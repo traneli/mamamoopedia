@@ -1,0 +1,53 @@
+import React from "react";
+import { Link, useHistory } from "react-router-dom";
+import * as utils from "../utils.js"
+
+function Members() {
+  const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
+  let history = useHistory();
+
+  function handleBackButton() {
+    history.push("/");
+  }
+
+  // https://codepen.io/jenniferleigh/pen/rVpeGG/
+
+  return (
+    <div class="members-container">
+      <div class="members-title">
+        <h2>MEMBERS</h2>
+      </div>
+      <div class="members-btn-toolbar">
+        <div class="members-button-container">
+          <Link to="/members/solar" class="members-button-label">
+            <span class="members-button-label-text">Solar</span>
+            <img class="members-solar-img" src={images["solar_travel.jpg"].default}/>
+          </Link>
+        </div>
+        <div class="members-button-container">
+          <Link to="/members/solar" class="members-button-label">
+            <span class="members-button-label-text">Moonbyul</span>
+            <img class="members-moonbyul-img" src={images["moonbyul_travel.png"].default}/>
+          </Link>
+        </div>
+        <div class="members-button-container">
+          <Link to="/members/solar" class="members-button-label">
+            <span class="members-button-label-text">Wheein</span>
+            <img class="members-wheein-img" src={images["wheein_travel.jpg"].default}/>
+          </Link>
+        </div>
+        <div class="members-button-container">
+          <Link to="/members/solar" class="members-button-label">
+            <span class="members-button-label-text">Hwasa</span>
+            <img class="members-hwasa-img" src={images["hwasa_travel.jpg"].default}/>
+          </Link>
+        </div>
+      </div>
+      <button class="media-button" onClick={handleBackButton}>
+        <img class="icon" src={images["home.svg"].default}/>
+      </button>
+    </div>
+  );
+}
+
+export default Members;
