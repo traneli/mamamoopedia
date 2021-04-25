@@ -108,7 +108,7 @@
   text-align: center;
 }
 
-.btn-toolbar button:hover {
+.btn-toolbar button:hover, .general-btn:hover {
   opacity: 0.8;
 }
 
