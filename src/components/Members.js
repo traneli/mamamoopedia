@@ -25,19 +25,19 @@ function Members() {
           </Link>
         </div>
         <div class="members-button-container">
-          <Link to="/members/solar" class="members-button-label">
+          <Link to="/members/moonbyul" class="members-button-label">
             <span class="members-button-label-text">Moonbyul</span>
             <img class="members-moonbyul-img" src={images["moonbyul_travel.png"].default}/>
           </Link>
         </div>
         <div class="members-button-container">
-          <Link to="/members/solar" class="members-button-label">
+          <Link to="/members/wheein" class="members-button-label">
             <span class="members-button-label-text">Wheein</span>
             <img class="members-wheein-img" src={images["wheein_travel.jpg"].default}/>
           </Link>
         </div>
         <div class="members-button-container">
-          <Link to="/members/solar" class="members-button-label">
+          <Link to="/members/hwasa" class="members-button-label">
             <span class="members-button-label-text">Hwasa</span>
             <img class="members-hwasa-img" src={images["hwasa_travel.jpg"].default}/>
           </Link>

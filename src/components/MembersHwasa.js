@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import * as utils from "../utils.js"
 
-function MembersSolar() {
+function MembersHwasa() {
   let history = useHistory();
 
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
@@ -14,15 +14,12 @@ function MembersSolar() {
     <div class="member-page-container">
       <div class="member-page-content">
         <div class="member-page-title">
-          <h2>SOLAR</h2>
-          <p>Kim Yong Sun, 김용선</p>
-          <p>1991/02/21</p>
+          <h2>Hwasa</h2>
+          <p>Ahn Hye Jin, 안혜진</p>
+          <p>1995/07/23</p>
         </div>
-        {/* <div class="member-page-parallax-wrapper">
-          <img class="member-page-img" src={images["solar_travel.jpg"].default}/>
-        </div> */}
         <div class="member-page-description">
-        <img class="member-page-img" src={images["solar_travel.jpg"].default}/>
+          <img class="member-page-img" src={images["hwasa_travel.jpg"].default}/>
           <div class="member-page-text-container">
             <p class="member-page-desc-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -48,20 +45,17 @@ function MembersSolar() {
               <li>Three</li>
             </ul>
             <p class="member-page-desc-text">
-              Solar's latest comeback: 
-              <a target="_blank" href="https://youtu.be/V8FXWf0s7K0"> Spit It Out (2020)</a>
+              Hwasa's latest comeback: 
+              <a target="_blank" href="https://youtu.be/brZRDjFIFJs"> Maria (2020)</a>
             </p>
           </div>
         </div>
         <button class="media-button" onClick={handleBackButton}>
           <img class="icon" src={images["home.svg"].default}/>
         </button>
-        {/* <button class="media-button" onClick={handleBackButton}>
-          <img class="icon" src={images["arrow.svg"].default}/>
-        </button> */}
       </div>
     </div>
   );
 }
 
-export default MembersSolar;
+export default MembersHwasa;

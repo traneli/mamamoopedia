@@ -37,10 +37,10 @@ function General() {
           </p>
           <h3>Latest Comeback</h3>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/UoI9riNffEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <button class="media-button" onClick={handleBackButton}>
-            <img class="icon" src={images["home.svg"].default}/>
-          </button>
         </div>
+        <button class="media-button" onClick={handleBackButton}>
+          <img class="icon" src={images["home.svg"].default}/>
+        </button>
       </div>
       {/* <div class="footer">
         <button class="media-button" onClick={handleBackButton}>
