@@ -5,9 +5,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .home-content {
+    height: 20%;
+  }
+
   .btn-toolbar {
     flex-direction: column;
     align-items: center;
+    top: 50%;
   }
 
   .general-content {
@@ -43,6 +48,10 @@
 }
 
 @media (min-width:1025px) {
+  .btn-toolbar {
+    top: 55%;
+  }
+  
   .member-page-description {
     width: 50%;
     height: 70%;
@@ -62,7 +71,7 @@
   color: #61dafb;
 }
 
-.home-content {
+.home-container {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
@@ -76,9 +85,16 @@
   text-align: center;
 }
 
+.home-content {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  /* height: 20%; */
+}
+
 .btn-toolbar {
   position: absolute;
-  top: 55%;
+  /* top: 55%; */
   display: flex;
   justify-content: center;
   width: 50%;

@@ -8,9 +8,11 @@ function Home() {
       <video id='videoBackground' autoPlay loop muted>
         <source src={sample} type='video/mp4'/>
       </video>
-      <div class="home-content">
-        <h2>MAMAMOO</h2>
-        <Buttons/>
+      <div class="home-container">
+        <div class="home-content">
+          <h2>MAMAMOO</h2>
+          <Buttons/>
+        </div>
       </div>
       <div class="home-footer">
         <SocialMediaButtons/>
