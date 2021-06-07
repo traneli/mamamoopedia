@@ -1,3 +1,4 @@
+import HomeAlternative from './components/HomeAlternative.js';
 import Home from './components/Home.js';
 import General from './components/General.js';
 import Members from './components/Members.js';
@@ -5,6 +6,7 @@ import MembersSolar from './components/MembersSolar.js';
 import MembersMoonbyul from './components/MembersMoonbyul.js';
 import MembersWheein from './components/MembersWheein.js';
 import MembersHwasa from './components/MembersHwasa.js';
+// import MembersSolarParallax from './components/MembersSolarParallax.js';
 import './App.css';
 
 import React from "react";
@@ -20,6 +22,7 @@ function App() {
     <Router>
       <div className="App" id="Main">
         <switch>
+          <Route exact path="/homealternative" component={HomeAlternative}/>
           <Route exact path="/" component={Home}/>
           <Route path="/general" component={General}/>
           <Route path="/members" component={Members}/>
@@ -27,6 +30,7 @@ function App() {
           <Route path="/members/moonbyul" component={MembersMoonbyul}/>
           <Route path="/members/wheein" component={MembersWheein}/>
           <Route path="/members/hwasa" component={MembersHwasa}/>
+          {/* <Route path="/solarParallax" component={MembersSolarParallax}/> */}
         </switch>
       </div>
     </Router>
