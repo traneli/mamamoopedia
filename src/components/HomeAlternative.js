@@ -1,4 +1,4 @@
-import sample from '../assets/mmm_aya_1080p.mp4';
+import sample from '../assets/mmm_wawn_1080p.mp4';
 import Buttons from '../components/Buttons.js';
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
 import UpperButtonMenuSelection from './UpperButtonMenuSelection.js';
@@ -17,17 +17,15 @@ function HomeAlternative() {
           {/* <img src={images["placeholder_logo.svg"].default}/> */}
           <h1 class="alt-home-head">MAMAMOO</h1>
           <div class="alt-home-subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          {/* <Buttons/> */}
+          <Buttons/>
         </div>
       </div>
       <div class="home-header">
         <UpperButtonMenuSelection/>
       </div>
       <div class="home-footer">
-        {/* <SocialMediaButtons/> */}
-        <button type="button" class="media-button">
-          <img class="icon" src={images["down-arrow.svg"].default}/>
-        </button>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <SocialMediaButtons/>
       </div>
     </>
   );
