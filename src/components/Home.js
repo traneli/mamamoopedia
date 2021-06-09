@@ -18,8 +18,9 @@ function Home() {
       </video>
       <div class="home-container">
         <div class="home-content">
-          {/* <img src={images["mamamoo-logo.svg"].default}/> */}
-          <h2>MAMAMOO</h2>
+          <img class="home-content-logo" src={images["mmm-logo-white.svg"].default}/>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          {/* <h2>MAMAMOO</h2> */}
           <Buttons/>
         </div>
       </div>
@@ -27,6 +28,7 @@ function Home() {
         <UpperButtonMenuSelection/>
       </div> */}
       <div class="home-footer">
+        <p>Lorem ipsum dolor sit amet, consectetur media buttons.</p>
         <SocialMediaButtons/>
       </div>
     </>

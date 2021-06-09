@@ -68,13 +68,6 @@
   }
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -96,98 +89,67 @@
 .home-content {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
+  font-size: 1.2rem;
   /* height: 20%; */
 }
 
-.alt-home-container {
+.home-content-logo {
+  width: 40rem;
+  margin-left: 2rem;
+}
+
+.home-footer {
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  /* font-size: calc(10px + 2vmin); */
-  /* font-family: Verdana, sans-serif; */
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.alt-home-content {
-  /* position: relative;
-  bottom: 5%; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 50%;
-  height: 50%;
-}
-
-.alt-home-head {
-  /* font-size: calc(10px + 2vmin); */
-  font-size: 3rem;
-}
-
-.alt-home-subhead {
-  /* font-size: calc(10px + 2vmin); */
-  font-size: 1.5rem;
-}
-
-/* .video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-  padding-bottom: 56.25%;
-}
-
-.video-foreground,
-.video-background iframe{
-  position: absolute;
-  top: 0;
+  height: 10%;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-} */
+  align-items: center;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+}
 
 .btn-toolbar {
-  position: absolute;
-  /* top: 55%; */
   display: flex;
   justify-content: center;
-  width: 50%;
+  /* position: absolute; */
+  /* top: 55%; */
+  /* width: 50%; */
 }
 
-.home-header {
+.div-header {
   position: absolute;
   width: 100%;
-  height: 8%;
+  height: 13%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  background: white;
+  /* z-index: 99; */
 }
 
-.upperbutton-content {
+.div-header-logo {
+  width: 12rem;
+  margin-left: 4rem;
+}
+
+.about-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  width: 100%;
+  height: 100%;
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-}
-
-.upperbuttonmenu-button {
-  color: #f1f1f1;
-  border: none;
-  background: none;
-  margin-right: 2rem;
-}
-
-.upperbuttonmenu-label {
-  color: #f1f1f1;
-  font-size: 1.2rem;  
-  text-decoration: none;
-  text-align: center;
-  /* text-transform: lowercase; */
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center
 }
 
 .general-btn {
@@ -196,10 +158,10 @@
   text-align: center;
   background:white;
   border: none;
-  border-radius: 15px;
-  width: 8rem;
-  height: 2rem;
-  margin: 10px;
+  border-radius: 20px;
+  width: 10rem;
+  height: 2.3rem;
+  margin: 1.3rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -218,6 +180,28 @@
   opacity: 0.8;
 }
 
+.upperbutton-content {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+}
+
+.upperbuttonmenu-button {
+  color: #f1f1f1;
+  border: none;
+  background: none;
+  margin-right: 4rem;
+}
+
+.upperbuttonmenu-label {
+  color: black;
+  font-size: 1.5rem;  
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  /* text-transform: lowercase; */
+}
+
 #videoBackground {
   object-fit: cover;
   width: 100vw;
@@ -227,15 +211,6 @@
   left: 0;
 }
 
-.home-footer {
-  position: fixed;
-  width: 100%;
-  height: 10%;
-  bottom: 0;
-  left: 0;
-  /* background-color: red; */
-  align-items: center;
-}
 
 .socialmedia-btn-bar {
   display: flex;

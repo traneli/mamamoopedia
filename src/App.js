@@ -1,5 +1,5 @@
-import HomeAlternative from './components/HomeAlternative.js';
 import Home from './components/Home.js';
+import About from './components/About.js';
 import General from './components/General.js';
 import Members from './components/Members.js';
 import MembersSolar from './components/MembersSolar.js';
@@ -22,9 +22,9 @@ function App() {
     <Router>
       <div className="App" id="Main">
         <switch>
-          <Route exact path="/homealternative" component={HomeAlternative}/>
           <Route exact path="/" component={Home}/>
           <Route path="/general" component={General}/>
+          <Route path="/about" component={About}/>
           <Route path="/members" component={Members}/>
           <Route path="/members/solar" component={MembersSolar}/>
           <Route path="/members/moonbyul" component={MembersMoonbyul}/>
