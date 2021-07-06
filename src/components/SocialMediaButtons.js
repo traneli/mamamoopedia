@@ -19,7 +19,12 @@ function SocialMediaButtons() {
 
     return (
       <div class="socialmedia-btn-bar">
-        <button type="button" class="media-button" onClick={() => openPage(urls[0])}>
+        <input type="image" class="icon" src={images["waw_instagram.svg"].default} />
+        <input type="image" class="icon" src={images["waw_fancafe_light_bg.svg"].default} />
+        <input type="image" class="icon" src={images["waw_vlive.svg"].default} />
+        <input type="image" class="icon" src={images["waw_twitter.svg"].default} />
+        <input type="image" class="icon" src={images["waw_fb.svg"].default} />
+        {/* <button type="button" class="media-button" onClick={() => openPage(urls[0])}>
           <img class="icon" src={images["apple-music.svg"].default}/>
         </button>
         <button type="button" class="media-button" onClick={() => openPage(urls[1])}>
@@ -39,7 +44,7 @@ function SocialMediaButtons() {
         </button>
         <button type="button" class="media-button" onClick={() => openPage(urls[6])}>
           <img class="icon" src={images["youtube.svg"].default}/>
-        </button>
+        </button> */}
       </div>
   );
 }

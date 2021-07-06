@@ -1,3 +1,11 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useHistory, withRouter } from "react-router";
+
 import Home from './components/Home.js';
 import About from './components/About.js';
 import General from './components/General.js';
@@ -9,15 +17,21 @@ import MembersHwasa from './components/MembersHwasa.js';
 // import MembersSolarParallax from './components/MembersSolarParallax.js';
 import './App.css';
 
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
 
 // https://www.intechnic.com/blog/50-examples-of-large-background-video-websites/
 
 function App() {
+  const [ isHome, setHome ] = useState(false);
+  const history = useHistory();
+
+  useEffect (() => {
+    if(history && history.location.pathname === '/') {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  });
+
   return (
     <Router>
       <div className="App" id="Main">
@@ -37,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

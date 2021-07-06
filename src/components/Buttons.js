@@ -22,13 +22,18 @@ function Buttons() {
   return (
     <div class="btn-toolbar">
       <div className="general-btn">
-        <Link to="/general" className="general-link-btn-label">
-            General
+        <Link to="/about" className="general-link-btn-label">
+            About MAMAMOO
         </Link>
       </div>
       <div className="general-btn">
         <Link to="/members" className="general-link-btn-label">
-            Members
+            Discography
+        </Link>
+      </div>
+      <div className="general-btn">
+        <Link to="/members" className="general-link-btn-label">
+            Timeline
         </Link>
       </div>
       <button onClick={videoIndexClick} className="general-btn">
