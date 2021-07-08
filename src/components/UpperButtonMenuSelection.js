@@ -34,12 +34,22 @@ function UpperButtonMenuSelection() {
       <nav className="upperbutton-content">
         <div className="upperbuttonmenu-button">
           <Link to="/about" className="upperbuttonmenu-label">
-              About
+            About Mamamoo
           </Link>
         </div>
         <div className="upperbuttonmenu-button">
           <Link to="/members" className="upperbuttonmenu-label">
-              Members
+            Members
+          </Link>
+        </div>
+        <div className="upperbuttonmenu-button">
+          <Link to="/members" className="upperbuttonmenu-label">
+            Discography
+          </Link>
+        </div>
+        <div className="upperbuttonmenu-button">
+          <Link to="/members" className="upperbuttonmenu-label">
+            Timeline
           </Link>
         </div>
         <div className="upperbuttonmenu-button">

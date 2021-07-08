@@ -4,7 +4,9 @@
   width: 100%;
 }
 
+/* Mobile size */
 @media screen and (max-width: 600px) {
+/* @media screen and (min-width: 320px) { */
   .home-content {
     height: 20%;
   }
@@ -40,6 +42,10 @@
     overflow: auto;
   }
 
+  .about-content-low-center {
+    flex-direction: column;
+  }
+
   /* .member-page-parallax-wrapper {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -47,11 +53,12 @@
     perspective: 10px;
   } */
 
-  .member-page-img {
-    width: 100%;
-  }
+  /* .member-page-img {
+    width: 130%;
+  } */
 }
 
+/* Over mobile size */
 @media (min-width: 600px) {
   .home-content-logo {
     width: 40rem;
@@ -231,22 +238,37 @@
   font-family: Roboto-Regular;
 }
 
-.about-content-low-center img {
-  width: 130%;
-  /* width: 50rem; */
+.about-content-low-center-img-wrapper {
+  width: 100%;
 }
 
-.about-content-low-center-text{
-  width: 80%;
-  margin-right: 3rem;
-  margin-left: 3rem;
+.about-content-low-center-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .about-content-low-center img {
+  width: 100%;
+  height: auto;
+} */
+
+.about-content-low-center-text {
+  width: 60%;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.about-content-low-center-text-paragraph {
+  margin-bottom: 3rem;
 }
 
 .about-content-low-center-members-btn-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 10rem;
+  position: fixed;
+  /* margin-top: 10rem; */
 }
 
 .about-content-low-center-members-btn {
@@ -256,11 +278,21 @@
   text-decoration: none;
   text-align: left;
   display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin-top: 1.55rem;
 }
 
 .about-content-low-center-members-btn img {
+  width: 15%;
+  height: 3.8rem;
+}
+
+.about-content-low-center-members-btn p {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 4.5rem; /*50%*/
 }
 
 .about-content-bottom-top {
@@ -282,7 +314,20 @@
 }
 
 .about-content-bottom-center-image {
+  /* width: 100%; */
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
   width: 100%;
+}
+
+.about-content-bottom-center-image iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .about-content-bottom {
