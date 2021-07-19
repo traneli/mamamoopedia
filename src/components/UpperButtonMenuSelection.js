@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function UpperButtonMenuSelection() {
 
   const videoIndexUrl = "https://docs.google.com/spreadsheets/u/1/d/1ck-dPOKb301Z74-5GqV2Ey5F4QS4F7kAw7g4zr5qsgU/htmlview#";
+
+  const activeStyle = {
+    fontWeight: "bold",
+    borderBottom: "1px solid #000",
+    paddingBottom: "3px"
+  };
 
   function videoIndexClick(e) {
     window.open(videoIndexUrl, "_blank");
@@ -33,24 +39,24 @@ function UpperButtonMenuSelection() {
     <header>
       <nav className="upperbutton-content">
         <div className="upperbuttonmenu-button">
-          <Link to="/about" className="upperbuttonmenu-label">
+          <NavLink to="/about" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             About Mamamoo
-          </Link>
+          </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
-          <Link to="/members" className="upperbuttonmenu-label">
+          <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             Members
-          </Link>
+          </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
-          <Link to="/members" className="upperbuttonmenu-label">
+          <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             Discography
-          </Link>
+          </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
-          <Link to="/members" className="upperbuttonmenu-label">
+          <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             Timeline
-          </Link>
+          </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
           <a href="https://docs.google.com/spreadsheets/u/1/d/1ck-dPOKb301Z74-5GqV2Ey5F4QS4F7kAw7g4zr5qsgU/"

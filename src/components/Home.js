@@ -21,7 +21,7 @@ function Home() {
       </div>
       <div class="home-footer">
         <p>Get connected with MAMAMOO</p>
-        <SocialMediaButtons/>
+        <SocialMediaButtons background="transparent"/>
       </div>
     </>
   );

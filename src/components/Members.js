@@ -1,19 +1,29 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import * as utils from "../utils.js"
 import PageTemplate from '../PageTemplate';
+import Layout from "../PageLayout.js";
 
 function Members() {
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
   let history = useHistory();
+  let location = useLocation();
 
   function handleBackButton() {
     history.push("/");
   }
 
+  console.log(location);
+
   // https://codepen.io/jenniferleigh/pen/rVpeGG/
 
   return (
+    // <div>
+    //   <Layout>
+    //     <p>testi</p>
+    //   </Layout>
+    // </div>
+
     <div>
       <PageTemplate>
         <p>testi</p>
