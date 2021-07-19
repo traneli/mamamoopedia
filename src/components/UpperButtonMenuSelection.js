@@ -49,12 +49,12 @@ function UpperButtonMenuSelection() {
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
-          <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          <NavLink to="/discography" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             Discography
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
-          <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          <NavLink to="/timeline" className="upperbuttonmenu-label" activeStyle={activeStyle}>
             Timeline
           </NavLink>
         </div>

@@ -6,15 +6,17 @@ import {
 import { useState, useEffect } from "react";
 import { useHistory, withRouter } from "react-router";
 
-import Home from './components/Home.js';
-import About from './components/About.js';
-import General from './components/General.js';
-import Members from './components/Members.js';
-import MembersSolar from './components/MembersSolar.js';
-import MembersMoonbyul from './components/MembersMoonbyul.js';
-import MembersWheein from './components/MembersWheein.js';
-import MembersHwasa from './components/MembersHwasa.js';
-// import MembersSolarParallax from './components/MembersSolarParallax.js';
+import Home from './components/Home';
+import About from './components/About';
+import General from './components/General';
+import Members from './components/Members';
+import MembersSolar from './components/MembersSolar';
+import MembersMoonbyul from './components/MembersMoonbyul';
+import MembersWheein from './components/MembersWheein';
+import MembersHwasa from './components/MembersHwasa';
+import Discography from './components/Discography';
+import Timeline from './components/Timeline';
+
 import './App.css';
 
 
@@ -44,7 +46,8 @@ function App() {
           <Route path="/members/moonbyul" component={MembersMoonbyul}/>
           <Route path="/members/wheein" component={MembersWheein}/>
           <Route path="/members/hwasa" component={MembersHwasa}/>
-          {/* <Route path="/solarParallax" component={MembersSolarParallax}/> */}
+          <Route path="/discography" component={Discography}/>
+          <Route path="/timeline" component={Timeline}/>
         </switch>
       </div>
     </Router>

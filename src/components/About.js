@@ -57,7 +57,7 @@ function About() {
               Cras id elit at purus porta feugiat interdum a erat. Nullam laoreet pretium venenatis. Nulla felis ipsum, aliquet nec sollicitudin sed, pharetra sed est. Nam tempus mauris in mauris vulputate facilisis. Fusce nec aliquam nisl. Donec vel urna lacinia, ullamcorper felis sed, posuere lectus. Donec rhoncus velit et ligula convallis imperdiet. Donec eu vestibulum lacus. Duis magna dui, fringilla eu mollis sed, malesuada ut mauris. Suspendisse nec molestie nisi, sit amet finibus nisi. Curabitur a neque mauris. Nulla quis felis ultrices, ultrices mauris non, scelerisque sem. Maecenas imperdiet eros eu tortor dictum, ornare pretium massa hendrerit.
             </p>
             <div class="about-content-low-center-members-btn-container">
-              <Link to="/general" className="about-content-low-center-members-btn">
+              <Link to="/members" className="about-content-low-center-members-btn">
                 <p>Get to know the members</p>
                 <img src={images["brown_arrow_right.svg"].default}/>
               </Link>
@@ -80,8 +80,8 @@ function About() {
             genre under the sun and trust them to do all these with justice, without sacrificing
             their own Mamamoo color.
           </p>
-          {/* TODO: Add new link */}
-          <Link to="/general">
+          {/* TODO: Change to new link */}
+          <Link to="/discography">
             SEE THEIR FULL DISCOGRAPHY
           </Link>
         </div>

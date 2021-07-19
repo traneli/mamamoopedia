@@ -380,6 +380,41 @@
   margin-top: 2rem;
 }
 
+.members-main-content-top {
+  width: 100%;
+  background: #E0D2C7;
+}
+
+.members-main-content-top h2 {
+  color: #9A6C57;
+  font-size: 4rem;
+  font-family: Roboto-Bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.members-main-content-image-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.members-main-content-image-group-link {
+  width: 25%;
+}
+
+.members-main-content-image-group-btn {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+.members-main-content-image-group-btn img {
+  width: 100%;
+  height: 100%;
+}
+
  /* #E0D2C7 lighter*/
  /* #9A6C57 darker*/
 
