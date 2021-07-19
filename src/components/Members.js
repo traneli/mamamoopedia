@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import * as utils from "../utils.js"
 import PageTemplate from '../PageTemplate';
-import Layout from "../PageLayout.js";
 
 function Members() {
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
