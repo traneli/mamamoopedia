@@ -12,13 +12,13 @@ export const MembersInfo = [
       '☆ Has four dogs: Daebak, Haengwoon, Keongang, and Janggu\\n' +
       '☆ Was the leader of the temporary group formed by Idol Drama Operation Team\\n' +
       '☆ Is the 2nd most credited female idol overall with 71 songs, according to KOMCA.\\n' +
-      '☆ Has her own Instagram, mo_onbyul\\n' +
-      '☆ Is the for the NOW radio show, Studio Moon Night\\n' +
+      '☆ Has her own Instagram, <span class="member-span-coloured-text">mo_onbyul</span>\\n' +
+      '☆ Is the for the NOW radio show, <span class="member-span-coloured-text">Studio Moon Night</span>\\n' +
       '☆ Is the most sociable member of the group\\n' +
       '☆ Has 7 tattoos\\n' +
       '☆ Her hobby is photography\\n' +
       '☆ Is a bit of a tech nerd\\n' +
-      '☆ On February 14, 2020 she released her second solo album, \'Dark Side of the Moon\'',
+      '☆ On February 14, 2020 she released her second solo album, <span class="member-span-coloured-text">\'Dark Side of the Moon\'</span>',
       solo: 'https://youtu.be/7Ewgm6TMKgE',
       socials: [
         {
@@ -48,13 +48,13 @@ export const MembersInfo = [
       '☼ Currently lives with her older sister, Yonghee\\n' +
       '☼ Is licensed in laughter therapy, recreation level 1, fun leadership, and bus driving\\n' +
       '☼ As of November 2020 has 27 songs credited on KOMCA\\n' +
-      '☼ Has her own YouTube channel, 솔라시도 solarsido\\n' +
+      '☼ Has her own YouTube channel, 솔라시도 <span class="member-span-coloured-text">solarsido</span>\\n' +
       '☼ Was scouted while singing "I Will Always Love You"\\n' +
       '☼ Held her own solo concerts in 2018 for her cover series, Solar\'s Emotion, which she started in 2016\\n' +
       '☼ Endearingly referred to as Yeba (pretty fool)\\n' +
       '☼ Has a mixed breed dog named Yongki\\n' +
-      '☼ Has her own Instagram, solarkeem\\n' +
-      '☼ On April 23, 2020 she made her solo debut with \'Spit It Out\'\\n',
+      '☼ Has her own Instagram, <span class="member-span-coloured-text">solarkeem</span>\\n' +
+      '☼ On April 23, 2020 she made her solo debut with <span class="member-span-coloured-text">\'Spit It Out\'</span>\\n',
       solo: 'https://youtu.be/V8FXWf0s7K0',
       socials: [
         {
@@ -87,10 +87,10 @@ export const MembersInfo = [
       '彡 Is the shortest member at 159cm\\n' +
       '彡 Her hobby is drawing\\n' +
       '彡 Was tricked into getting baptized by Hwasa\\n' +
-      '彡 Has her own Instagram, whee_inthemood\\n' +
+      '彡 Has her own Instagram, <span class="member-span-coloured-text">whee_inthemood</span>\\n' +
       '彡 Her dimple is measured to be 2.5cm across\\n' +
       '彡 Can remember up to 50 random words in sequence\\n' +
-      '彡 On April 13, 2021 she released her first mini album, \'Redd\'\\n',
+      '彡 On April 13, 2021 she released her first mini album, <span class="member-span-coloured-text">\'Redd\'</span>\\n',
       solo: 'https://youtu.be/ShFKF2YN7H0',
       socials: [
         {
@@ -113,16 +113,16 @@ export const MembersInfo = [
       'Vocal, Rapper & Maknae \\n' +
       'Colors: Pink (Moosical) / Yellow (4season)',
       description: 
-      '✿ In 2018 after her first appearance on \'I Live Alone\', caused a nationwide shortage of gopchang\\n' +
+      '✿ In 2018 after her first appearance on <span class="member-span-coloured-text">\'I Live Alone\'</span>, caused a nationwide shortage of gopchang\\n' +
       '✿ Is allergic to animals, so her pets are stuffed animals, a lion and a dog.\\n' +
       '✿ As of November 2020 has 31 songs credited to her name on KOMCA\\n' +
-      '✿ Received \'Rookie of the Year\' for variety at the 2018 MBC Entertainment Awards\\n' +
+      '✿ Received <span class="member-span-coloured-text">\'Rookie of the Year\'</span> for variety at the 2018 MBC Entertainment Awards\\n' +
       '✿ Has been friends with Wheein since middle school\\n' +
       '✿ Has 5 tattoos, one of which is her baptismal name, \'Maria\'\\n' +
-      '✿ Has her own Instagram, _mariahwasa\\n' +
+      '✿ Has her own Instagram, <span class="member-span-coloured-text">_mariahwasa</span>\\n' +
       '✿ Is known for her strong and unique appearance\\n' +
       '✿ Debuted as Silbi in the group, Refund Sisters\\n' +
-      '✿ On June 29, 2020 she released her first solo album, \'María\'\\n',
+      '✿ On June 29, 2020 she released her first solo album, <span class="member-span-coloured-text">\'María\'</span>\\n',
       solo: 'https://youtu.be/brZRDjFIFJs',
       socials: [
         {

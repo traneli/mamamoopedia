@@ -24,10 +24,16 @@ function MembersMoonbyul() {
     window.open(props, "_blank");
   }
 
+  function ChangeStringToHTML(data) {
+    const result = utils.jsonToHTML(data);
+    return result;
+  }
+
   function NewlineText(props) {
     const text = props.text;
     const className = props.className;
-    const newText = text.split('\\n').map(str => <p class={className}>{str}</p>);
+    // const newText = text.split('\\n').map(str => <p class={className}>{str}</p>);
+    const newText = text.split('\\n').map(str => ChangeStringToHTML({str}.str));
     return newText;
   }
 
