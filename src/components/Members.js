@@ -2,8 +2,10 @@ import React, { useContext, useRef, useEffect, useState } from 'react';
 import PageTemplate from '../PageTemplate';
 
 import MembersMain from './MembersMain'
-import MembersSolar from './MembersSolar.js';
-import MembersMoonbyul from './MembersMoonbyul.js';
+import MembersSolar from './MembersSolar';
+import MembersMoonbyul from './MembersMoonbyul';
+import MembersWheein from './MembersWheein';
+import MembersHwasa from './MembersHwasa';
 import MemberContext from '../hoc/context/MainContext';
 
 function Members() {
@@ -21,7 +23,16 @@ function Members() {
       return (
         <section class="members-main-content"><MembersSolar/></section>
       )
+    } else if(selectedMember === "wheein") {
+      return (
+        <section class="members-main-content"><MembersWheein/></section>
+      )
+    } else if(selectedMember === "hwasa") {
+      return (
+        <section class="members-main-content"><MembersHwasa/></section>
+      )
     }
+
     return <MembersMain/>;
   }
 
