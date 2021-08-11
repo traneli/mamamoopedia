@@ -6,16 +6,7 @@ import {
 import { useState, useEffect } from "react";
 import { useHistory, withRouter } from "react-router";
 
-import Home from './components/Home';
-import About from './components/About';
-import General from './components/General';
-import Members from './components/Members';
-import MembersSolar from './components/MembersSolar';
-import MembersMoonbyul from './components/MembersMoonbyul';
-import MembersWheein from './components/MembersWheein';
-import MembersHwasa from './components/MembersHwasa';
-import Discography from './components/Discography';
-import Timeline from './components/Timeline';
+import { Home, About, General, Members, MembersSolar, MembersMoonbyul, MembersWheein, MembersHwasa, Discography, Timeline } from './components/Index';
 
 import './App.css';
 
@@ -42,10 +33,10 @@ function App() {
           <Route path="/general" component={General}/>
           <Route path="/about" component={About}/>
           <Route path="/members" component={Members}/>
-          <Route path="/members/solar" component={MembersSolar}/>
-          <Route path="/members/moonbyul" component={MembersMoonbyul}/>
+          {/* <Route exact path="/members/solar" component={MembersSolar}/>
+          <Route exacth path="/members/moonbyul" component={MembersMoonbyul}/>
           <Route path="/members/wheein" component={MembersWheein}/>
-          <Route path="/members/hwasa" component={MembersHwasa}/>
+          <Route path="/members/hwasa" component={MembersHwasa}/> */}
           <Route path="/discography" component={Discography}/>
           <Route path="/timeline" component={Timeline}/>
         </switch>

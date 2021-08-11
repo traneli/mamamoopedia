@@ -1,64 +1,63 @@
-import { useHistory } from "react-router-dom";
-import * as utils from "../utils.js"
+import { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import * as utils from '../utils.js';
+
+import './Members.style.css';
+
+import { MembersInfo } from '../data/MembersInfoData';
+import MemberContext from '../hoc/context/MainContext';
 
 function MembersSolar() {
   let history = useHistory();
 
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
+  const { member, setMember } = useContext(MemberContext);
 
   function handleBackButton() {
     history.push("/members");
+    return(
+      setMember("")
+    )
+  }
+  
+  function openMediaLink(props) {
+    window.open(props, "_blank");
+  }
+
+  function NewlineText(props) {
+    const text = props.text;
+    const className = props.className;
+    const newText = text.split('\\n').map(str => <p class={className}>{str}</p>);
+    return newText;
   }
 
   return (
     <div class="member-page-container">
+      <div class="member-page-back-button-content">
+        <button onClick={() => handleBackButton()}>
+          <img src={images["arrow_left_black.svg"].default}/>
+          Back to members
+        </button>
+      </div>
       <div class="member-page-content">
-        <div class="member-page-title">
-          <h2>SOLAR</h2>
-          <p>Kim Yong Sun, 김용선</p>
-          <p>1991/02/21</p>
-        </div>
-        {/* <div class="member-page-parallax-wrapper">
-          <img class="member-page-img" src={images["solar_travel.jpg"].default}/>
-        </div> */}
-        <div class="member-page-description">
-        <img class="member-page-img" src={images["solar_travel.jpg"].default}/>
-          <div class="member-page-text-container">
-            <p class="member-page-desc-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Aenean vulputate ipsum ex, non tempor turpis laoreet eget. 
-              Cras venenatis scelerisque ligula, eget viverra justo tincidunt non. 
-              Vivamus dui neque, tempus non sagittis ac, fermentum id odio. 
-              Donec elementum pharetra convallis. Phasellus pellentesque hendrerit tortor ac dignissim. 
-              Mauris faucibus turpis a ligula tempus lacinia. Donec eleifend lacus gravida enim pretium,
-              ut volutpat velit tincidunt. Integer volutpat pellentesque elit, ut efficitur est varius ut.
-            </p>
-            <p class="member-page-desc-text">
-              Habla habla ipsum dolor sit amet, consectetur adipiscing elit. 
-              Aenean vulputate ipsum ex, non tempor turpis laoreet eget. 
-              Cras venenatis scelerisque ligula, eget viverra justo tincidunt non. 
-              Vivamus dui neque, tempus non sagittis ac, fermentum id odio. 
-              Donec elementum pharetra convallis. Phasellus pellentesque hendrerit tortor ac dignissim. 
-              Mauris faucibus turpis a ligula tempus lacinia. Donec eleifend lacus gravida enim pretium,
-              ut volutpat velit tincidunt. Integer volutpat pellentesque elit, ut efficitur est varius ut.
-            </p>
-            <ul class="member-page-desc-list">
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
-            <p class="member-page-desc-text">
-              Solar's latest comeback: 
-              <a target="_blank" href="https://youtu.be/V8FXWf0s7K0"> Spit It Out (2020)</a>
-            </p>
+        <img class="member-page-img-pfp" src={images[MembersInfo[1].image].default}/>
+        <div class="member-page-information-box">
+          <h1>{MembersInfo[1].name}</h1>
+          <h2>{MembersInfo[1].fullName}</h2>
+          <div class="member-page-information-box-text-content">
+            <NewlineText text={MembersInfo[1].information}/>
+          </div>
+          <div class="member-page-information-box-text-content">
+            <NewlineText text={MembersInfo[1].description}/>
+          </div>
+          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[1].solo)}>Solar's latest solo work: Spit It Out</button>
+          <p class="member-page-information-box-social-title">Socials:</p>
+          <div class="member-page-information-box-media-btn-content">
+            <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[0].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[1].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_youtube_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[2].url)}/>
           </div>
         </div>
-        <button class="media-button" onClick={handleBackButton}>
-          <img class="icon" src={images["home.svg"].default}/>
-        </button>
-        {/* <button class="media-button" onClick={handleBackButton}>
-          <img class="icon" src={images["arrow.svg"].default}/>
-        </button> */}
       </div>
     </div>
   );
