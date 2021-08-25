@@ -10,6 +10,127 @@
   font-family: Roboto-Regular;
 }
 
+.discography-content-top {
+  width: 100%;
+  background: #E0D2C7;
+}
+
+.discography-content-top h2 {
+  color: #9A6C57;
+  font-size: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.discography-content-top p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+
+.discography-content-top-media {
+  width: 100%;
+  background: #E0D2C7;
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-img-wrapper {
+  width: 100%;
+}
+
+.discography-content-top-media-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.discography-content-top-media-player-box-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.discography-content-top-media-player-box-top {
+  height: 35%;
+  background: #1D1D1E;
+  display: flex;
+  align-items: center;
+}
+
+.discography-content-top-media-player-box-top img {
+  margin-left: 1.5rem;
+  width: 60%;
+}
+
+.discography-content-top-media-player-box-bottom {
+  height: 65%;
+  background: #131314;
+}
+
+.discography-content-top-media-player-box-bottom-row {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-bottom-row:first-child {
+  margin-top: 2rem;
+}
+
+.discography-content-top-media-player-box-bottom-row-artist{
+  margin: 0;
+}
+
+.discography-content-top-media-player-box-bottom-row-inner {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto-Regular;
+  font-weight: 100;
+}
+
+.discography-content-top-media-player-box-bottom-row-inner p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.discography-content-top-media-player-box-top-text-container {
+  color: white;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-player-box-top-album-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.discography-content-top-media-player-box-top-album-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-top-album-information {
+  margin-top: 0;
+
+}
+
+.discography-content-top-media-player-box-top-album-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*------------- CAROUSEL STYLES -------------------*/
+
 .discography-carousel-container {
   width: 100%;
   display: flex;

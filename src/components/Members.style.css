@@ -31,7 +31,7 @@
   align-items: center;
 }
 
-.member-page-back-button-content button {
+.member-page-back-button {
   font-size: 1.5rem;
   text-transform: uppercase;
   background: none;
@@ -40,6 +40,18 @@
   font-family: Roboto-Bold;
   display: flex;
   align-items: center;
+}
+
+.member-page-back-button:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.member-page-back-button:hover::after {
+  transform: scaleX(1);
 }
 
 .member-page-back-button-content img {
@@ -96,6 +108,7 @@
   padding: 0.7rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  transition: 0.3s;
 }
 
 .member-page-information-box-social-title {
@@ -113,11 +126,16 @@
   width: 3rem;
   margin-right: 0.5rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #member-page-information-box-media-btn-special {
   width: 6rem;
   /* margin-top: 0.5rem; */
+}
+
+.member-page-information-box-solo-btn:hover, .member-page-information-box-media-btn:hover {
+  opacity: 0.8;
 }
 
 .member-span-coloured-text {

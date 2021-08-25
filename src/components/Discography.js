@@ -1,124 +1,107 @@
-import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-
 import './Discography.style.css';
 
 import * as utils from "../utils.js"
 import PageTemplate from '../PageTemplate';
 import { MamamooDiscographyData } from '../data/MamamooDiscographyData';
 
-// https://freefrontend.com/javascript-carousels/
-// https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
-
-const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
-const albumImages = utils.importAll(require.context('../assets/albums', false, /\.(png|jp?g|svg)/));
-
-function Carousel(props) {
-  const [currPos, setPos] = useState(0);
-
-  let position = 0;
-  let currentAlbum = props.albumData[position];
-  let currentImage = currentAlbum.image;
-
-  const listAlbums = props.albumData.map((album) =>
-    <div class ="discography-carousel-content" key={album.name}>
-      <img class="discography-carousel-image" src={albumImages[currentImage].default}/>
-      <div class="discography-carousel-text-container">
-        <h1>{currentAlbum.name}</h1>
-        <p class="discography-carousel-text-subheader">{currentAlbum.info}</p>
-        <p>
-          {currentAlbum.description}
-        </p>
-        <p><i>Click on the cover image to see the track list</i></p>
-      </div>
-    </div>
-  );
-  
-  function moveRight(){
-    // currentImage = props.albumData[position + 1].image;
-    // position++;
-    // currentImage = props.albumData[position].image;
-    setPos(currPos + 1);
-    currentImage = props.albumData[currPos].image;
-    console.log("Pressed right button! " + currentImage + ", " + currPos);
-  }
-
-  function moveLeft(){
-    // currentImage = props.albumData[position - 1].image;
-    // position--;
-    // currentImage = props.albumData[position].image;
-    setPos(currPos - 1);
-    currentImage = props.albumData[currPos].image;
-    console.log("Pressed left button! " + currentImage + ", " + currPos);
-  }
-
-  return (
-    <div class="discography-carousel-container">
-      <button class="discography-carousel-arrow" onClick={moveLeft}>
-        <img id="discography-carousel-left-btn" src={images["carousel_arrow_left.svg"].default}/>
-      </button>
-      {/* <div class="discography-carousel-content">
-        <img class="discography-carousel-image" src={albumImages[currentImage].default}/>
-        <div class="discography-carousel-text-container">
-          <h1>{currentAlbum.name}</h1>
-          <p class="discography-carousel-text-subheader">{currentAlbum.info}</p>
-          <p>
-            {currentAlbum.description}
-          </p>
-          <p><i>Click on the cover image to see the track list</i></p>
-        </div>
-      </div> */}
-      {listAlbums}
-      <button class="discography-carousel-arrow" onClick={moveRight}>
-        <img id="discography-carousel-right-btn" src={images["carousel_arrow_right.svg"].default}/>
-      </button>
-    </div>
-  )
-}
-
 function Discography() {
-  let history = useHistory();
+  const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
+  const albumImages = utils.importAll(require.context('../assets/albums', false, /\.(png|jp?g|svg)/));
 
-  function handleBackButton() {
-    history.push("/");
+  function AlbumDataList(props) {
+    const albumData = props.album;
+    const albumToShow = props.showAlbum;
+    const allData = props.showAllData;
+    let selectedAlbum = "";
+
+    console.log(albumData.length);
+
+    for(var i = 0; i < albumData.length; i++) {
+      if(albumData[i].name.toLowerCase() === albumToShow.toLowerCase()) {
+        selectedAlbum = albumData[i];
+      }
+    }
+
+    if(allData.toLowerCase() === "false") {
+      return (
+        // <>
+        // {
+        //   <img src={albumImages[selectedAlbum.image]}/>
+        // }
+        // </>
+        <img src={albumImages[selectedAlbum.image].default}/>
+      )
+    } else {
+      return (
+        <div class="discography-content-top-media-player-box-content">
+          <div class="discography-content-top-media-player-box-top">
+            <img src={albumImages[selectedAlbum.image].default}/>
+            <div class="discography-content-top-media-player-box-top-text-container">
+              <p class="discography-content-top-media-player-box-top-album-type">{selectedAlbum.type}</p>
+              <h1 class="discography-content-top-media-player-box-top-album-title">{selectedAlbum.name}</h1>
+              <p class="discography-content-top-media-player-box-top-album-information">{selectedAlbum.info}</p>
+              <p class="discography-content-top-media-player-box-top-album-description">{selectedAlbum.description}</p>
+            </div>
+          </div>
+          {/* <div class="discography-content-top-media-player-box-bottom">
+            <p>test</p>
+          </div> */}
+      </div>
+      )
+    }
   }
 
   return (
-    <div>
-      <PageTemplate>
-        <div class="discography-content">
-          <Carousel albumData={MamamooDiscographyData.albums}/>
+    <PageTemplate>
+      <section class="discography-content">
+        <div class="discography-content-top">
+          <h2>LATEST RELEASE</h2>
+          <p>In June 02, 2021, MAMAMOO returned with their 11th mini album 'WAW'</p>
         </div>
-        {/* {MamamooDiscographyData.albums.map((data) => {
-          return(
-            <div class="discography-content">
-              <Carousel albumData={data}/>
+        <div class="discography-content-top-media">
+          <div class="discography-content-top-media-img-wrapper">
+            <img src={images["waw_group.jpg"].default}/>
+          </div>
+          <div class="discography-content-top-media-player-box-content">
+            <div class="discography-content-top-media-player-box-top">
+              {/* <img src={albumImages["mamamoo_waw.jpg"].default}/> */}
+              <AlbumDataList album={MamamooDiscographyData.albums} showAlbum="waw" showAllData="true"/>
+              {/* <div class="discography-content-top-media-player-box-top-text-container">
+                <p class="discography-content-top-media-player-box-top-album-type">EP</p>
+                <h1 class="discography-content-top-media-player-box-top-album-title">WAW</h1>
+                <p class="discography-content-top-media-player-box-top-album-information">2021 - 4 songs, 12 minutes 26 seconds</p>
+                <p class="discography-content-top-media-player-box-top-album-description">MAMAMOO’s eleventh mini album released on June 02, 2021. This is part of the WAW project made to celebrate the group’s seventh anniversary. The Japanese edition of WAW will be released on September 29, 2021.</p>
+              </div> */}
             </div>
-          )
-        })}; */}
-        {/* <div class="discography-content">
-          <Carousel imageList={images}/>
-        </div> */}
-        {/* {MamamooDiscographyData.albums.map((data, key) => {
-          return (
-            <div key={key}>
-              <div class="discography-content">
-                <Carousel imageList={data.image}/>
-              </div>
-              <img src={albumImages[data.image].default}/>
+            <div class="discography-content-top-media-player-box-bottom">
+              {/* <div class="discography-content-top-media-player-box-bottom-row" id="discography-content-first-row">
+                <p class="discography-content-top-media-player-box-bottom-row-artist">Where Are We Now (Title track)</p>
+                <div class="discography-content-top-media-player-box-bottom-row-inner">
+                  <p>MAMAMOO</p>
+                  <p>3:43</p>
+                </div>
+              </div> */}
               {
-                data.name + 
-                " , " +
-                data.info +
-                " ," +
-                data.description
+                MamamooDiscographyData.albums[MamamooDiscographyData.albums.length - 1].songs.map(song => {
+                  console.log(song);
+                  return (
+                    // <div class="discography-content-top-media-player-box-bottom-row" id="discography-content-first-row">
+                    <div class="discography-content-top-media-player-box-bottom-row">
+                      <p class="discography-content-top-media-player-box-bottom-row-artist">{song.name}</p>
+                      <div class="discography-content-top-media-player-box-bottom-row-inner">
+                        <p>{song.artist.toUpperCase()}</p>
+                        <p>{song.length}</p>
+                      </div>
+                    </div>
+                  )
+                })
               }
             </div>
-          );
-        })} */}
-      </PageTemplate>
-    </div>
-  );
+          </div>
+        </div>
+      </section>
+    </PageTemplate>
+  )
 }
 
 export default Discography;

@@ -14,26 +14,32 @@ function UpperButtonMenuSelection() {
     window.open(videoIndexUrl, "_blank");
   }
 
+  // Animated borderline: https://codepen.io/hayzey/pen/LNzwVO
+
   return (
     <header>
       <nav className="upperbutton-content">
         <div className="upperbuttonmenu-button">
           <NavLink to="/about" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          {/* <NavLink to="/about" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
             About Mamamoo
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
           <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          {/* <NavLink to="/members" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
             Members
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
           <NavLink to="/discography" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          {/* <NavLink to="/discography" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
             Discography
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
           <NavLink to="/timeline" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          {/* <NavLink to="/timeline" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
             Timeline
           </NavLink>
         </div>

@@ -40,7 +40,7 @@ function MembersMoonbyul() {
   return (
     <div class="member-page-container">
       <div class="member-page-back-button-content">
-        <button onClick={() => handleBackButton()}>
+        <button class="member-page-back-button" onClick={() => handleBackButton()}>
           <img src={images["arrow_left_black.svg"].default}/>
           Back to members
         </button>

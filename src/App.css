@@ -501,6 +501,27 @@
   /* text-transform: lowercase; */
 }
 
+/* .upperbuttonmenu-label:active {
+  font-weight: "bold";
+  border-bottom: "1px solid #000";
+  padding-bottom: "3px"
+} */
+
+/*
+TODO: Fix menu border animation
+*/
+/* .upperbuttonmenu-label:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #000000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.upperbuttonmenu-label:hover:after, .upperbuttonmenu-label:focus:after {
+  transform: scaleX(1);
+} */
+
 #videoBackground {
   object-fit: cover;
   width: 100vw;
