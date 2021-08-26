@@ -19,6 +19,7 @@ Modal.setAppElement(document.getElementById('Main'));
 function ModalGeneral() {
   var subtitle;
   const [modalIsOpen,setIsOpen] = React.useState(false);
+  
   function openModal() {
     setIsOpen(true);
   }

@@ -62,7 +62,7 @@
 
 .discography-content-top-media-player-box-top img {
   margin-left: 1.5rem;
-  width: 60%;
+  width: 20%;
 }
 
 .discography-content-top-media-player-box-bottom {
@@ -127,6 +127,57 @@
 .discography-content-top-media-player-box-top-album-description {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.discography-content-top-albums {
+  width: 100%;
+  background: #E0D2C7;
+}
+
+.discography-content-top-albums-header {
+  color: #9A6C57;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.discography-content-top-albums-subheader {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.discography-content-top-albums-gallery-container {
+  background: #9A6C57;
+  width: 100%;
+}
+
+.discography-content-top-albums-gallery-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.discography-content-top-albums-gallery-album {
+  margin-top: 4rem;
+  width: 14%;
+  color: #E0D2C7;
+}
+
+.discography-content-top-albums-gallery-album img {
+  width: 80%;
+}
+
+.discography-content-top-albums-gallery-album-header {
+  font-size: 1.5rem;
+  font-family: Roboto-Bold;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.discography-content-top-albums-gallery-album-subheader {
+  font-family: Roboto-Regular;
+  margin-top: 0.2rem;
 }
 
 /*------------- CAROUSEL STYLES -------------------*/

@@ -52,10 +52,6 @@ function About() {
               amazing success. Recognized by respected seniors in the industry,
               Mamamoo has really made it.
             </p>
-            <p class="about-content-low-center-text-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar massa est, gravida porta nisi ullamcorper at. Proin malesuada dolor et porta hendrerit. Ut sit amet turpis at nibh iaculis porta. Maecenas faucibus ultricies turpis at ullamcorper. Vestibulum aliquet erat venenatis ante ullamcorper congue. In a vulputate erat. Nullam vitae faucibus ante. Nam sollicitudin vel ante nec pulvinar. Nullam finibus augue sit amet neque sodales, non cursus nisi vulputate. Mauris dapibus interdum nisi, nec rutrum nunc hendrerit at. Quisque id euismod lorem.
-              Cras id elit at purus porta feugiat interdum a erat. Nullam laoreet pretium venenatis. Nulla felis ipsum, aliquet nec sollicitudin sed, pharetra sed est. Nam tempus mauris in mauris vulputate facilisis. Fusce nec aliquam nisl. Donec vel urna lacinia, ullamcorper felis sed, posuere lectus. Donec rhoncus velit et ligula convallis imperdiet. Donec eu vestibulum lacus. Duis magna dui, fringilla eu mollis sed, malesuada ut mauris. Suspendisse nec molestie nisi, sit amet finibus nisi. Curabitur a neque mauris. Nulla quis felis ultrices, ultrices mauris non, scelerisque sem. Maecenas imperdiet eros eu tortor dictum, ornare pretium massa hendrerit.
-            </p>
             <div class="about-content-low-center-members-btn-container">
               <Link to="/members" className="about-content-low-center-members-btn">
                 <p>Get to know the members</p>

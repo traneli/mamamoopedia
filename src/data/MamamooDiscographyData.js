@@ -2,6 +2,7 @@ export const MamamooDiscographyData = {
   "albums": [
     {
       "name": "Hello",
+      "date": "June 18, 2014",
       "type": "EP",
       "info": "2014 - 6 songs, 17 minutes 44 seconds",
       "description": "MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. ",
@@ -55,6 +56,7 @@ export const MamamooDiscographyData = {
     },
     {
       "name": "Piano Man",
+      "date": "November 21, 2014",
       "type": "EP",
       "info": "2014 - 5 songs, 16 minutes 49 seconds (Physical) 4 songs, 13 minutes 28 seconds (Digital)",
       "description": "MAMAMOO’s second mini album released on November 21, 2014\\nA physical version was released on December 2, 2014 which includes their OST for Marriage, Not Dating, \"Love Lane\".",
@@ -103,24 +105,11 @@ export const MamamooDiscographyData = {
     },
     {
       "name": "Pink Funky",
+      "date": "June 19, 2015",
       "type": "EP",
       "info": "2015 - 9 songs, 29 minutes 06 seconds (Physical) 6 songs, 20 minutes 18 seconds (Digital)",
       "description": "MAMAMOO’s third mini album released on June 19, 2015. The physical release included their Acapella and Instrumental version of \"Um Oh Ah Yeh\". It also includes an Instrumental version of \"a little bit\".",
       "image": "mamamoo_pinkfunky.jpg",
-      "musicPlatforms": [
-        {
-          "name": "apple music",
-          "url": "https://music.apple.com/us/album/piano-man-ep/944159969"
-        },
-        {
-          "name": "spotify",
-          "url": "https://open.spotify.com/album/1E1dfdqofKqvpCfsKuBvA1?si=cbaAKCEaTPWjfeWz9ukPLQ&dl_branch=1"
-        },
-        {
-          "name": "youtube music",
-          "url": "https://music.youtube.com/playlist?list=OLAK5uy_nxRIU-nTc8ys8nhYSDtzMl7szv9pcwHuY&feature=share"
-        }
-      ],
       "songs": [
         {
           "name": "Freakin Shoes",
@@ -166,24 +155,11 @@ export const MamamooDiscographyData = {
     },
     {
       "name": "Melting",
+      "date": "February 26, 2016",
       "type": "Album",
       "info": "2016 - 12 songs, 42 minutes 36 seconds (International) 13 songs, 45 minutes 44 seconds (Korean)",
       "description": "MAMAMOO’s first full-length album released on February 26, 2016. Two of the included songs in the album served as their pre-released singles, \"I Miss You\" & \"Taller Than You\". They were released on January 29, 2016 and February 12, 2016, respectively. ",
       "image": "mamamoo_melting.jpg",
-      "musicPlatforms": [
-        {
-          "name": "apple music",
-          "url": "https://music.apple.com/us/album/piano-man-ep/944159969"
-        },
-        {
-          "name": "spotify",
-          "url": "https://open.spotify.com/album/1E1dfdqofKqvpCfsKuBvA1?si=cbaAKCEaTPWjfeWz9ukPLQ&dl_branch=1"
-        },
-        {
-          "name": "youtube music",
-          "url": "https://music.youtube.com/playlist?list=OLAK5uy_nxRIU-nTc8ys8nhYSDtzMl7szv9pcwHuY&feature=share"
-        }
-      ],
       "songs": [
         {
           "name": "Taller Than You (1cm의 자존심)",
@@ -253,25 +229,457 @@ export const MamamooDiscographyData = {
       ]
     },
     {
+      "name": "Memory",
+      "date": "November 07, 2016",
+      "type": "EP",
+      "info": "2016 - 8 songs, 28 minutes 24 seconds",
+      "description": "MAMAMOO’s fourth mini album released on November 07, 2016. This included their previously released singles, “Woo Hoo”, an OST for LG G5 And Friends, and “Angel, Dab Dab” which consists of two subunit tracks. It also included their pre-release single, “New York” which came out on September 21, 2016.",
+      "image": "mamamoo_memory.jpg",
+      "songs": [
+        {
+          "name": "Memory (그리고 그리고 그려봐)",
+          "artist": "Mamamoo",
+          "length": "3:52"
+        },
+        {
+          "name": "Décalcomanie (데칼코마니) - Title track",
+          "artist": "Mamamoo",
+          "length": "3:36"
+        },
+        {
+          "name": "New York",
+          "artist": "Mamamoo",
+          "length": "3:02"
+        },
+        {
+          "name": "Moderato",
+          "artist": "Mamamoo, Hash Swan",
+          "length": "3:59"
+        },
+        {
+          "name": "Angel",
+          "artist": "Mamamoo",
+          "length": "3:33"
+        },
+        {
+          "name": "Dab Dab",
+          "artist": "Mamamoo, eSNa",
+          "length": "2:50"
+        },
+        {
+          "name": "I Love Too (놓지 않을게)",
+          "artist": "Mamamoo",
+          "length": "4:25"
+        },
+        {
+          "name": "Woo Hoo (기대해도 좋은 날)",
+          "artist": "Mamamoo",
+          "length": "3:14"
+        }
+      ]
+    },
+    {
+      "name": "Purple",
+      "date": "June 22, 2017",
+      "type": "EP",
+      "info": "2017 - 5 songs, 17 minutes 20 seconds",
+      "description": "MAMAMOO’s fifth mini album released on June 22, 2017. The album comes in two versions: Purple & Mint. And on October 6, 2017, an “Asia edition” CD + DVD version was released in Taiwan. The CD included 8 remastered tracks from their previous albums and the DVD had 8 music videos.",
+      "image": "mamamoo_purple.jpg",
+      "songs": [
+        {
+          "name": "Yes I Am (나로 말할 것 같으면) - Title track",
+          "artist": "Mamamoo",
+          "length": "3:31"
+        },
+        {
+          "name": "Finally",
+          "artist": "Mamamoo",
+          "length": "3:08"
+        },
+        {
+          "name": "Love & Hate (구차해) - Moonbyul solo",
+          "artist": "Mamamoo, Moon Byul",
+          "length": "3:13"
+        },
+        {
+          "name": "Aze Gag (아재개그)",
+          "artist": "Mamamoo, Hash Swan",
+          "length": "3:31"
+        },
+        {
+          "name": "Da Ra Da (다라다)",
+          "artist": "Mamamoo",
+          "length": "3:57"
+        }
+      ]
+    },
+    {
+      "name": "Yellow Flower",
+      "date": "March 07, 2018",
+      "type": "EP",
+      "info": "2018 - 7 songs, 21 minutes 45 seconds",
+      "description": "MAMAMOO’s sixth mini album released on March 07, 2018. This spring-themed record is the first part of their “Four Seasons Four Colors” project, which they introduced with the first special single, “Paint Me”, released on January 04, 2018. The single is included in the album.",
+      "image": "mamamoo_yellowflower.jpg",
+      "songs": [
+        {
+          "name": "From Winter to Spring (겨울에서 봄으로) (Intro)",
+          "artist": "Mamamoo",
+          "length": "3:52"
+        },
+        {
+          "name": "Star Wind Flower Sun (별 바람 꽃 태양)",
+          "artist": "Mamamoo",
+          "length": "3:36"
+        },
+        {
+          "name": "Starry Night (별이 빛나는 밤) - Title track",
+          "artist": "Mamamoo",
+          "length": "3:02"
+        },
+        {
+          "name": "Be Calm (덤덤해지네) - Hwasa Solo",
+          "artist": "Mamamoo, Hwasa",
+          "length": "3:59"
+        },
+        {
+          "name": "Rude Boy",
+          "artist": "Mamamoo",
+          "length": "3:33"
+        },
+        {
+          "name": "Spring Fever (봄타)",
+          "artist": "Mamamoo",
+          "length": "2:50"
+        },
+        {
+          "name": "Paint Me (칠해줘)",
+          "artist": "Mamamoo",
+          "length": "4:25"
+        }
+      ]
+    },
+    {
+      "name": "Red Moon",
+      "date": "July 16, 2018",
+      "type": "EP",
+      "info": "2018 - 6 songs, 20 minutes 13 seconds",
+      "description": "MAMAMOO’s seventh mini album released on July 16, 2018. This summer-themed record is the second part of their “Four Seasons Four Colors” project. The pre-released song, “Rainy Season”, which came out on July 1, 2018 is included in the album. It also has the song, “SELFISH”, from Moonbyul’s solo debut single, “SELFISH”.",
+      "image": "mamamoo_redmoon.jpg",
+      "songs": [
+        {
+          "name": "Midnight Summer Dream (여름밤의 꿈)",
+          "artist": "Mamamoo",
+          "length": "3:18"
+        },
+        {
+          "name": "Egotistic (너나 해) - Title track",
+          "artist": "Mamamoo",
+          "length": "3:16"
+        },
+        {
+          "name": "Rainy Season (장마)",
+          "artist": "Mamamoo",
+          "length": "3:42"
+        },
+        {
+          "name": "Sky! Sky! (하늘하늘 (청순))",
+          "artist": "Mamamoo",
+          "length": "3:21"
+        },
+        {
+          "name": "Sleep in the Car (잠이라도 자지)",
+          "artist": "Mamamoo",
+          "length": "3:22"
+        },
+        {
+          "name": "SELFISH (feat. Seulgi of Red Velvet) - Moonbyul solo",
+          "artist": "Mamamoo, Moon Byul, SEULGI",
+          "length": "3:12"
+        }
+      ]
+    },
+    {
+      "name": "BLUE;S",
+      "date": "November 28, 2018",
+      "type": "EP",
+      "info": "2018 - 6 songs, 19 minutes 28 seconds",
+      "description": "MAMAMOO’s eighth mini album released on November 28, 2018. This autumn-themed record is the third part of their “Four Seasons Four Colors” project. ",
+      "image": "mamamoo_blues.jpg",
+      "songs": [
+        {
+          "name": "From Autumn to Winter (가을에서 겨울로) (Intro)",
+          "artist": "Mamamoo",
+          "length": "1:36"
+        },
+        {
+          "name": "No More Drama",
+          "artist": "Mamamoo",
+          "length": "3:10"
+        },
+        {
+          "name": "Wind Flower - Title Track",
+          "artist": "Mamamoo",
+          "length": "3:56"
+        },
+        {
+          "name": "HELLO - Solar Solo",
+          "artist": "Mamamoo, Solar",
+          "length": "3:16"
+        },
+        {
+          "name": "Better Than I Thought (생각보단 괜찮아)",
+          "artist": "Mamamoo",
+          "length": "3:23"
+        },
+        {
+          "name": "Morning",
+          "artist": "Mamamoo",
+          "length": "4:04"
+        }
+      ]
+    },
+    {
+      "name": "White Wind",
+      "date": "March 14, 2019",
+      "type": "EP",
+      "info": "2019 - 7 songs, 22 minutes 05 seconds",
+      "description": "MAMAMOO’s ninth mini album released on March 14, 2019. This winter-themed record is the fourth and final part of their “Four Seasons Four Colors” project.",
+      "image": "mamamoo_whitewind.jpg",
+      "songs": [
+        {
+          "name": "Where R U",
+          "artist": "Mamamoo",
+          "length": "3:08"
+        },
+        {
+          "name": "Gogobebe (고고베베) - Title Track",
+          "artist": "Mamamoo",
+          "length": "3:16"
+        },
+        {
+          "name": "Waggy (쟤가 걔야)",
+          "artist": "Mamamoo",
+          "length": "3:12"
+        },
+        {
+          "name": "25 - Wheein Solo",
+          "artist": "Mamamoo, Whee In",
+          "length": "3:22"
+        },
+        {
+          "name": "Bad Bye",
+          "artist": "Mamamoo",
+          "length": "4:33"
+        },
+        {
+          "name": "My Star",
+          "artist": "Mamamoo",
+          "length": "3:11"
+        },
+        {
+          "name": "4season (Outro)",
+          "artist": "Mamamoo",
+          "length": "1:22"
+        }
+      ]
+    },
+    {
+      "name": "4colors",
+      "date": "August 7, 2019",
+      "type": "EP",
+      "info": "2019 - 12 songs, 42 minutes 20 seconds",
+      "description": "MAMAMOO’s Japanese debut album released on August 7, 2019. This album doesn’t have a title track for it is a compilation of the “Four Seasons, Four Colors” Project, with the its title tracks re-recorded in Japanese.",
+      "image": "mamamoo_4colors.jpg",
+      "songs": [
+        {
+          "name": "Starry Night (Japanese ver.)",
+          "artist": "Mamamoo",
+          "length": "3:33"
+        },
+        {
+          "name": "Be Calm (덤덤해지네) - Hwasa solo",
+          "artist": "Mamamoo, Hwa Sa",
+          "length": "3:30"
+        },
+        {
+          "name": "Egotistic (Japanese ver.)",
+          "artist": "Mamamoo",
+          "length": "3:18"
+        },
+        {
+          "name": "SELFISH (feat. Seulgi of Red Velvet) - Moonbyul solo",
+          "artist": "Mamamoo, Moon Byul, SEULGI",
+          "length": "3:15"
+        },
+        {
+          "name": "Wind Flower (Japanese ver.)",
+          "artist": "Mamamoo",
+          "length": "3:55"
+        },
+        {
+          "name": "HELLO - Solar solo",
+          "artist": "Mamamoo, Solar",
+          "length": "3:18"
+        },
+        {
+          "name": "gogobebe (Japanese ver.)",
+          "artist": "Mamamoo",
+          "length": "3:17"
+        },
+        {
+          "name": "25 - Wheein Solo",
+          "artist": "Mamamoo, Whee In",
+          "length": "3:24"
+        },
+        {
+          "name": "Décalcomanie (Japanese ver.) ",
+          "artist": "Mamamoo",
+          "length": "3:38"
+        },
+        {
+          "name": "You Don’t Know Me",
+          "artist": "Mamamoo",
+          "length": "3:44"
+        },
+        {
+          "name": "Sleep Talk",
+          "artist": "Mamamoo",
+          "length": "3:09"
+        },
+        {
+          "name": "Nada Sousou (涙そうそう)",
+          "artist": "Mamamoo",
+          "length": "4:15"
+        }
+      ]
+    },
+    {
+      "name": "Reality in BLACK",
+      "date": "November 14, 2019",
+      "type": "Album",
+      "info": "2019 - 11 songs, 36 minutes (International) 13 songs, 42 minutes 33 seconds (Japanese)",
+      "description": "MAMAMOO’s second full-length album released on November 14, 2019. The word \"BLACK\" is an acronym for \"Bless Life and Carry Knowledge\".  The song “Destiny” was previously performed and released in the digital EP, Queendom < Final Comeback > for the show Queendom. On March 11, 2020, a Japanese edition was released.",
+      "image": "mamamoo_rib.jpg",
+      "songs": [
+        {
+          "name": "Destiny (우린 결국 다시 만날 운명이었지)",
+          "artist": "Mamamoo",
+          "length": "4:08"
+        },
+        {
+          "name": "Universe",
+          "artist": "Mamamoo",
+          "length": "3:36"
+        },
+        {
+          "name": "Ten Nights (열밤)",
+          "artist": "Mamamoo",
+          "length": "3:38"
+        },
+        {
+          "name": "Hip - Title track",
+          "artist": "Mamamoo",
+          "length": "3:18"
+        },
+        {
+          "name": "4x4ever",
+          "artist": "Mamamoo",
+          "length": "3:05"
+        },
+        {
+          "name": "Better",
+          "artist": "Mamamoo",
+          "length": "3:17"
+        },
+        {
+          "name": "gogobebe (Japanese ver.)",
+          "artist": "Mamamoo",
+          "length": "3:17"
+        },
+        {
+          "name": "Hello Mama",
+          "artist": "Mamamoo",
+          "length": "3:40"
+        },
+        {
+          "name": "ZzZz (심심해)",
+          "artist": "Mamamoo",
+          "length": "3:25"
+        },
+        {
+          "name": "Reality",
+          "artist": "Mamamoo",
+          "length": "3:03"
+        },
+        {
+          "name": "High Tension (춤을 취)",
+          "artist": "Mamamoo",
+          "length": "3:18"
+        },
+        {
+          "name": "I'm Your Fan",
+          "artist": "Mamamoo",
+          "length": "2:28"
+        },
+        {
+          "name": "Hip (Japanese ver.) - Japanese edition only",
+          "artist": "Mamamoo",
+          "length": "3:18"
+        },
+        {
+          "name": "Shampoo - Japanese edition only",
+          "artist": "Mamamoo",
+          "length": "3:15"
+        }
+      ]
+    },
+    {
+      "name": "Travel",
+      "date": "November 03, 2020",
+      "type": "EP",
+      "info": "2020 - 5 songs, 17 minutes 08 seconds (Digital) 6 songs, 20 minutes 04 seconds (Physical)",
+      "description": "MAMAMOO’s tenth mini album released on November 03, 2020. The album comes in two versions: Deep Green & Light Green. “Dingga”, which was  pre-released on October 20, 2020 was included in the physical release of the album.",
+      "image": "mamamoo_travel.jpg",
+      "songs": [
+        {
+          "name": "Travel",
+          "artist": "Mamamoo",
+          "length": "3:31"
+        },
+        {
+          "name": "Dingga (딩가딩가) - CD only",
+          "artist": "Mamamoo",
+          "length": "2:59"
+        },
+        {
+          "name": "Aya - Title track",
+          "artist": "Mamamoo",
+          "length": "3:31"
+        },
+        {
+          "name": "Chuck (척)",
+          "artist": "Mamamoo",
+          "length": "3:16"
+        },
+        {
+          "name": "Diamond",
+          "artist": "Mamamoo",
+          "length": "2:40"
+        },
+        {
+          "name": "Good Night (잘자)",
+          "artist": "Mamamoo",
+          "length": "4:08"
+        }
+      ]
+    },
+    {
       "name": "WAW",
+      "date": "June 02, 2021",
       "type": "EP",
       "info": "2021 - 4 songs, 12 minutes 26 seconds",
       "description": "MAMAMOO’s eleventh mini album released on June 02, 2021. This is part of the WAW project made to celebrate the group’s seventh anniversary. The Japanese edition of WAW will be released on September 29, 2021.",
       "image": "mamamoo_waw.jpg",
-      "musicPlatforms": [
-        {
-          "name": "apple music",
-          "url": "https://music.apple.com/us/album/piano-man-ep/944159969"
-        },
-        {
-          "name": "spotify",
-          "url": "https://open.spotify.com/album/1E1dfdqofKqvpCfsKuBvA1?si=cbaAKCEaTPWjfeWz9ukPLQ&dl_branch=1"
-        },
-        {
-          "name": "youtube music",
-          "url": "https://music.youtube.com/playlist?list=OLAK5uy_nxRIU-nTc8ys8nhYSDtzMl7szv9pcwHuY&feature=share"
-        }
-      ],
       "songs": [
         {
           "name": "Where Are We Now (Title track)",
