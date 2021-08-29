@@ -5,7 +5,7 @@ export const MamamooDiscographyData = {
       "date": "June 18, 2014",
       "type": "EP",
       "info": "2014 - 6 songs, 17 minutes 44 seconds",
-      "description": "MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. \"MAMAMOO’s debut mini album released on June 18, 2014\\nThe pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. \\nThe album comes in two versions: Red and Pink. ",
+      "description": "MAMAMOO’s debut mini album released on June 18, 2014. The pre-debut songs \"Don't Be Happy\" and \"Heeheehaheho\" were released on January 9, and May 30, 2014, respectively. The album comes in two versions: Red and Pink. ",
       "image": "mamamoo_hello.jpg",
       "musicPlatforms": [
         {

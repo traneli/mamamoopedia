@@ -9,3 +9,9 @@ export function jsonToHTML(text) {
     <p dangerouslySetInnerHTML={ {__html: text}} /> 
   )
 }
+
+export const generalForms = {
+  MODAL: "MODAL",
+  GALLERY: "GALLERY",
+  PICTURE: "PICTURE"
+}

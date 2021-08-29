@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import Album from "./Album";
+import * as utils from "../utils.js"
+import { MamamooDiscographyData } from '../data/MamamooDiscographyData';
 
 // https://react-bootstrap.github.io/components/modal/
 
@@ -16,39 +19,19 @@ const customStyles = {
 
 Modal.setAppElement(document.getElementById('Main'));
 
-function ModalGeneral() {
-  var subtitle;
-  const [modalIsOpen,setIsOpen] = React.useState(false);
-  
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
-
-  function closeModal(){
-    setIsOpen(false);
-  }
-
-    return (
-      <div>
-        <button onClick={openModal}>General</button>
-        <Modal
-          isOpen={modalIsOpen}
-          // onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          // style={customStyles}
-          // contentLabel="Example Modal"
-          className="Modal"
-          overlayClassName="Overlay"
-        >
-          <button onClick={closeModal}>Close</button>
-        </Modal>
-      </div>
-    );
+function ModalGeneral(props){
+  return (
+    <div>
+      <Modal
+        isOpen={props.isModalOpen}
+        onRequestClose={props.setModalOpen}
+        className="Modal"
+        overlayClassName="Overlay"
+      >
+        <Album album={MamamooDiscographyData.albums} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/>
+      </Modal>
+    </div>
+  );
 }
 
 export default ModalGeneral;

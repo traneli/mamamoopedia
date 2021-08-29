@@ -48,25 +48,25 @@
 }
 
 .discography-content-top-media-player-box-content {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.discography-content-top-media-player-box-top {
+.discography-content-top-media-player-box-top-modal {
   height: 35%;
   background: #1D1D1E;
   display: flex;
   align-items: center;
 }
 
-.discography-content-top-media-player-box-top img {
+.discography-content-top-media-player-box-top-modal img {
   margin-left: 1.5rem;
   width: 20%;
 }
 
 .discography-content-top-media-player-box-bottom {
-  height: 65%;
+  height: 100%;
   background: #131314;
 }
 
@@ -81,6 +81,10 @@
 
 .discography-content-top-media-player-box-bottom-row:first-child {
   margin-top: 2rem;
+}
+
+.discography-content-top-media-player-box-bottom-row:last-child {
+  margin-bottom: 2rem;
 }
 
 .discography-content-top-media-player-box-bottom-row-artist{
@@ -99,12 +103,18 @@
   margin-top: 0;
 }
 
-.discography-content-top-media-player-box-top-text-container {
+.discography-content-top-media-player-box-top-text-container-modal {
   color: white;
   font-size: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 2rem;
   font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-player-box-top-album-title-modal {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-family: Roboto-Bold;
 }
 
 .discography-content-top-media-player-box-top-album-type {
@@ -127,6 +137,26 @@
 .discography-content-top-media-player-box-top-album-description {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.discography-content-top-media-player-box-top-text-container-gallery {
+  color: white;
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-player-box-top-gallery {
+  height: 35%;
+  background: #1D1D1E;
+  display: flex;
+  align-items: center;
+}
+
+.discography-content-top-media-player-box-top-gallery img {
+  margin-left: 1.5rem;
+  width: 20%;
 }
 
 .discography-content-top-albums {
@@ -166,6 +196,7 @@
 
 .discography-content-top-albums-gallery-album img {
   width: 80%;
+  cursor: pointer;
 }
 
 .discography-content-top-albums-gallery-album-header {
