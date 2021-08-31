@@ -15,3 +15,9 @@ export const generalForms = {
   GALLERY: "GALLERY",
   PICTURE: "PICTURE"
 }
+
+export const discographyType = {
+  ALBUMS: "ALBUMS",
+  SOLOS: "SOLOS",
+  CFS: "CFS"
+}

@@ -719,12 +719,364 @@ export const MamamooDiscographyData = {
       ]
     }
   ],
-  "cfs": [
+  "solos": [
     {
-      "name": "test"
+      "name": "Solar Gamsung",
+      "date": "November 07, 2017",
+      "type": "Album",
+      "info": "2015-2018 - 11 songs, 35 minutes 24 seconds",
+      "description": "MAMAMOO Solar’s project which consists of 6 parts, wherein she covers different songs. On November 07, 2017, it was released as her first compilation album. It had two versions: CD and Cassette Tape. Only the first five parts of the project is included in the EP album then an LP was released which contains all songs. At the end of the project, Solar hosted a solo concert called \"Emotion Concert Blossom\".",
+      "image": "border_solar_gamsung.jpg",
+      "songs": [
+        {
+          "name": "Lived Like a Fool (바보처럼 살았군요) - Part 1",
+          "artist": "Solar",
+          "length": "3:47"
+        },
+        {
+          "name": "Only Longing Grows (그리움만 쌓이네) - Part 2",
+          "artist": "Solar",
+          "length": "4:05"
+        },
+        {
+          "name": "In My Dreams (꿈에) - Part 3",
+          "artist": "Solar",
+          "length": "3:27"
+        },
+        {
+          "name": "Happy People (행복을 주는 사람) (Intro) - Part 4",
+          "artist": "Solar",
+          "length": "0:27"
+        },
+        {
+          "name": "Happy People (행복을 주는 사람) - Part 4",
+          "artist": "Solar",
+          "length": "3:22"
+        },
+        {
+          "name": "Alone People (외로운 사람들) - Part 5",
+          "artist": "Solar",
+          "length": "4:07"
+        },
+        {
+          "name": "Autumn Letter (가을 편지) - Part 5",
+          "artist": "Solar",
+          "length": "2:44"
+        },
+        {
+          "name": "Where the Wind Rises - Part 6",
+          "artist": "Solar",
+          "length": "3:15"
+        },
+        {
+          "name": "Nada Sou Sou (눈물이 주룩주룩) - Part 6",
+          "artist": "Solar",
+          "length": "4:11"
+        },
+        {
+          "name": "It's Been A Long Time (한동안 뜸했었지) - Part 6",
+          "artist": "Solar",
+          "length": "2:31"
+        },
+        {
+          "name": "Star Wind Flower Sun (별 바람 꽃 태양) (Solo Ver.) - Part 6",
+          "artist": "Solar",
+          "length": "3:25"
+        }
+      ]
+    },
+    {
+      "name": "Spit It Out",
+      "date": "April 23, 2020",
+      "type": "Single",
+      "info": "2020 - 2 songs, 6 minutes 28 seconds",
+      "description": "MAMAMOO Solar’s first solo debut single. It was released on April 23, 2020.",
+      "image": "border_solar_sio.jpg",
+      "songs": [
+        {
+          "name": "Spit It Out (뱉어)",
+          "artist": "Solar",
+          "length": "3:14"
+        },
+        {
+          "name": "Spit It Out (뱉어) (Instrumental ver.)",
+          "artist": "Solar",
+          "length": "3:14"
+        }
+      ]
+    },
+    {
+      "name": "Selfish",
+      "date": "May 23, 2017",
+      "type": "Single",
+      "info": "2018 - 3 songs, 9 minutes 15 seconds",
+      "description": "MAMAMOO Moonbyul’s solo debut single. It was released on May 23, 2017 and a special limited edition Kihno kit was also released.",
+      "image": "border_moonbyul_selfish.jpg",
+      "songs": [
+        {
+          "name": "In My Room",
+          "artist": "Moon Byul",
+          "length": "3:47"
+        },
+        {
+          "name": "SELFISH (feat. Seulgi of Red Velvet)",
+          "artist": "Moon Byul",
+          "length": "4:05"
+        },
+        {
+          "name": "Love & Hate (Acoustic ver.)",
+          "artist": "Moon Byul",
+          "length": "3:27"
+        }
+      ]
+    },
+    {
+      "name": "Dark Side of the Moon",
+      "date": "February 14, 2020",
+      "type": "EP",
+      "info": "2020 - 5 songs, 16 minutes 59 seconds (Digital) 6 songs, 20 minutes 19 seconds (Physical) ",
+      "description": "MAMAMOO Moonbyul’s first mini album. It was released on February 14, 2020 and with “Weird Day” as its pre-released track which came out on February 04, 2020.",
+      "image": "border_moonbyul_dsotm.jpg",
+      "songs": [
+        {
+          "name": "Eclipse (달이 태양을 가릴 때) - Title track",
+          "artist": "Moon Byul",
+          "length": "3:28"
+        },
+        {
+          "name": "mirror",
+          "artist": "Moon Byul",
+          "length": "3:26"
+        },
+        {
+          "name": "ILJIDO",
+          "artist": "Moon Byul",
+          "length": "3:01"
+        },
+        {
+          "name": "MOON MOVIE",
+          "artist": "Moon Byul",
+          "length": "3:38"
+        },
+        {
+          "name": "Snow (눈)",
+          "artist": "Moon Byul",
+          "length": "3:24"
+        },
+        {
+          "name": "Weird Day (낯선날) (Feat. Punch) - CD only",
+          "artist": "Moon Byul",
+          "length": "3:22"
+        }
+      ]
+    },
+    {
+      "name": "門oon : Repackage",
+      "date": "May 29, 2020",
+      "type": "EP",
+      "info": "2020 - 3 songs, 08 minutes 30 seconds (Digital) 9 songs, 28 minutes 47 seconds (Physical)",
+      "description": "MAMAMOO Moonbyul’s repackaged album of her mini, Dark Side of the Moon. It was released on May 29, 2020 alongside an introduction song and a new title track.",
+      "image": "border_moonbyul_dsotm_repackage.jpg",
+      "songs": [
+        {
+          "name": "Intro: Satellite (Intro : 우린 어느 별에서 떨어져 둘이 됐을까?)",
+          "artist": "Moon Byul",
+          "length": "1:11"
+        },
+        {
+          "name": "Eclipse (달이 태양을 가릴 때) - CD only",
+          "artist": "Moon Byul",
+          "length": "3:28"
+        },
+        {
+          "name": "mirror - CD only",
+          "artist": "Moon Byul",
+          "length": "3:26"
+        },
+        {
+          "name": "ILJIDO - CD only",
+          "artist": "Moon Byul",
+          "length": "3:01"
+        },
+        {
+          "name": "MOON MOVIE - CD only",
+          "artist": "Moon Byul",
+          "length": "3:38"
+        },
+        {
+          "name": "Snow (눈) - CD only",
+          "artist": "Moon Byul",
+          "length": "3:24"
+        },
+        {
+          "name": "Weird Day (낯선날) (Feat. Punch) - CD only",
+          "artist": "Moon Byul",
+          "length": "3:22"
+        },
+        {
+          "name": "Absence (부재) - Title track",
+          "artist": "Moon Byul",
+          "length": "3:39"
+        },
+        {
+          "name": "Absence (부재) (Instrumental ver.) ",
+          "artist": "Moon Byul",
+          "length": "3:39"
+        }
+      ]
+    },
+    {
+      "name": "Magnolia",
+      "date": "April 17, 2018",
+      "type": "Single",
+      "info": "2018 - 1 songs, 3 minutes 08 seconds",
+      "description": "MAMAMOO Wheein’s solo debut single. It was released on April 17, 2018, which was also her birthday.",
+      "image": "border_wheein_magnolia.jpg",
+      "songs": [
+        {
+          "name": "Easy (feat. Sik-K)",
+          "artist": "Whee In, Sik-K",
+          "length": "3:08"
+        }
+      ]
+    },
+    {
+      "name": "Soar",
+      "date": "September 04, 2019",
+      "type": "Single",
+      "info": "2019 - 3 songs, 11 minutes 32 seconds (Physical) 2 songs, 8 minutes 25 seconds (Digital)",
+      "description": "MAMAMOO Wheein’s first single album, which includes her solo debut single “Easy” in the tracklist. It was released on September 04, 2019.",
+      "image": "border_wheein_soar.jpg",
+      "songs": [
+        {
+          "name": "Good Bye (헤어지자) (Prod. Jungkey)",
+          "artist": "Whee In, Jungkey",
+          "length": "4:12"
+        },
+        {
+          "name": "Easy (feat. Sik-K) - CD Only",
+          "artist": "Whee In, Sik-K",
+          "length": "3:08"
+        },
+        {
+          "name": "Good Bye (헤어지자) (Prod. Jungkey) - Instrumental ver.",
+          "artist": "Whee In, Jungkey",
+          "length": "4:12"
+        }
+      ]
+    },
+    {
+      "name": "Redd",
+      "date": "April 23, 2021",
+      "type": "EP",
+      "info": "2021 - 6 songs, 19 minutes 20 seconds (Physical) 7 songs, 22 minutes 29 seconds (Digital)",
+      "description": "MAMAMOO Wheein’s first mini album. It was released on April 13, 2021, with “Water color (English ver.)” being released on digital platforms on April 23, 2021.",
+      "image": "border_wheein_redd.jpg",
+      "songs": [
+        {
+          "name": "Water Color - Title track",
+          "artist": "Whee In",
+          "length": "3:09"
+        },
+        {
+          "name": "TRASH (feat. pH-1)",
+          "artist": "Whee In",
+          "length": "2:52"
+        },
+        {
+          "name": "OHOO",
+          "artist": "Whee In",
+          "length": "3:16"
+        },
+        {
+          "name": "Butterfly (feat. GSoul)",
+          "artist": "Whee In, GSoul",
+          "length": "3:28"
+        },
+        {
+          "name": "Springtime (봄이 너에게)",
+          "artist": "Whee In",
+          "length": "2:40"
+        },
+        {
+          "name": "NO THANKS",
+          "artist": "Whee In",
+          "length": "3:52"
+        },
+        {
+          "name": "Water Color (English ver.) - Digital only",
+          "artist": "Whee In",
+          "length": "3:09"
+        }
+      ]
+    },
+    {
+      "name": "Twit",
+      "date": "February 13, 2019",
+      "type": "Single",
+      "info": "2019 - 2 songs, 6 minutes 20 seconds",
+      "description": "MAMAMOO Hwasa’s first solo debut single. It was released on February 13, 2019.",
+      "image": "border_hwasa_twit.jpg",
+      "songs": [
+        {
+          "name": "Twit (멍청이)",
+          "artist": "Hwa Sa",
+          "length": "3:10"
+        },
+        {
+          "name": "Twit (멍청이) (Instrumental ver.)",
+          "artist": "Hwa Sa",
+          "length": "3:10"
+        }
+      ]
+    },
+    {
+      "name": "María",
+      "date": "June 29, 2020",
+      "type": "EP",
+      "info": "2020 - 6 songs, 18 minutes 19 seconds (Digital) 7 songs, 21 minutes 29 seconds (Physical)  ",
+      "description": "MAMAMOO Hwasa’s first mini album. It was released on June 29, 2020.",
+      "image": "border_hwasa_maria.jpg",
+      "songs": [
+        {
+          "name": "Intro : Nobody Else)",
+          "artist": "Hwa Sa",
+          "length": "1:57"
+        },
+        {
+          "name": "Maria (마리아) - Title track",
+          "artist": "Hwa Sa",
+          "length": "3:19"
+        },
+        {
+          "name": "Kidding (Prod. Zico)",
+          "artist": "Hwa Sa",
+          "length": "2:45"
+        },
+        {
+          "name": "Why",
+          "artist": "Hwa Sa",
+          "length": "3:21"
+        },
+        {
+          "name": "I'm Bad Too (feat. DPR LIVE)",
+          "artist": "Hwa Sa, DPR LIVE",
+          "length": "2:12"
+        },
+        {
+          "name": "LMM",
+          "artist": "Hwa Sa",
+          "length": "4:41"
+        },
+        {
+          "name": "Twit (멍청이) - CD only",
+          "artist": "Hwa Sa",
+          "length": "3:10"
+        }
+      ]
     }
   ],
-  "solos": [
+  "cfs": [
     {
       "name": "test"
     }

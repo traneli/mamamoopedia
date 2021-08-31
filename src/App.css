@@ -209,6 +209,7 @@
 
 .about-content-top p {
   margin-bottom: 3rem;
+  margin-top: 0.5rem;
   font-size: 1.4rem;
 }
 
@@ -374,6 +375,7 @@
 .about-content-footer {
   width: 100%;
   background: #9A6C57;
+  margin-top: auto;
 }
 
 .about-content-footer p {

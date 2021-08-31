@@ -6,7 +6,7 @@ import {
 import { useState, useEffect } from "react";
 import { useHistory, withRouter } from "react-router";
 
-import { Home, About, General, Members, MembersSolar, MembersMoonbyul, MembersWheein, MembersHwasa, Discography, Timeline } from './components/Index';
+import { Home, About, General, Members, Discography, Timeline, Resources } from './components/Index';
 
 import './App.css';
 
@@ -33,12 +33,9 @@ function App() {
           <Route path="/general" component={General}/>
           <Route path="/about" component={About}/>
           <Route path="/members" component={Members}/>
-          {/* <Route exact path="/members/solar" component={MembersSolar}/>
-          <Route exacth path="/members/moonbyul" component={MembersMoonbyul}/>
-          <Route path="/members/wheein" component={MembersWheein}/>
-          <Route path="/members/hwasa" component={MembersHwasa}/> */}
           <Route path="/discography" component={Discography}/>
           <Route path="/timeline" component={Timeline}/>
+          <Route path="/resources" component={Resources}/>
         </switch>
       </div>
     </Router>

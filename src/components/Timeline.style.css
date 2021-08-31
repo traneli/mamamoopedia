@@ -1,0 +1,38 @@
+.timeline-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  font-family: Roboto-Regular;
+  background: #E0D2C7;
+}
+
+
+.temp-timeline-underconstruction-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temp-timeline-underconstruction-container h2 {
+  font-family: Roboto-Bold;
+  font-size: 5rem;
+  color: #9A6C57;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+.temp-timeline-underconstruction-container h3 {
+  font-family: Roboto-Regular;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #9A6C57;
+  margin-top: 0;
+  margin-bottom: 8rem;
+}

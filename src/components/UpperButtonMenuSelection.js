@@ -44,12 +44,18 @@ function UpperButtonMenuSelection() {
           </NavLink>
         </div>
         <div className="upperbuttonmenu-button">
+          <NavLink to="/resources" className="upperbuttonmenu-label" activeStyle={activeStyle}>
+          {/* <NavLink to="/timeline" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
+            Resources
+          </NavLink>
+        </div>
+        {/* <div className="upperbuttonmenu-button">
           <a href="https://docs.google.com/spreadsheets/u/1/d/1ck-dPOKb301Z74-5GqV2Ey5F4QS4F7kAw7g4zr5qsgU/"
           target="_blank"
           className="upperbuttonmenu-label">
             Video Index
           </a>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

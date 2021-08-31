@@ -24,6 +24,7 @@
 
 .discography-content-top p {
   margin-bottom: 3rem;
+  margin-top: 0.5rem;
   font-size: 1.4rem;
 }
 
@@ -62,6 +63,7 @@
 
 .discography-content-top-media-player-box-top-modal img {
   margin-left: 1.5rem;
+  /* margin-top: 0.5rem; */
   width: 20%;
 }
 
@@ -85,6 +87,19 @@
 
 .discography-content-top-media-player-box-bottom-row:last-child {
   margin-bottom: 2rem;
+}
+
+.discography-content-top-media-player-box-bottom-row-gallery {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-bottom-row-gallery:first-child {
+  margin-top: 1.5rem;
 }
 
 .discography-content-top-media-player-box-bottom-row-artist{
@@ -142,8 +157,7 @@
 .discography-content-top-media-player-box-top-text-container-gallery {
   color: white;
   font-size: 1rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 1rem 2rem 1rem 1rem;
   font-family: Roboto-Regular;
 }
 
@@ -155,23 +169,24 @@
 }
 
 .discography-content-top-media-player-box-top-gallery img {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
+  margin: 1rem 1rem 1rem 2rem;
   width: 20%;
 }
 
-.discography-content-top-albums {
+.discography-content-gallery {
   width: 100%;
   background: #E0D2C7;
 }
 
-.discography-content-top-albums-header {
+.discography-content-gallery-header {
   color: #9A6C57;
   font-size: 5rem;
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
-.discography-content-top-albums-subheader {
+.discography-content-gallery-subheader {
   margin-bottom: 2rem;
   font-size: 1.4rem;
 }
@@ -179,6 +194,8 @@
 .discography-content-top-albums-gallery-container {
   background: #9A6C57;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .discography-content-top-albums-gallery-content {
@@ -192,6 +209,10 @@
   margin-top: 4rem;
   width: 14%;
   color: #E0D2C7;
+}
+
+.discography-content-top-albums-gallery-album:last-child {
+  margin-bottom: 2rem;
 }
 
 .discography-content-top-albums-gallery-album img {
@@ -209,6 +230,29 @@
 .discography-content-top-albums-gallery-album-subheader {
   font-family: Roboto-Regular;
   margin-top: 0.2rem;
+}
+
+.temp-underconstruction-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.temp-underconstruction-container h2 {
+  font-family: Roboto-Bold;
+  font-size: 5rem;
+  color: #E0D2C7;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+.temp-underconstruction-container h3 {
+  font-family: Roboto-Regular;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #E0D2C7;
+  margin-top: 0;
+  margin-bottom: 8rem;
 }
 
 /*------------- CAROUSEL STYLES -------------------*/

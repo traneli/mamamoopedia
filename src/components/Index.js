@@ -8,3 +8,4 @@ export { default as MembersWheein } from './MembersWheein';
 export { default as MembersHwasa } from './MembersHwasa';
 export { default as Discography } from './Discography';
 export { default as Timeline } from './Timeline';
+export { default as Resources } from './Resources';

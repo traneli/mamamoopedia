@@ -3,6 +3,7 @@ import './Discography.style.css';
 import * as utils from "../utils.js"
 
 const albumImages = utils.importAll(require.context('../assets/albums', false, /\.(png|jp?g|svg)/));
+//const albumImagesBorderless = utils.importAll(require.context('../assets/albums/borderless_albums', false, /\.(png|jp?g|svg)/));
 
 function Album(props) {
   const albumData = props.album;
@@ -12,12 +13,6 @@ function Album(props) {
 
   if(albumToShow.length){
     selectedAlbum = albumData.find(album => album.name.toLowerCase() === albumToShow.toLowerCase())
-
-    // for(var i = 0; i < albumData.length; i++) {
-    //   if(albumData[i].name.toLowerCase() === albumToShow.toLowerCase()) {
-    //     selectedAlbum = albumData[i];
-    //   }
-    // }
   } else {
     return (null);
   }
@@ -68,7 +63,7 @@ function Album(props) {
         <div class="discography-content-top-media-player-box-bottom">
           {
             selectedAlbum.songs.map(song => 
-              <div class="discography-content-top-media-player-box-bottom-row">
+              <div class="discography-content-top-media-player-box-bottom-row-gallery">
                 <p class="discography-content-top-media-player-box-bottom-row-artist">{song.name}</p>
                 <div class="discography-content-top-media-player-box-bottom-row-inner">
                   <p>{song.artist.toUpperCase()}</p>

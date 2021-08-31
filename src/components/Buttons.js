@@ -36,9 +36,14 @@ function Buttons() {
           Timeline
         </Link>
       </div>
-      <button onClick={videoIndexClick} className="general-btn">
+      <div className="general-btn">
+        <Link to="/resources" className="general-link-btn-label">
+          Resources
+        </Link>
+      </div>
+      {/* <button onClick={videoIndexClick} className="general-btn">
         Video Index
-      </button>
+      </button> */}
     </div>
   );
 }

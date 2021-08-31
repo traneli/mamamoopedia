@@ -90,6 +90,7 @@ export const MembersInfo = [
       '彡 Has her own Instagram, <span class="member-span-coloured-text">whee_inthemood</span>\\n' +
       '彡 Her dimple is measured to be 2.5cm across\\n' +
       '彡 Can remember up to 50 random words in sequence\\n' +
+      '彡 She signed with ‘THE L1VE’ on August 30, 2021, after leaving RBW on June 11, 2021. An extended agreement was made which states that she will still be part of MAMAMOO and will be doing group activities until December 2023.\\n' +
       '彡 On April 13, 2021 she released her first mini album, <span class="member-span-coloured-text">\'Redd\'</span>\\n',
       solo: 'https://youtu.be/ShFKF2YN7H0',
       socials: [

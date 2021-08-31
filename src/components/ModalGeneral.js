@@ -20,6 +20,26 @@ const customStyles = {
 Modal.setAppElement(document.getElementById('Main'));
 
 function ModalGeneral(props){
+  let galleryType = null;
+  if(props.galleryType !== undefined) {
+    // galleryType = Object.keys(MamamooDiscographyData).find(type => type === props.galleryType.toLowerCase())
+
+    switch(props.galleryType){
+      case utils.discographyType.ALBUMS:
+        galleryType = MamamooDiscographyData.albums;
+        break;
+      case utils.discographyType.SOLOS:
+        galleryType = MamamooDiscographyData.solos;
+        break;
+      case utils.discographyType.CFS:
+        galleryType = MamamooDiscographyData.cfs;
+        break;
+    }
+
+  } else {
+    return(null);
+  }
+  
   return (
     <div>
       <Modal
@@ -28,7 +48,8 @@ function ModalGeneral(props){
         className="Modal"
         overlayClassName="Overlay"
       >
-        <Album album={MamamooDiscographyData.albums} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/>
+        <Album album={galleryType} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/>
+        {/* <Album album={galleryType} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/> */}
       </Modal>
     </div>
   );
