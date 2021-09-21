@@ -682,7 +682,7 @@ export const MamamooDiscographyData = {
       "image": "mamamoo_waw.jpg",
       "songs": [
         {
-          "name": "Where Are We Now (Title track)",
+          "name": "Where Are We Now - Title track",
           "artist": "Mamamoo",
           "length": "3:43"
         },
@@ -715,6 +715,131 @@ export const MamamooDiscographyData = {
           "name": "Happier Than Ever",
           "artist": "Mamamoo",
           "length": ""
+        }
+      ]
+    },
+    {
+      "name": "I SAY MAMAMOO: THE BEST",
+      "date": "September 15, 2021",
+      "type": "Album",
+      "info": "2021 - 23 songs, 00 minutes 00 seconds",
+      "description": "MAMAMOO’s repackaged album which covers their 7 years of activity, represented by their selected re-recorded tracks from previous albums. Two new songs will be included, which are ‘Happier than Ever’ and ‘mumumumuch’. The album was released on September 15, 2021.",
+      "image": "mamamoo_thebest.jpg",
+      "songs": [
+        {
+          "name": "mumumumuch (하늘 땅 바다만큼) - Title track",
+          "artist": "Mamamoo",
+          "length": "3:29"
+        },
+        {
+          "name": "Happier Than Ever (분명 우린 그때 좋았었어)",
+          "artist": "Mamamoo",
+          "length": "3:48"
+        },
+        {
+          "name": "Paint Me (Orchestra ver.) (칠해줘)",
+          "artist": "Mamamoo",
+          "length": "3:24"
+        },
+        {
+          "name": "Starry Night (Orchestra ver.) (별이 빛나는 밤)",
+          "artist": "Mamamoo",
+          "length": "3:34"
+        },
+        {
+          "name": "gogobebe (Rock ver.) (고고베베)",
+          "artist": "Mamamoo",
+          "length": "3:40"
+        },
+        {
+          "name": "Egotistic (Blistering sun ver.) (너나 해)",
+          "artist": "Mamamoo",
+          "length": "3:31"
+        },
+        {
+          "name": "You're the best 2021 (넌 is 뭔들 2021)",
+          "artist": "Mamamoo",
+          "length": "4:29"
+        },
+        {
+          "name": "I Miss You 2021",
+          "artist": "Mamamoo",
+          "length": "4:29"
+        },
+        {
+          "name": "HeeHeeHaHeHo Part.2 (히히하헤호 Part.2)",
+          "artist": "Mamamoo",
+          "length": "3:53"
+        },
+        {
+          "name": "Words Don't Come Easy 2021 (우리끼리 2021)",
+          "artist": "Mamamoo",
+          "length": "3:55"
+        },
+        {
+          "name": "Piano Man 2021",
+          "artist": "Mamamoo",
+          "length": "3:47"
+        },
+        {
+          "name": "AHH OOP 2021",
+          "artist": "Mamamoo",
+          "length": "3:22"
+        },
+        {
+          "name": "Decalcomanie 2021",
+          "artist": "Mamamoo",
+          "length": "4:12"
+        },
+        {
+          "name": "AYA (Traditional ver.)",
+          "artist": "Mamamoo",
+          "length": "3:29"
+        },
+        {
+          "name": "HIP (Remix ver.)",
+          "artist": "Mamamoo",
+          "length": "4:29"
+        },
+        {
+          "name": "A little bit 2021 (따끔 2021)",
+          "artist": "Mamamoo",
+          "length": "3:50"
+        },
+        {
+          "name": "Wind flower (Dramatic ver.)",
+          "artist": "Mamamoo",
+          "length": "4:34"
+        },
+        {
+          "name": "Um Oh Ah Yeh 2021 (음오아예 2021)",
+          "artist": "Mamamoo",
+          "length": "4:19"
+        },
+        {
+          "name": "Don't Be Happy 2021 (행복하지마 2021)",
+          "artist": "Mamamoo",
+          "length": "2:57"
+        },
+        {
+          "name": "Peppermint Chocolate (MMM ver.) (썸남썸녀)",
+          "artist": "Mamamoo",
+          "length": "3:31"
+        },
+        {
+          "name": "Destiny (Extended ver.) (우린 결국 다시 만날 운명이었지)",
+          "artist": "Mamamoo",
+          "length": "4:40"
+        },
+        {
+          "name": "Mr. Ambiguous 2021 (Mr. 애매모호 2021)",
+          "artist": "Mamamoo",
+          "length": "3:48"
+        },
+        {
+          "name": "Yes I am (Funk boost ver.) (나로 말할 것 같으면)",
+          "artist": "Mamamoo",
+          "length": "3:47"
         }
       ]
     }

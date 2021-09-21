@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+/* Mobile size */
+@media screen and (max-width: 600px){
+  .upperbutton-content {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: fixed;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+/* PC size */
+@media (min-width: 600px) {
+  .upperbutton-content {
+    display: flex;
+  }
+
+  .upperbuttonmenu-button {
+    margin-right: 4rem;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1.5rem;  
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+/* Laptop Size */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .upperbuttonmenu-label {
+      font-size: 1.2rem;
+    }
+
+    .upperbuttonmenu-button {
+      margin-right: 2.5rem;
+    }
+
+}
+
+.upperbuttonmenu-button {
+  color: #f1f1f1;
+  border: none;
+  background: none;
+}
+
+.upperbuttonmenu-label {
+  color: black;
+  font-family: Roboto-Regular;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.hamburger-upperbutton-content {
+  display: inline;
+}
+
+.menu-hamburger-box {
+  width: 100%;
+  height: 100%;
+  background: white;
+}

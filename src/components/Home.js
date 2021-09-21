@@ -1,4 +1,5 @@
-import sample from '../assets/mmm_wawn_1080p_compressed.mp4';
+// import sample from '../assets/mmm_wawn_1080p_compressed.mp4';
+import sample from '../assets/mmm_mmmuch_1080_compressed.mp4';
 import Buttons from '../components/Buttons.js';
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
 import UpperButtonMenuSelection from './UpperButtonMenuSelection.js';

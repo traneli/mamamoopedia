@@ -27,13 +27,13 @@ function SocialMediaButtons(props) {
         <button type="button" class="media-button" onClick={() => openPage(urls[1])}>
           <img class="icon" src={images["waw_fancafe_light_bg.svg"].default}/>
         </button>
-        <button type="button" class="media-button" onClick={() => openPage(urls[2])}>
+        <button type="button" class="media-button" onClick={() => openPage(urls[3])}>
           <img class="icon" src={images["waw_vlive.svg"].default}/>
         </button>
-        <button type="button" class="media-button" onClick={() => openPage(urls[3])}>
+        <button type="button" class="media-button" onClick={() => openPage(urls[4])}>
           <img class="icon" src={images["waw_twitter.svg"].default}/>
         </button>
-        <button type="button" class="media-button" onClick={() => openPage(urls[4])}>
+        <button type="button" class="media-button" onClick={() => openPage(urls[5])}>
           <img class="icon" src={images["waw_fb.svg"].default}/>
         </button>
 

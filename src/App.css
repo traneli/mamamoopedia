@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+
+
+/************ MEDIA QUERIES ************/
+
 /* Mobile size */
 @media screen and (max-width: 600px) {
 /* @media screen and (min-width: 320px) { */
@@ -48,6 +52,23 @@
   .about-content-low-center {
     flex-direction: column;
   }
+  
+  .about-content-top h2 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .about-content-top p {
+    font-size: 1.1rem;
+  }
+
+  .about-content-low-center-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 5rem 4rem 5rem;
+  }
 
   /* .member-page-parallax-wrapper {
     overflow-x: hidden;
@@ -61,7 +82,73 @@
   } */
 }
 
-/* Over mobile size */
+/* Tablet size */
+@media screen  
+  and (min-device-width: 600px)
+  and (max-device-width: 1200px) {
+  
+    .about-content-low-center {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-content-low-center-text {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+}
+
+/* Laptop size */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+    .div-header-logo-btn {
+      margin-left: 2rem;
+    }
+
+    .div-header-logo {
+      width: 10.5rem;
+      /* margin-left: 4rem; */
+    }
+
+    .about-content-low-center {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-content-low-center-text {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    /* TODO: For function laptopAboutLowCenter, has cropped image */
+    /* .column-about-content-low-center {
+      width: 100%;
+      background: #E0D2C7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      font-size: 1.1rem;
+      font-family: Roboto-Regular;
+    }
+
+    .column-about-content-low-center img{
+      width: 100%;
+      height: 45%;
+      object-fit: cover;
+    }
+    
+    .column-about-content-low-center-text {
+      width: 60%;
+      margin: 2rem 5rem 0rem 5rem;
+      position: relative;
+    } */
+  }
+
+/* PC size */
 @media (min-width: 600px) {
   .home-content-logo {
     width: 40rem;
@@ -85,7 +172,33 @@
   .member-page-desc-text {
     padding-left: 2rem;
   }
+
+  .div-header-logo-btn {
+    margin-left: 4rem;
+  }
+
+  .div-header-logo {
+    width: 12rem;
+  }
+
+  .about-content-top h2 {
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+
+  .about-content-top p {
+    font-size: 1.4rem;
+  }
+
+  .about-content-low-center-text {
+    width: 60%;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 }
+
+
+/************ STYLES ************/
 
 @font-face {
   font-family: Roboto-Regular;
@@ -166,12 +279,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 4rem;
-}
-
-.div-header-logo {
-  width: 12rem;
-  /* margin-left: 4rem; */
 }
 
 .about-container {
@@ -196,21 +303,20 @@
 
 .about-content-top {
   width: 100%;
-  /* height: 13%; */
   background: #E0D2C7;
 }
 
 .about-content-top h2 {
   color: #9A6C57;
-  font-size: 5rem;
-  margin-top: 3rem;
+  /* font-size: 5rem; */
+  /* margin-top: 3rem; */
   margin-bottom: 0;
 }
 
 .about-content-top p {
   margin-bottom: 3rem;
   margin-top: 0.5rem;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
 }
 
 .about-content-top-image {
@@ -239,6 +345,10 @@
   font-family: Roboto-Bold;
 }
 
+.column-about-content-low-center {
+  display: none;
+}
+
 .about-content-low-center {
   /* width: 100%; */
   background: #E0D2C7;
@@ -265,9 +375,9 @@
 } */
 
 .about-content-low-center-text {
-  width: 60%;
+  /* width: 60%;
   margin-right: 5rem;
-  margin-left: 5rem;
+  margin-left: 5rem; */
   position: relative;
 }
 
@@ -288,7 +398,7 @@
 .about-content-low-center-members-btn {
   color: #9A6C57;
   font-size: 15px;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Bold;
   text-decoration: none;
   text-align: left;
   display: flex;
@@ -385,7 +495,7 @@
   margin-top: 2rem;
 }
 
-.members-main-content {
+/* .members-main-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -417,7 +527,6 @@
 }
 
 .members-main-content-btn-container {
-  /* width: 26%; */
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -445,7 +554,7 @@
 .members-main-content-image-group-btn img {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* --------------------------- */
 
@@ -480,13 +589,11 @@
   opacity: 0.8;
 }
 
-.upperbutton-content {
+/* .upperbutton-content {
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-}
+} */
 
-.upperbuttonmenu-button {
+/* .upperbuttonmenu-button {
   color: #f1f1f1;
   border: none;
   background: none;
@@ -500,8 +607,7 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  /* text-transform: lowercase; */
-}
+} */
 
 /* .upperbuttonmenu-label:active {
   font-weight: "bold";
@@ -523,6 +629,7 @@ TODO: Fix menu border animation
 .upperbuttonmenu-label:hover:after, .upperbuttonmenu-label:focus:after {
   transform: scaleX(1);
 } */
+
 
 #videoBackground {
   object-fit: cover;

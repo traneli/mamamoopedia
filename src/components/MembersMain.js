@@ -3,6 +3,8 @@ import {  Link, useRouteMatch } from 'react-router-dom';
 import MemberContext from '../hoc/context/MainContext';
 import * as utils from '../utils.js';
 
+import './Members.style.css';
+
 const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
 
 function MembersMain() {

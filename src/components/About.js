@@ -1,4 +1,4 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as utils from "../utils.js"
 import UpperButtonMenuSelection from "./UpperButtonMenuSelection.js";
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
@@ -6,12 +6,37 @@ import Header from "./Header.js";
 import PageTemplate from '../PageTemplate'; // TODO: Test layout/template thing
 
 function About() {
-  let history = useHistory();
-
   const images = utils.importAll(require.context('../assets', false, /\.(jp?g|svg)/));
 
-  function handleBackButton() {
-    history.push("/");
+  function laptopAboutLowCenter() {
+    return (
+      <>
+        <img src={images["waw_group.jpg"].default}/>
+        <div class="column-about-content-low-center-text">
+          <p class="about-content-low-center-text-paragraph">
+            The girls stood out among others for consistently delivering fun and entertaining performances. 
+            They performed in multiple festivals, concerts, music shows, and award shows and they never fail to get the crowd going. 
+            Alongside their iconic stages, they explored different musical genres and produced songs with 
+            messages varying from talking about their heights <span class="span-coloured-text">(Taller than you)</span> to self-empowerment <span class="span-coloured-text">(HIP)</span>. 
+          </p>
+          <p class="about-content-low-center-text-paragraph">
+            Mamamoo also participate in producing their songs, with Moonbyul writing her own rap lyrics for most songs. Currently they have over 200 songs, 11 mini albums, 3 full albums, and 1 repackaged album. Their discography also includes several OSTs, collaborations and CF songs. 
+            For their repackaged album, they re-recorded 21 different tracks from their previous albums and produced 2 new songs, <span class="span-coloured-text">‘Happier than Ever’</span> and <span class="span-coloured-text">‘mumumumuch’</span>, dedicated to their journey and to the Moomoo fandom respectively.
+          </p>
+          <p class="about-content-low-center-text-paragraph">
+            They debuted with the goal of being artists that are talented and good with singing but also
+            know how to have fun onstage. Now, 7 years into their career, Mamamoo has proven to
+            be one of the best K-Pop groups of all time.
+          </p>
+          <div class="about-content-low-center-members-btn-container">
+            <Link to="/members" className="about-content-low-center-members-btn">
+              <p>Get to know the members</p>
+              <img src={images["brown_arrow_right.svg"].default}/>
+            </Link>
+          </div>
+        </div>
+      </>
+    )
   }
 
   return (
@@ -21,7 +46,8 @@ function About() {
           <h2>Who is MAMAMOO?</h2>
           <p>Learn more about the vocal k-pop girl group with immense stage presence</p>
         </div>
-        <img class="about-content-top-image" src={images["waw_mmm_ot4.jpg"].default}/>
+        {/* <img class="about-content-top-image" src={images["waw_mmm_ot4.jpg"].default}/> */}
+        <img class="about-content-top-image" src={images["waw_mmm_concert.jpg"].default}/>
         <div class="about-content-center">
           <p>
             <span class="span-coloured-text">MAMAMOO</span> (Korean: 마마무, stylized in all caps) is a South Korean girl group formed by RBW (formerly WA Entertainment) in 2014, composed of four members: <span class="span-coloured-text">Solar, Moonbyul, Wheein, and Hwasa</span>. 
@@ -31,26 +57,23 @@ function About() {
         </div>
         <div class="about-content-low-center">
           <div class="about-content-low-center-img-wrapper">
-            <img src={images["blues_mmm_ot4.jpg"].default}/>
+            <img src={images["waw_group.jpg"].default}/>
           </div>
-          {/* <img src={images["blues_mmm_ot4.jpg"].default}/> */}
           <div class="about-content-low-center-text">
             <p class="about-content-low-center-text-paragraph">
-              Their debut was considered by some critics as <span class="span-coloured-text">one of the best K-pop debuts of 2014</span>. They are
-              recognized for their retro, jazz, and R&B concepts and strong vocal performances. They were
-              debuted with the goal of producing artists that are talented and good with singing but also
-              know how to have fun onstage. Now, almost 6 years into their career, Mamamoo has proven to
-              be one of the best K-Pop groups of all time!
+              The girls stood out among others for consistently delivering fun and entertaining performances. 
+              They performed in multiple festivals, concerts, music shows, and award shows and they never fail to get the crowd going. 
+              Alongside their iconic stages, they explored different musical genres and produced songs with 
+              messages varying from talking about their heights <span class="span-coloured-text">(Taller than you)</span> to self-empowerment <span class="span-coloured-text">(HIP)</span>. 
             </p>
             <p class="about-content-low-center-text-paragraph">
-              The girls stand out among others even upon debut because of their
-              ’concept,’ which was being their true selves. Mamamoo’s music was
-              made not to appeal to the masses but to suit what they can do with their
-              voices and performances. Because of this, they received a lot of praises for
-              their strong vocal performances and how they have fun on stage. Despite
-              being different and coming from a small agency, the girls surely achieved
-              amazing success. Recognized by respected seniors in the industry,
-              Mamamoo has really made it.
+              Mamamoo also participate in producing their songs, with Moonbyul writing her own rap lyrics for most songs. Currently they have over 200 songs, 11 mini albums, 3 full albums, and 1 repackaged album. Their discography also includes several OSTs, collaborations and CF songs. 
+              For their repackaged album, they re-recorded 21 different tracks from their previous albums and produced 2 new songs, <span class="span-coloured-text">‘Happier than Ever’</span> and <span class="span-coloured-text">‘mumumumuch’</span>, dedicated to their journey and to the Moomoo fandom respectively.
+            </p>
+            <p class="about-content-low-center-text-paragraph">
+              They debuted with the goal of being artists that are talented and good with singing but also
+              know how to have fun onstage. Now, 7 years into their career, Mamamoo has proven to
+              be one of the best K-Pop groups of all time.
             </p>
             <div class="about-content-low-center-members-btn-container">
               <Link to="/members" className="about-content-low-center-members-btn">
@@ -70,11 +93,9 @@ function About() {
         </div>
         <div class="about-content-bottom">
           <p>
-            A casual listener of an artist needs to listen to the 1-minute sample of a track first
-            before deciding to click the download button. But for Mamamoo, this does not
-            apply. Mamamoo is recognized for their <span class="span-coloured-text">musical diversity</span>. You can name any
+            Mamamoo is known for their <span class="span-coloured-text">musical diversity</span>. You can name any
             genre under the sun and trust them to do all these with justice, without sacrificing
-            their own Mamamoo color.
+            their own color.
           </p>
           {/* TODO: Change to new link */}
           <Link to="/discography">
