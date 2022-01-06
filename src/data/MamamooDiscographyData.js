@@ -702,19 +702,19 @@ export const MamamooDiscographyData = {
           "length": "3:04"
         },
         {
-          "name": "Where Are We Now (Japanese ver.) - Title track",
+          "name": "Where Are We Now (Japanese ver.)",
           "artist": "Mamamoo",
           "length": ""
         },
         {
           "name": "Strange Day",
           "artist": "Mamamoo",
-          "length": ""
+          "length": "3:18"
         },
         {
           "name": "Happier Than Ever",
           "artist": "Mamamoo",
-          "length": ""
+          "length": "3:48"
         }
       ]
     },
@@ -1159,12 +1159,12 @@ export const MamamooDiscographyData = {
       "name": "María",
       "date": "June 29, 2020",
       "type": "EP",
-      "info": "2020 - 6 songs, 18 minutes 19 seconds (Digital) 7 songs, 21 minutes 29 seconds (Physical)  ",
+      "info": "2020 - 6 songs, 18 minutes 19 seconds (Digital) 7 songs, 21 minutes 29 seconds (Physical)",
       "description": "MAMAMOO Hwasa’s first mini album. It was released on June 29, 2020.",
       "image": "border_hwasa_maria.jpg",
       "songs": [
         {
-          "name": "Intro : Nobody Else)",
+          "name": "Intro : Nobody Else",
           "artist": "Hwa Sa",
           "length": "1:57"
         },
@@ -1197,6 +1197,31 @@ export const MamamooDiscographyData = {
           "name": "Twit (멍청이) - CD only",
           "artist": "Hwa Sa",
           "length": "3:10"
+        }
+      ]
+    },
+    {
+      "name": "Guilty Pleasure",
+      "date": "November 24, 2021",
+      "type": "Single",
+      "info": "2021 - 3 songs, 7 minutes 59 seconds",
+      "description": "MAMAMOO Hwasa’s 2nd single album. It was released on November 24, 2021.",
+      "image": "placeholder.jpg",
+      "songs": [
+        {
+          "name": "FOMO",
+          "artist": "Hwa Sa",
+          "length": "2:21"
+        },
+        {
+          "name": "I'm a 빛 - Title Track",
+          "artist": "Hwa Sa",
+          "length": "2:47"
+        },
+        {
+          "name": "Bless U",
+          "artist": "Hwa Sa",
+          "length": "2:50"
         }
       ]
     }

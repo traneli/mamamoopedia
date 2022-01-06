@@ -99,17 +99,14 @@
 }
 
 /* Laptop size */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     
     .div-header-logo-btn {
       margin-left: 2rem;
     }
 
     .div-header-logo {
-      width: 10.5rem;
+      width: 10rem;
       /* margin-left: 4rem; */
     }
 
@@ -119,8 +116,16 @@
     }
 
     .about-content-low-center-text {
+      width: 55%;
       margin-top: 4rem;
       margin-bottom: 3rem;
+      margin-right: 5rem;
+      margin-left: 5rem;
+    }
+
+    .about-content-top h2 {
+      font-size: 3rem;
+      margin-top: 1.5rem;
     }
 
     /* TODO: For function laptopAboutLowCenter, has cropped image */
@@ -149,7 +154,7 @@
   }
 
 /* PC size */
-@media (min-width: 600px) {
+@media (min-width: 1281px) {
   .home-content-logo {
     width: 40rem;
   }

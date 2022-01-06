@@ -32,35 +32,68 @@
     } */
   }
 
+/* UPDATE 021221: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+
 /* Laptop size */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media 
+  /* and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  */
+  (min-width: 1025px) and (max-width: 1280px) { 
     
     .discography-content-top-media {
       height: 60%;
     }
 
-    .discography-content-top-media-player-box-bottom {
-      overflow: auto;
+    /***** TOP BOX START ****/
+    .discography-content-top h2{
+      font-size: 3rem;
+      margin-top: 2rem;
     }
+    
+    .discography-content-top p {
+      /* font-size: 0.7rem; */
+      margin-bottom: 2rem;
+    }
+    /***** TOP BOX END ****/
 
+
+    /***** TOP MEDIA BOX START ****/
     .discography-content-top-media-player-box-top-gallery img {
       width: 15%
     }
-
+    
     .discography-content-top-media-player-box-top-text-container-gallery {
       font-size: 0.5rem;
     }
+    
+    .discography-content-top-media-player-box-top-album-title {
+      font-size: 1rem;
+    }
+    /***** TOP MEDIA BOX END ****/
   }
 
 /* PC size */
-@media (min-width: 600px) {
+/* @media (min-width: 600px) { */
+  @media (min-width: 1281px) {  
+
   /* .discography-content-top-media {
     max-height: 80%;
   } */
 
+  /***** TOP BOX START ****/
+  .discography-content-top h2{
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+
+  .discography-content-top p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+  /***** TOP BOX END ****/
+
+
+  /***** TOP MEDIA BOX START ****/
   .discography-content-top-media-player-box-top-gallery img {
     width: 20%;
   }
@@ -68,6 +101,11 @@
   .discography-content-top-media-player-box-top-text-container-gallery {
     font-size: 1rem;
   }
+
+  .discography-content-top-media-player-box-top-album-title {
+    font-size: 3rem;
+  }
+
 }
 
 .discography-content {
@@ -89,15 +127,15 @@
 
 .discography-content-top h2 {
   color: #9A6C57;
-  font-size: 5rem;
-  margin-top: 3rem;
+  /* font-size: 5rem; */ /*In media tags*/
+  /* margin-top: 3rem; */ /*In media tags*/
   margin-bottom: 0;
 }
 
 .discography-content-top p {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */ /*In media tags*/
   margin-top: 0.5rem;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */ /*In media tags*/
 }
 
 .discography-content-top-media {
@@ -117,8 +155,10 @@
 
 .discography-content-top-media-img-wrapper img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .discography-content-top-media-player-box-content {
@@ -143,6 +183,7 @@
 .discography-content-top-media-player-box-bottom {
   height: 100%;
   background: #131314;
+  overflow: auto;
 }
 
 .discography-content-top-media-player-box-bottom-row {
@@ -213,7 +254,6 @@
 .discography-content-top-media-player-box-top-album-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 4rem;
   font-family: Roboto-Bold;
 }
 

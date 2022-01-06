@@ -33,7 +33,7 @@ function Discography() {
           <div class="discography-content-top-media-img-wrapper">
             <img src={images["best_mmm_diamond.jpg"].default}/>
           </div>
-          <Album album={MamamooDiscographyData.albums} showAlbum="waw" formType={utils.generalForms.GALLERY}/>
+          <Album album={MamamooDiscographyData.albums} showAlbum="I SAY MAMAMOO: THE BEST" formType={utils.generalForms.GALLERY}/>
         </div>
         <div class="discography-content-gallery">
           <h2 class="discography-content-gallery-header">ALBUMS</h2>

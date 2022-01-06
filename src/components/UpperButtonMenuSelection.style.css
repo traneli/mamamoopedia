@@ -40,19 +40,14 @@
 }
 
 /* Laptop Size */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media (min-width: 1025px) and (max-width: 1280px) {
     .upperbuttonmenu-label {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .upperbuttonmenu-button {
       margin-right: 2.5rem;
     }
-
 }
 
 .upperbuttonmenu-button {
