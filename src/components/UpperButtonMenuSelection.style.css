@@ -20,8 +20,26 @@
   }
 }
 
-/* PC size */
-@media (min-width: 600px) {
+/* Laptop Size */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .upperbutton-content {
+    display: flex;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1rem;
+  }
+  
+  .upperbuttonmenu-button {
+    margin-right: 2.5rem;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px) {
   .upperbutton-content {
     display: flex;
   }
@@ -31,7 +49,7 @@
   }
 
   .upperbuttonmenu-label {
-    font-size: 1.5rem;  
+    font-size: 1.3rem; 
   }
 
   .menu-hamburger {
@@ -39,15 +57,23 @@
   }
 }
 
-/* Laptop Size */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .upperbuttonmenu-label {
-      font-size: 1rem;
-    }
+/* PC size */
+@media (min-width: 1401px) {
+  .upperbutton-content {
+    display: flex;
+  }
 
-    .upperbuttonmenu-button {
-      margin-right: 2.5rem;
-    }
+  .upperbuttonmenu-button {
+    margin-right: 4rem;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1.3rem;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
 }
 
 .upperbuttonmenu-button {
@@ -91,3 +117,5 @@
   height: 100%;
   background: white;
 }
+
+

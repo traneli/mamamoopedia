@@ -36,8 +36,7 @@
 
 /* Laptop size */
 @media 
-  /* and (min-device-width: 1200px) 
-  and (max-device-width: 1600px)  */
+/* (min-width: 992px) {  */
   (min-width: 1025px) and (max-width: 1280px) { 
     
     .discography-content-top-media {
@@ -70,10 +69,48 @@
       font-size: 1rem;
     }
     /***** TOP MEDIA BOX END ****/
+
+
+    /***** ALBUM MEDIA BOX START ****/
+    .discography-content-gallery-header {
+      font-size: 3rem;
+    }
+
+    .discography-content-top-albums-gallery-album-header {
+      font-size: 1.2rem;
+    }
+
+    .discography-content-top-albums-gallery-album-subheader {
+      font-size: 0.8rem;
+    }
+    /***** ALBUM MEDIA BOX END ****/
+
+
+    /***** MODAL START *****/
+    .discography-content-top-media-player-box-content-modal {
+      flex-direction: row;
+    }
+
+    .discography-content-top-media-player-box-top-modal {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .discography-content-top-media-player-box-top-modal img {
+      margin-top: 1.6rem;
+      margin-left: 2rem;
+    }
+
+    .discography-content-top-media-player-box-bottom-modal {
+      width: 100%;
+    }
+    /***** MODAL END *****/
   }
 
-/* PC size */
-/* @media (min-width: 600px) { */
+  /* PC size */
+  /* @media (min-width: 1281px) {   */
   @media (min-width: 1281px) {  
 
   /* .discography-content-top-media {
@@ -103,9 +140,41 @@
   }
 
   .discography-content-top-media-player-box-top-album-title {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    /* font-size: 3rem; */
+  }
+  /***** TOP MEDIA BOX END ****/
+
+
+  /***** ALBUM MEDIA BOX START ****/
+  .discography-content-gallery-header {
+    font-size: 5rem;
   }
 
+  .discography-content-gallery-subheader {
+    font-size: 1.4rem;
+  }
+
+  .discography-content-top-albums-gallery-album-header {
+    font-size: 1.5rem;
+  }
+  /***** ALBUM MEDIA BOX END ****/
+
+  
+  /***** MODAL START *****/
+  .discography-content-top-media-player-box-content-modal {
+    flex-direction: column;
+  }
+
+  .discography-content-top-media-player-box-top-modal {
+    height: 35%;
+    align-items: center;
+  }
+
+  .discography-content-top-media-player-box-top-modal img {
+    margin-left: 1.5rem;
+  }
+  /***** MODAL END *****/
 }
 
 .discography-content {
@@ -167,20 +236,34 @@
   flex-direction: column;
 }
 
+.discography-content-top-media-player-box-bottom {
+  height: 100%;
+  background: #131314;
+  overflow: auto;
+}
+
+/*------------- MODAL STYLES -------------------*/
+
+.discography-content-top-media-player-box-content-modal {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */ /*In media tags*/
+}
+
 .discography-content-top-media-player-box-top-modal {
-  height: 35%;
+  /* height: 35%; */ /*In media tags*/
   background: #1D1D1E;
   display: flex;
-  align-items: center;
+  /* align-items: center; */ /*In media tags*/
 }
 
 .discography-content-top-media-player-box-top-modal img {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */ /*In media tags*/
   /* margin-top: 0.5rem; */
   width: 20%;
 }
 
-.discography-content-top-media-player-box-bottom {
+.discography-content-top-media-player-box-bottom-modal {
   height: 100%;
   background: #131314;
   overflow: auto;
@@ -216,7 +299,7 @@
   margin-top: 1.5rem;
 }
 
-.discography-content-top-media-player-box-bottom-row-artist{
+.discography-content-top-media-player-box-bottom-row-artist {
   margin: 0;
 }
 
@@ -242,7 +325,7 @@
 .discography-content-top-media-player-box-top-album-title-modal {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: Roboto-Bold;
 }
 
@@ -259,7 +342,6 @@
 
 .discography-content-top-media-player-box-top-album-information {
   margin-top: 0;
-
 }
 
 .discography-content-top-media-player-box-top-album-description {
@@ -294,14 +376,14 @@
 
 .discography-content-gallery-header {
   color: #9A6C57;
-  font-size: 5rem;
+  /* font-size: 5rem; */ /*In media tags*/
   margin-top: 2rem;
   margin-bottom: 0;
 }
 
 .discography-content-gallery-subheader {
   margin-bottom: 2rem;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */ /*In media tags*/
 }
 
 .discography-content-top-albums-gallery-container {
@@ -334,7 +416,7 @@
 }
 
 .discography-content-top-albums-gallery-album-header {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */ /*In media tags*/
   font-family: Roboto-Bold;
   margin-top: 1rem;
   margin-bottom: 0;

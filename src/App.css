@@ -128,6 +128,12 @@
       margin-top: 1.5rem;
     }
 
+    .Modal {
+      width: 75%;
+      height: 50%;
+
+    }
+
     /* TODO: For function laptopAboutLowCenter, has cropped image */
     /* .column-about-content-low-center {
       width: 100%;
@@ -199,6 +205,11 @@
     width: 60%;
     margin-right: 5rem;
     margin-left: 5rem;
+  }
+
+  .Modal {
+    width: 40%;
+    height: auto;
   }
 }
 
@@ -685,10 +696,8 @@ TODO: Fix menu border animation
 }
 
 .Modal {
-  /* width: 50rem;
-  height: 50rem; */
-  width: 40%;
-  height: auto;
+  /*width: 40%;*/ /*In media tags*/
+  /*height: auto;*/ /*In media tags*/
   min-height: 60%;
   max-height: 80%;
   overflow-y: auto;

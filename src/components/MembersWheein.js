@@ -56,7 +56,7 @@ function MembersWheein() {
           <div class="member-page-information-box-text-content">
             <NewlineText text={MembersInfo[2].description}/>
           </div>
-          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[2].solo)}>Wheein's latest solo work: water color</button>
+          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[2].solo.url)}>Wheein's latest solo work: {MembersInfo[2].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
             <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[2].socials[0].url)}/>

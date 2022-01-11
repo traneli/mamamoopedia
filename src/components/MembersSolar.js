@@ -56,7 +56,7 @@ function MembersSolar() {
           <div class="member-page-information-box-text-content">
             <NewlineText text={MembersInfo[1].description}/>
           </div>
-          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[1].solo)}>Solar's latest solo work: Spit It Out</button>
+          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[1].solo.url)}>Solar's latest solo work: {MembersInfo[1].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
             <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[0].url)}/>

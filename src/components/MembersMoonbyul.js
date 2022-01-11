@@ -56,12 +56,13 @@ function MembersMoonbyul() {
           <div class="member-page-information-box-text-content">
             <NewlineText text={MembersInfo[0].description}/>
           </div>
-          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[0].solo)}>Moonbyul's latest solo work: AM3DA</button>
+          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[0].solo.url)}>Moonbyul's latest solo work: {MembersInfo[0].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
             <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[0].socials[0].url)}/>
             <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[0].socials[1].url)}/>
-            <img class="member-page-information-box-media-btn" id="member-page-information-box-media-btn-special" src={images["waw_smn_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[0].socials[2].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_youtube_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[0].socials[2].url)}/>
+            <img class="member-page-information-box-media-btn" id="member-page-information-box-media-btn-special" src={images["waw_smn_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[0].socials[3].url)}/>
           </div>
         </div>
       </div>

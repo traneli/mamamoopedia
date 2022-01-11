@@ -56,7 +56,7 @@ function MembersHwasa() {
           <div class="member-page-information-box-text-content">
             <NewlineText text={MembersInfo[3].description}/>
           </div>
-          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[3].solo)}>Hwasa's latest solo work: María</button>
+          <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[3].solo.url)}>Hwasa's latest solo work: {MembersInfo[3].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
             <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[3].socials[0].url)}/>

@@ -23,7 +23,7 @@ function Album(props) {
     )
   } else if(formType === utils.generalForms.MODAL) {
     return (
-      <div class="discography-content-top-media-player-box-content">
+      <div class="discography-content-top-media-player-box-content-modal">
         <div class="discography-content-top-media-player-box-top-modal">
           <img src={albumImages[selectedAlbum.image].default}/>
           <div class="discography-content-top-media-player-box-top-text-container-modal">
@@ -33,7 +33,7 @@ function Album(props) {
             <p class="discography-content-top-media-player-box-top-album-description">{selectedAlbum.description}</p>
           </div>
         </div>
-        <div class="discography-content-top-media-player-box-bottom">
+        <div class="discography-content-top-media-player-box-bottom-modal">
           {
             selectedAlbum.songs.map(song => 
               <div class="discography-content-top-media-player-box-bottom-row">

@@ -19,7 +19,11 @@ export const MembersInfo = [
       '☆ Her hobby is photography\\n' +
       '☆ Is a bit of a tech nerd\\n' +
       '☆ On February 14, 2020 she released her second solo album, <span class="member-span-coloured-text">\'Dark Side of the Moon\'</span>',
-      solo: 'https://youtu.be/7Ewgm6TMKgE',
+      solo: 
+        {
+          name: 'Shutdown',
+          url:'https://youtu.be/Nqz4oh2jogE',
+        },
       socials: [
         {
           name: 'spotify',
@@ -28,6 +32,10 @@ export const MembersInfo = [
         {
           name: 'instagram',
           url: 'https://www.instagram.com/mo_onbyul/'
+        },
+        {
+          name: 'youtube',
+          url: 'https://www.youtube.com/channel/UCFrAB5I66LgzOi15TF4PO6A'
         },
         {
           name: 'smn',
@@ -55,7 +63,11 @@ export const MembersInfo = [
       '☼ Has a mixed breed dog named Yongki\\n' +
       '☼ Has her own Instagram, <span class="member-span-coloured-text">solarkeem</span>\\n' +
       '☼ On April 23, 2020 she made her solo debut with <span class="member-span-coloured-text">\'Spit It Out\'</span>\\n',
-      solo: 'https://youtu.be/V8FXWf0s7K0',
+      solo: 
+        {
+          name: 'Spit It Out',
+          url: 'https://youtu.be/V8FXWf0s7K0'
+        },
       socials: [
         {
           name: 'spotify',
@@ -92,7 +104,11 @@ export const MembersInfo = [
       '彡 Can remember up to 50 random words in sequence\\n' +
       '彡 She signed with ‘THE L1VE’ on August 30, 2021, after leaving RBW on June 11, 2021. An extended agreement was made which states that she will still be part of MAMAMOO and will be doing group activities until December 2023.\\n' +
       '彡 On April 13, 2021 she released her first mini album, <span class="member-span-coloured-text">\'Redd\'</span>\\n',
-      solo: 'https://youtu.be/ShFKF2YN7H0',
+      solo: 
+        {
+          name: 'water color',
+          url: 'https://youtu.be/ShFKF2YN7H0'
+        },
       socials: [
         {
           name: 'spotify',
@@ -124,7 +140,11 @@ export const MembersInfo = [
       '✿ Is known for her strong and unique appearance\\n' +
       '✿ Debuted as Silbi in the group, Refund Sisters\\n' +
       '✿ On June 29, 2020 she released her first solo album, <span class="member-span-coloured-text">\'María\'</span>\\n',
-      solo: 'https://youtu.be/brZRDjFIFJs',
+      solo: 
+        {
+          name: 'I\'m a 빛',
+          url: 'https://youtu.be/s1kwS3riCQI'
+        },
       socials: [
         {
           name: 'spotify',

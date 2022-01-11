@@ -61,10 +61,7 @@
 }
 
 /* Laptop size */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@media (min-width: 1025px) and (max-width: 1280px) { 
 
   .members-main-content-image-group-btn {
     height: 100%;
