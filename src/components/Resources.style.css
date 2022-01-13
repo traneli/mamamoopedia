@@ -41,7 +41,7 @@
 .resources-content-row-section {
   width: 70%;
   display: flex;
-  margin: 1.5rem;
+  margin: 0 0 2rem 0;
 }
 
 .resources-container-row-content {

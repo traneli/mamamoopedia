@@ -137,9 +137,10 @@ export const MembersInfo = [
       '✿ Has been friends with Wheein since middle school\\n' +
       '✿ Has 5 tattoos, one of which is her baptismal name, \'Maria\'\\n' +
       '✿ Has her own Instagram, <span class="member-span-coloured-text">_mariahwasa</span>\\n' +
+      '✿ Has her own YouTube channel, <span class="member-span-coloured-text">HWASA</span>\\n' + 
       '✿ Is known for her strong and unique appearance\\n' +
       '✿ Debuted as Silbi in the group, Refund Sisters\\n' +
-      '✿ On June 29, 2020 she released her first solo album, <span class="member-span-coloured-text">\'María\'</span>\\n',
+      '✿ On November 24, 2021 she released her second solo album, <span class="member-span-coloured-text">\'Guilty Pleasure\'</span>\\n',
       solo: 
         {
           name: 'I\'m a 빛',
@@ -153,6 +154,10 @@ export const MembersInfo = [
         {
           name: 'instagram',
           url: 'https://www.instagram.com/_mariahwasa/'
+        },
+        {
+          name: 'youtube',
+          url: 'https://www.youtube.com/channel/UCiM8arBZ-GyuBFG3wy6fEgw'
         }
       ]
     }

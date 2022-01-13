@@ -36,7 +36,6 @@
 
 /* Laptop size */
 @media 
-/* (min-width: 992px) {  */
   (min-width: 1025px) and (max-width: 1280px) { 
     
     .discography-content-top-media {

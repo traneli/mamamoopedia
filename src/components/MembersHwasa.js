@@ -61,6 +61,7 @@ function MembersHwasa() {
           <div class="member-page-information-box-media-btn-content">
             <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[3].socials[0].url)}/>
             <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[3].socials[1].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_youtube_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[3].socials[2].url)}/>
           </div>
         </div>
       </div>

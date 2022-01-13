@@ -8,38 +8,6 @@
   src: url('../assets/fonts/Roboto-Bold.ttf');
 }
 
-/* Over mobile size */
-@media (min-width: 600px) {
-  .members-main-content-image-group-btn img {
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .members-main-content-image-group-link {
-    width: 25%;
-  }
-
-  .member-page-content {
-    width: 72%;
-  }
-
-  .member-page-back-button-content {
-    width: 72%;
-  }
-
-  .member-page-information-box-text-content {
-    font-size: 1.2rem;
-  }
-
-  .member-page-information-box h1 {
-    font-size: 4.5rem;
-  }
-
-  .member-page-information-box h2 {
-    font-size: 2rem;
-  }
-}
-
 /* Mobile size */
 @media screen and (max-width: 600px) {
   .members-main-content-image-group {
@@ -95,6 +63,45 @@
 
   .member-page-information-box h2 {
     font-size: 1.2rem;
+  }
+}
+
+/* PC size */
+@media (min-width: 1281px) {
+  .members-main-content-image-group-btn img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .members-main-content-image-group-link {
+    width: 25%;
+  }
+
+  .member-page-content {
+    width: 72%;
+    height: 72%;
+  }
+
+  /* .member-page-img-pfp {
+    min-height: 55%;
+    max-height: 100%;
+  } */
+
+  .member-page-back-button-content {
+    width: 72%;
+  }
+
+  .member-page-information-box-text-content {
+    font-size: 1.2rem;
+  }
+
+  .member-page-information-box h1 {
+    /* font-size: 4.5rem; */
+    font-size: 1.8rem;
+  }
+
+  .member-page-information-box h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -191,6 +198,7 @@
   font-family: Roboto-Bold;
   display: flex;
   align-items: center;
+  padding:  2rem 0 2rem 0;
 }
 
 .member-page-back-button:after {
@@ -209,6 +217,7 @@
   margin-right: 1rem;
 }
 
+/* TODO: Recheck image height/width */
 .member-page-img-pfp {
   height: 100%;
 }
@@ -219,6 +228,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: auto;
+}
+
+.member-page-information-box h1, .member-page-information-box h2, .member-page-information-box-text-content {
+  margin-right: 1rem;
 }
 
 .member-page-information-box h1 {
