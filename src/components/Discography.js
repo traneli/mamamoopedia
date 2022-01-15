@@ -27,7 +27,7 @@ function Discography() {
         <ModalGeneral isModalOpen={isModalOpen} setModalOpen={handleModalClick} galleryType={galleryType} albumName={selectedAlbumInfo}/> 
         <div class="discography-content-top">
           <h2>LATEST RELEASE</h2>
-          <p>In June 02, 2021, MAMAMOO returned with their 11th mini album 'WAW'</p>
+          <p>In September 15, 2021, MAMAMOO returned with a compilation album 'I SAY MAMAMOO : THE BEST'</p>
         </div>
         <div class="discography-content-top-media">
           <div class="discography-content-top-media-img-wrapper">

@@ -85,7 +85,7 @@ function About() {
         </div>
         <div class="about-content-bottom-top">
           <h2>BeLisMaMoo</h2>
-          <p>Learn more about the vocal k-pop girl group with immense stage presence</p>
+          <p>Believe and Listen to Mamamoo</p>
         </div>
         {/* <img class="about-content-bottom-center-image" src={images["destiny_mmm_ot4.jpg"].default}/> */}
         <div class="about-content-bottom-center-image">

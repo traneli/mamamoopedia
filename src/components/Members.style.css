@@ -40,14 +40,14 @@
   }
 
   .member-page-content {
-    width: 82%;
-    height: 75%;
+    width: 72%;
+    height: 72%;
   }
 
-  .member-page-img-pfp {
+  /* .member-page-img-pfp {
     min-height: 55%;
     max-height: 100%;
-  }
+  } */
 
   .member-page-back-button-content {
     width: 83%;
