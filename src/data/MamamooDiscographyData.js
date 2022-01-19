@@ -1051,10 +1051,55 @@ export const MamamooDiscographyData = {
       ]
     },
     {
+      "name": "6equence",
+      "date": "January 19, 2022",
+      "type": "EP",
+      "info": "2022 - 7 songs, 22 minutes 05 seconds",
+      "description": "MAMAMOO Moonbyul’s repackaged album of her mini, Dark Side of the Moon. It was released on May 29, 2020 alongside an introduction song and a new title track.",
+      "image": "placeholder.jpg",
+      "songs": [
+        {
+          "name": "Intro: SYNOPSIS",
+          "artist": "Moon Byul",
+          "length": "1:38"
+        },
+        {
+          "name": "G999 (Feat. Mirani)",
+          "artist": "Moon Byul, Mirani",
+          "length": "3:04"
+        },
+        {
+          "name": "Shutdown (Feat. Seori)",
+          "artist": "Moon Byul, Seori",
+          "length": "3:21"
+        },
+        {
+          "name": "LUNATIC",
+          "artist": "Moon Byul",
+          "length": "3:25"
+        },
+        {
+          "name": "For Me",
+          "artist": "Moon Byul",
+          "length": "3:38"
+        },
+        {
+          "name": "ddu ddu ddu",
+          "artist": "Moon Byul",
+          "length": "3:32"
+        },
+        {
+          "name": "LUNATIC (English Ver.)",
+          "artist": "Moon Byul",
+          "length": "3:25"
+        }
+      ]
+    },
+    {
       "name": "Magnolia",
       "date": "April 17, 2018",
       "type": "Single",
-      "info": "2018 - 1 songs, 3 minutes 08 seconds",
+      "info": "2018 - 1 song, 3 minutes 08 seconds",
       "description": "MAMAMOO Wheein’s solo debut single. It was released on April 17, 2018, which was also her birthday.",
       "image": "border_wheein_magnolia.jpg",
       "songs": [
@@ -1132,6 +1177,46 @@ export const MamamooDiscographyData = {
           "name": "Water Color (English ver.) - Digital only",
           "artist": "Whee In",
           "length": "3:09"
+        }
+      ]
+    },
+    {
+      "name": "Whee",
+      "date": "January 16, 2022",
+      "type": "EP",
+      "info": "2022 - 6 songs, 16 minutes",
+      "description": "MAMAMOO Wheein’s second mini album. It was released on January 16, 2022.",
+      "image": "placeholder.jpg",
+      "songs": [
+        {
+          "name": "Make Me Happy - Title Song",
+          "artist": "Whee In",
+          "length": "3:17"
+        },
+        {
+          "name": "Pink Cloud",
+          "artist": "Whee In",
+          "length": "3:10"
+        },
+        {
+          "name": "Letter Filled With Light",
+          "artist": "Whee In",
+          "length": "3:08"
+        },
+        {
+          "name": "Deserve (Interlude)",
+          "artist": "Whee In",
+          "length": "0:32"
+        },
+        {
+          "name": "Pastel",
+          "artist": "Whee In",
+          "length": "2:22"
+        },
+        {
+          "name": "Paraglide",
+          "artist": "Whee In",
+          "length": "3:38"
         }
       ]
     },

@@ -18,11 +18,11 @@ export const MembersInfo = [
       '☆ Has 7 tattoos\\n' +
       '☆ Her hobby is photography\\n' +
       '☆ Is a bit of a tech nerd\\n' +
-      '☆ On February 14, 2020 she released her second solo album, <span class="member-span-coloured-text">\'Dark Side of the Moon\'</span>',
+      '☆ On January 19, 2022 she released her third solo album, <span class="member-span-coloured-text">\'6equence\'</span>',
       solo: 
         {
-          name: 'Shutdown',
-          url:'https://youtu.be/Nqz4oh2jogE',
+          name: 'Lunatic',
+          url:'https://youtu.be/l-fZh5Maq0k',
         },
       socials: [
         {
@@ -103,11 +103,11 @@ export const MembersInfo = [
       '彡 Her dimple is measured to be 2.5cm across\\n' +
       '彡 Can remember up to 50 random words in sequence\\n' +
       '彡 She signed with ‘THE L1VE’ on August 30, 2021, after leaving RBW on June 11, 2021. An extended agreement was made which states that she will still be part of MAMAMOO and will be doing group activities until December 2023.\\n' +
-      '彡 On April 13, 2021 she released her first mini album, <span class="member-span-coloured-text">\'Redd\'</span>\\n',
+      '彡 On January 16, 2022 she released her second mini album, <span class="member-span-coloured-text">\'Whee\'</span>\\n',
       solo: 
         {
-          name: 'water color',
-          url: 'https://youtu.be/ShFKF2YN7H0'
+          name: 'Make Me Happy',
+          url: 'https://youtu.be/8nVyoH0ppmI'
         },
       socials: [
         {
