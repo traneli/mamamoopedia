@@ -28,6 +28,12 @@
     top: 50%;
   }
 
+  .div-header-logo-btn {
+    margin-left: 0.5rem;
+    display: flex;
+    width: 50%;
+  }
+
   .general-content {
     position: relative;
     width: 100%;
