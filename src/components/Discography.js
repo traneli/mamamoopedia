@@ -26,7 +26,7 @@ function Discography() {
       <section class="discography-content">
         <ModalGeneral isModalOpen={isModalOpen} setModalOpen={handleModalClick} galleryType={galleryType} albumName={selectedAlbumInfo}/> 
         <div class="discography-content-top">
-          <h2>LATEST RELEASE</h2>
+          <h2>Latest Release</h2>
           <p>In September 15, 2021, MAMAMOO returned with a compilation album 'I SAY MAMAMOO : THE BEST'</p>
         </div>
         <div class="discography-content-top-media">

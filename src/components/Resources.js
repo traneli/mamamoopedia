@@ -14,9 +14,9 @@ function Resources() {
         <div class="resources-content-row-section">
           <div class="resources-container-row-content">
             <h3>WEBSITES</h3>
-            <a href="https://kpop.fandom.com/wiki/MAMAMOO" target="_blank" rel="noopener noreferrer">https://kpop.fandom.com/wiki/MAMAMOO</a>
-            <a href="https://mamamoo.fandom.com/wiki/MAMAMOO" target="_blank" rel="noopener noreferrer">https://mamamoo.fandom.com/wiki/MAMAMOO</a>
-            <a href="https://en.wikipedia.org/wiki/Mamamoo" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Mamamoo</a>
+            <a href="https://kpop.fandom.com/wiki/MAMAMOO" target="_blank" rel="noopener noreferrer">Kpop Wiki</a>
+            <a href="https://mamamoo.fandom.com/wiki/MAMAMOO" target="_blank" rel="noopener noreferrer">Mamamoo Wiki</a>
+            <a href="https://en.wikipedia.org/wiki/Mamamoo" target="_blank" rel="noopener noreferrer">Wikipedia</a>
           </div>
           <div class="resources-container-row-content">
             <h3>FILES</h3>

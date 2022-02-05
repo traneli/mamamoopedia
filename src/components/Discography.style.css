@@ -10,13 +10,47 @@
 
 /* Mobile size */
 @media screen and (max-width: 600px) {
-  /* .discography-content-top-media-player-box-top-gallery img {
-    width: 15%;
-  } */
+  .discography-content-top-media-player-box-top-gallery img {
+    margin: 2rem 1rem 1rem 2rem;
+  }
 
-  /* .discography-content-top-media-player-box-top-text-container-gallery {
-    font-size: 0.5rem;
-  } */
+  .discography-content-top h2{
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .discography-content-top p {
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  .discography-content-top-media-img-wrapper {
+    display: none;
+  }
+
+  .discography-content-top-media-player-box-top-gallery {
+    height: 100%;
+    flex-direction: column;
+  }
+
+   .discography-content-top-media-player-box-top-text-container-gallery {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+
+  .discography-content-gallery-header {
+    font-size: 3rem;
+  }
+
+  .discography-content-gallery-subheader {
+    font-size: 1.1rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+
+  /* TODO 5.2.: https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row Dynamic flex box*/
+
 }
 
 /* Tablet size */
@@ -56,23 +90,37 @@
 
 
     /***** TOP MEDIA BOX START ****/
+    .discography-content-top-media-img-wrapper img {
+      display: block;
+    }
+
+    .discography-content-top-media-player-box-top-gallery {
+      height: 35%;
+    }
+
     .discography-content-top-media-player-box-top-gallery img {
-      width: 15%
+      width: 15%;
+      margin: 1rem 1rem 1rem 2rem;
     }
     
     .discography-content-top-media-player-box-top-text-container-gallery {
       font-size: 0.5rem;
+      margin: 1rem 2rem 1rem 1rem;
     }
     
     .discography-content-top-media-player-box-top-album-title {
       font-size: 1rem;
-    }
+    }    
     /***** TOP MEDIA BOX END ****/
 
 
     /***** ALBUM MEDIA BOX START ****/
     .discography-content-gallery-header {
       font-size: 3rem;
+    }
+
+    .discography-content-gallery-subheader {
+      font-size: 1.4rem;
     }
 
     .discography-content-top-albums-gallery-album-header {
@@ -108,9 +156,8 @@
     /***** MODAL END *****/
   }
 
-  /* PC size */
-  /* @media (min-width: 1281px) {   */
-  @media (min-width: 1281px) {  
+/* PC size */
+@media (min-width: 1281px) {  
 
   /* .discography-content-top-media {
     max-height: 80%;
@@ -130,12 +177,22 @@
 
 
   /***** TOP MEDIA BOX START ****/
+  .discography-content-top-media-img-wrapper img {
+    display: block;
+  }
+
+  .discography-content-top-media-player-box-top-gallery {
+    height: 35%;
+  }
+
   .discography-content-top-media-player-box-top-gallery img {
     width: 20%;
+    margin: 1rem 1rem 1rem 2rem;
   }
 
   .discography-content-top-media-player-box-top-text-container-gallery {
     font-size: 1rem;
+    margin: 1rem 2rem 1rem 1rem;
   }
 
   .discography-content-top-media-player-box-top-album-title {
@@ -225,7 +282,7 @@
   width: 100%;
   /* height: auto; */
   height: 100%;
-  display: block;
+  /* display: block; */
   object-fit: cover;
 }
 
@@ -351,21 +408,15 @@
 .discography-content-top-media-player-box-top-text-container-gallery {
   color: white;
   /* font-size: 1rem; */
-  margin: 1rem 2rem 1rem 1rem;
+  /* margin: 1rem 2rem 1rem 1rem; */
   font-family: Roboto-Regular;
 }
 
 .discography-content-top-media-player-box-top-gallery {
-  height: 35%;
+  /* height: 35%; */
   background: #1D1D1E;
   display: flex;
   align-items: center;
-}
-
-.discography-content-top-media-player-box-top-gallery img {
-  /* margin-left: 1.5rem; */
-  margin: 1rem 1rem 1rem 2rem;
-  /* width: 20%; */
 }
 
 .discography-content-gallery {
