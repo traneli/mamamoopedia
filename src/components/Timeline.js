@@ -19,7 +19,7 @@ function Timeline() {
             <h3>Under Construction</h3>
           </div> */}
           <div className="timeline-content-top">
-            <img class="timeline-content-top-logo" src="/static/media/mmm-logo-brown.667929c5.svg"/>
+            <img class="timeline-content-top-logo" src={images["mmm-logo-brown.svg"].default}/>
             <h2>Timeline</h2>
             <Carousel>
             {/* <CarouselItem>Item 1</CarouselItem>
