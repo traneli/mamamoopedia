@@ -25,6 +25,9 @@
 .timeline-content-top {
   width: 100%;
   background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .timeline-content-top-logo {

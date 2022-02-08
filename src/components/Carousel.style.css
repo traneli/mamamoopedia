@@ -1,5 +1,13 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel {
   overflow: hidden;
+  width: 25%;
 }
 
 .inner { 
@@ -18,8 +26,15 @@
 .indicators {
   display: flex;
   justify-content: center;
+  margin: 2rem;
 }
 
-.indicators > button {
-  margin: 5px;
+.indicator-button {
+  width: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.indicator-button:hover {
+  opacity: 0.8;
 }

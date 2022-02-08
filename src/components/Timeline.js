@@ -5,6 +5,7 @@ import * as utils from "../utils.js"
 import PageTemplate from '../PageTemplate';
 import Carousel, { CarouselItem } from './Carousel';
 import { MamamooDiscographyData } from '../data/MamamooDiscographyData';
+import { MamamooTimelineData } from '../data/MamamooTimelineData';
 
 function Timeline() {
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
@@ -32,6 +33,13 @@ function Timeline() {
                 </CarouselItem>
               )
             }
+            {/* {
+              MamamooTimelineData.test.map(album => 
+                <CarouselItem>
+                  <p>{album}</p>
+                </CarouselItem>
+              )
+            } */}
           </Carousel>
           </div>
         </section>
