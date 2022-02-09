@@ -6,9 +6,9 @@ import * as utils from '../utils.js';
 
 import './Carousel.style.css';
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, width, itemClass }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
+    <div className={itemClass} style={{ width: width }}>
       {children}
     </div>
   );
@@ -35,40 +35,43 @@ const Carousel = ({ children }) => {
   });
   
   return (
-    <div className="carousel-container">
-      <div className="indicators">
-        <img class="indicator-button" src={images["carousel_arrow_left.svg"].default} onClick={() => updateIndex(activeIndex - 1)}/>
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-          >
-          Prev
-        </button> */}
-      </div>
-      <div 
-        {...handlers}
-        className="carousel"
-      >
-        <div className="inner"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
-        })}
+    <>
+      <div className="carousel-container">
+        <div className="indicators">
+          <img class="indicator-button" src={images["carousel_arrow_left.svg"].default} onClick={() => updateIndex(activeIndex - 1)}/>
+        </div>
+        <div 
+          {...handlers}
+          className="carousel"
+        >
+          <div className="inner"
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          {React.Children.map(children, (child, index) => {
+            return React.cloneElement(child, { width: "100%" });
+          })}
+          </div>
+        </div>
+        <div className="indicators">
+          <img class="indicator-button" src={images["carousel_arrow_right.svg"].default} onClick={() => updateIndex(activeIndex + 1)}/>
         </div>
       </div>
-      <div className="indicators">
-      <img class="indicator-button" src={images["carousel_arrow_right.svg"].default} onClick={() => updateIndex(activeIndex + 1)}/>
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-          >
-          Next
-        </button> */}
+      <div className="carousel-page-labels">
+        {
+          React.Children.map(children, (child, index) => {
+            return (
+              <button
+                className={`${index === activeIndex ? "active" : ""}`}
+                onClick={() => {
+                  updateIndex(index);
+                }}
+              >
+              </button>
+            );
+          })
+        }
       </div>
-    </div>
+    </>
   );
 };
 

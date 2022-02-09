@@ -23,23 +23,25 @@ function Timeline() {
             <img class="timeline-content-top-logo" src={images["mmm-logo-brown.svg"].default}/>
             <h2>Timeline</h2>
             <Carousel>
-            {/* <CarouselItem>Item 1</CarouselItem>
-            <CarouselItem>Item 2</CarouselItem>
-            <CarouselItem>Item 3</CarouselItem> */}
-            {
+            {/* {
               MamamooDiscographyData.albums.map(album => 
-                <CarouselItem>
+                <CarouselItem itemClass="carousel-item-album">
                   <img src={albumImages[album.image].default}/>
                 </CarouselItem>
               )
-            }
-            {/* {
-              MamamooTimelineData.test.map(album => 
-                <CarouselItem>
-                  <p>{album}</p>
+            } */}
+            {
+              MamamooTimelineData.timeline.map(era => 
+                <CarouselItem itemClass="carousel-item">
+                  <h2>{era.year}</h2>
+                  {/* {
+                    era.events.map(event =>
+                      <p>{event.date}</p>  
+                    )
+                  } */}
                 </CarouselItem>
               )
-            } */}
+            }
           </Carousel>
           </div>
         </section>
