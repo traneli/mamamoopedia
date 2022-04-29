@@ -49,7 +49,6 @@
   align-items: center;
   overflow: auto;
   font-family: Roboto-Regular;
-  background: #E0D2C7;
 }
 
 .resources-content-top {
@@ -57,7 +56,7 @@
 }
 
 .resources-content-top h2 {
-  color: #9A6C57;
+  color: #55A965;
   /* font-size: 5rem; */
   /* margin-top: 3rem; */
   margin-bottom: 0;

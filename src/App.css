@@ -305,6 +305,11 @@
   color: #61dafb;
 }
 
+.home-section-container {
+  width: 100%;
+  height: 100%;
+}
+
 .home-container {
   position: fixed;
   /* background: rgba(0, 0, 0, 0.5); */
@@ -325,7 +330,7 @@
   align-items: center;
   width: 50%;
   font-size: 1.2rem;
-  color: #9A6C57;
+  color: white;
   font-family: Roboto-Bold;
   /* height: 20%; */
 }
@@ -363,7 +368,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* z-index: 99; */
+  background: #55A965;
+  z-index: 99;
 }
 
 .div-header-logo-btn {
@@ -561,12 +567,12 @@
 
 .about-content-footer {
   width: 100%;
-  background: #9A6C57;
+  background: #55A965;
   margin-top: auto;
 }
 
 .about-content-footer p {
-  color: #E0D2C7;
+  color: white;
   font-size: 1.2rem;
   font-family: Roboto-Bold;
   margin-top: 2rem;
@@ -727,7 +733,7 @@ TODO: Fix menu border animation
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
-  background: #9A6C57;
+  background: #55A965;
 }
 
 .media-button {

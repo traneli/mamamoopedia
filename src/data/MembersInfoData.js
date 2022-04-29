@@ -3,7 +3,7 @@ export const MembersInfo = [
       name: 'Moonbyul / 문별',
       id: 'moonbyul',
       fullName: 'Moon Byul Yi / 문별이 / 文星伊',
-      image: 'waw_member_moonbyul.jpg',
+      image: 'member_moonbyul.jpg',
       information: 
       '22 December 1992 / Capricorn / Monkey / Blood Type B \\n' + 
       'Rapper & Performance\\n' +
@@ -47,7 +47,7 @@ export const MembersInfo = [
       name: 'Solar / 솔라',
       id: 'solar',
       fullName: 'Kim Yong Sun / 김용선 / 金容仙',
-      image: 'waw_member_solar.jpg',
+      image: 'member_solar.jpg',
       information: 
       '21 February 1991 / Pisces / Goat / Blood Type B\\n' +
       'Leader & Vocal \\n' +
@@ -87,7 +87,7 @@ export const MembersInfo = [
       name: 'Wheein / 휘인',
       id: 'wheein',
       fullName: 'Jung Whee In / 정휘인 / 丁輝人',
-      image: 'waw_member_wheein.jpg',
+      image: 'member_wheein.jpg',
       information: 
       '17 April 1995 / Aries / Pig / Blood Type B\\n' +
       'Vocal & Performance\\n' +
@@ -124,7 +124,7 @@ export const MembersInfo = [
       name: 'Hwasa / 화사',
       id: 'hwasa',
       fullName: 'Ahn Hye Jin / 안혜진 / 安惠眞',
-      image: 'waw_member_hwasa.jpg',
+      image: 'member_hwasa.jpg',
       information: 
       '23 July 1995 / Leo / Pig / Blood Type A\\n' +
       'Vocal, Rapper & Maknae \\n' +

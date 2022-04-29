@@ -10,7 +10,7 @@ function UpperButtonMenuSelection() {
 
   const activeStyle = {
     fontWeight: "bold",
-    borderBottom: "1px solid #000",
+    borderBottom: "1px solid white",
     paddingBottom: "3px"
   };
 

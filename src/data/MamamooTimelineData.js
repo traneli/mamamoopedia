@@ -29,31 +29,66 @@ export const MamamooTimelineData = {
       },
       {
         "year": "2020",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2020",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2019",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2019",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2018",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2018",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2017",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2017",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2016",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2016",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2015",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2015",
+            "description": "The 1st day of January"
+          }
+        ]
       },
       {
         "year": "2014",
-        "events": []
+        "events": [
+          {
+            "date": "January 1, 2014",
+            "description": "The 1st day of January"
+          }
+        ]
       }
     ]
 };

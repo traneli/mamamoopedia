@@ -9,7 +9,7 @@ function Header() {
     <section class="div-header">
       <Link to="/" className="upperbuttonmenu-label">
         <button type="button" class="div-header-logo-btn">
-          <img class="div-header-logo" src={images["mmm-logo-black.svg"].default}/>
+          <img class="div-header-logo" src={images["mmm-logo-white.svg"].default}/>
         </button>
       </Link>
       <UpperButtonMenuSelection/>
