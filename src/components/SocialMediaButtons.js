@@ -13,14 +13,14 @@ const urls = [
 
 function SocialMediaButtons(props) {
     const images = utils.importAll(require.context('../assets', false, /\.svg/));
-
+    
     function openPage(url) {
         window.open(url, "_blank");
     }
 
     return (
       // <div class="socialmedia-btn-bar">
-      <div class={`socialmedia-btn-bar-${props.background}`}>
+      <div class={`socialmedia-btn-bar-${props.background}`} position={props.position}>
         <button type="button" class="media-button" onClick={() => openPage(urls[0])}>
           <img class="icon" src={images["waw_instagram.svg"].default}/>
         </button>

@@ -1,12 +1,13 @@
 @font-face {
-  font-family: Roboto-Regular;
-  src: url('../assets/fonts/Roboto-Regular.ttf');
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
 }
 
 @font-face {
-  font-family: Roboto-Bold;
-  src: url('../assets/fonts/Roboto-Bold.ttf');
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
 }
+
 
 /* Mobile size */
 @media screen and (max-width: 600px){
@@ -93,7 +94,7 @@
 
 .upperbuttonmenu-label {
   color: white;
-  font-family: Roboto-Regular;
+  font-family: RedHatDisplay-Regular;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
