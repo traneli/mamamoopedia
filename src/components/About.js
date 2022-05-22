@@ -1,12 +1,16 @@
+import { useContext } from 'react';
 import { Link } from "react-router-dom";
 import * as utils from "../utils.js"
 import UpperButtonMenuSelection from "./UpperButtonMenuSelection.js";
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
 import Header from "./Header.js";
-import PageTemplate from '../PageTemplate'; // TODO: Test layout/template thing
+import PageTemplate from '../PageTemplate';
+import MemberContext from '../hoc/context/MainContext';
 
 function About() {
   const images = utils.importAll(require.context('../assets', false, /\.(jp?g|svg)/));
+
+  const { member, setMember } = useContext(MemberContext);
 
   return (
     <PageTemplate>
@@ -18,19 +22,25 @@ function About() {
         <img class="about-content-top-image" src={images["waw_mmm_concert.jpg"].default}/>
         <div class="about-content-center">
           <div class="about-content-center-container">
-            {/* <img src={images["mmm_moustache_white.svg"].default}/>     */}
+            <div class="about-content-center-relative-pos">
+              <img src={images["mmm_moustache_white.svg"].default}/>    
+              <h1>MAMAMOO</h1>
+            </div>
             <p>
-              <span class="span-coloured-text">MAMAMOO</span> (Korean: 마마무, stylized in all caps) is a South Korean girl group formed by RBW (formerly WA Entertainment) in 2014, composed of four members: <span class="span-coloured-text">Solar, Moonbyul, Wheein, and Hwasa</span>. 
-              The group officially debuted with their single "Mr. Ambiguous" on June 18, 2014. 
-              Their debut was considered by some critics as one of the best K-pop debuts of 2014. They are recognized for their retro, jazz, R&B concepts and their strong vocal performances
+              <span class="span-coloured-text">MAMAMOO</span> (Korean: 마마무, stylized in all caps) is a South Korean girl group formed by RBW (formerly WA Entertainment) in 2014, composed of four members: <span class="span-coloured-text">Solar, Moonbyul, Wheein, and Hwasa.</span> The group officially debuted with their 1st mini album, <span class="span-coloured-text">'Hello'</span> with the title track, <span class="span-coloured-text">'Mr. Ambiguous'</span> on <span class="span-coloured-text">June 19, 2014.</span>
+              They are recognized for their vocal prowess, versatile discography, and dynamic stages. It is also worth noting that each member has their own solo career. 
+              <br/><br/>
+              Their fandom name is: <span class="span-coloured-text">Moomoo</span>
             </p>
           </div>
         </div>
         <div class="about-content-low-center">
-          {/* <Link to="/members/moonbyul" class="about-content-low-center-button"> */}
-            {/* <p>Moonbyul</p> */}
-            <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default}/>
-          {/* </Link> */}
+          <div class="about-content-low-center-button">
+            <Link to="/members/moonbyul">
+              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("moonbyul")}/>
+              {/* <p>MOONBYUL</p> */}
+            </Link>
+          </div>
           <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"].default}/>
           <img class="about-content-low-center-button" src={images["wheein_about_icon.jpg"].default}/>
           <img class="about-content-low-center-button" src={images["hwasa_about_icon.jpg"].default}/>
