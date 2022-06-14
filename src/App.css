@@ -518,18 +518,21 @@
 }
 
 .about-content-low-center-button {
-  /* height: 100%; */
+  height: 100%;
   margin: 0 1rem 0 1rem;
 }
 
-.about-content-low-center-button p {
-  position: absolute;
-  top: 45%;
-  left: 27%;
-  transform: translate(-50%, -50%);
+.about-content-low-center-button-header {
+  position: relative;
+  left: 9.5rem;
+  bottom: 24rem;
   color: white;
   font-family: RedHatDisplay-Bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+.about-content-low-center-button a {
+  text-decoration: none;
 }
 
 .about-content-low-center-img-wrapper {

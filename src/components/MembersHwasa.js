@@ -48,9 +48,11 @@ function MembersHwasa() {
       <div class="member-page-content">
         <img class="member-page-img-pfp" src={images[MembersInfo[3].image].default}/>
         <div class="member-page-information-box">
+          <div class="member-page-information-gradient-line"></div>
           <h1>{MembersInfo[3].name}</h1>
           <h2>{MembersInfo[3].fullName}</h2>
           <div class="member-page-information-box-text-content">
+            
             <NewlineText text={MembersInfo[3].information}/>
           </div>
           <div class="member-page-information-box-text-content">

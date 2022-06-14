@@ -19,7 +19,7 @@ function About() {
           <h2>Who is MAMAMOO?</h2>
           <p>Learn more about the vocal k-pop girl group with immense stage presence</p>
         </div> */}
-        <img class="about-content-top-image" src={images["waw_mmm_concert.jpg"].default}/>
+        <img class="about-content-top-image" src={images["mmm_group_5th_fanclub.jpg"].default}/>
         <div class="about-content-center">
           <div class="about-content-center-container">
             <div class="about-content-center-relative-pos">
@@ -36,14 +36,21 @@ function About() {
         </div>
         <div class="about-content-low-center">
           <div class="about-content-low-center-button">
-            <Link to="/members/moonbyul">
-              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("moonbyul")}/>
-              {/* <p>MOONBYUL</p> */}
-            </Link>
+            {/* <Link to={"/members/moonbyul"}> */}
+              {/* <div class="about-content-low-center-button-header">MOONBYUL</div> */}
+              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default}/>
+              {/* <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("test")}/> */}
+            {/* </Link> */}
           </div>
-          <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"].default}/>
-          <img class="about-content-low-center-button" src={images["wheein_about_icon.jpg"].default}/>
-          <img class="about-content-low-center-button" src={images["hwasa_about_icon.jpg"].default}/>
+          <div class="about-content-low-center-button">
+            <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"].default}/>
+          </div>
+          <div class="about-content-low-center-button">
+            <img class="about-content-low-center-button" src={images["wheein_about_icon.jpg"].default}/>
+          </div>
+          <div class="about-content-low-center-button">
+            <img class="about-content-low-center-button" src={images["hwasa_about_icon.jpg"].default}/>
+          </div>
         </div>
         {/* <div class="about-content-center">
           <p>

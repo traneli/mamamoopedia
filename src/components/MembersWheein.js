@@ -48,6 +48,7 @@ function MembersWheein() {
       <div class="member-page-content">
         <img class="member-page-img-pfp" src={images[MembersInfo[2].image].default}/>
         <div class="member-page-information-box">
+          <div class="member-page-information-gradient-line"></div>
           <h1>{MembersInfo[2].name}</h1>
           <h2>{MembersInfo[2].fullName}</h2>
           <div class="member-page-information-box-text-content">

@@ -42,7 +42,7 @@ const TimelineNavigation = (props) => {
       <nav className="timelinenav-content">
         <div className="timelinenav-content-top">
           {
-            sortedTimelineData.map(element => 
+            sortedTimelineData.map((element, index) => 
               <div className="timelinenav-button">
                 <NavLink to={"/timeline/" + element.year} className="timelinenav-label" activeStyle={activeStyle} onClick={() => setSelectedYear(element.year)}>
                 {/* <NavLink to={"/timeline/" + element.year} className="timelinenav-label"> */}
@@ -53,12 +53,17 @@ const TimelineNavigation = (props) => {
           }
         </div>
         <div className="timelinenav-content-bottom">
-          {
+          {/* {
             selectedYearData && selectedYearData.map(element => 
               <div>
                 <h3>{element.date}</h3>
                 <p>{element.description}</p>
               </div>  
+            )
+          } */}
+          {
+            selectedYearData && selectedYearData.map(item =>
+              <p>{console.log(item)}</p>
             )
           }
         </div>

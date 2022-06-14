@@ -3,18 +3,73 @@ export const MamamooTimelineData = {
     [
       {
         "year": "2022",
+        "months": [
+          {
+            "month": "January",
+            "events": [
+              {
+                "date": "January 16, 2022",
+                "description": "Wheein's 2nd Mini Album - Whee release",
+                "img": ""
+              }
+            ]
+          },
+          {
+            "month": "March",
+            "events": [
+              {
+                "date": "March 5-6, 2022",
+                "description": "Moonbyul's  Director's Cut: 6equence Concert Day 1 & 2",
+                "img": ""
+              },
+              {
+                "date": "March 16, 2022",
+                "description": "Solar's 1st Mini Album 容 : FACE release",
+                "img": ""
+              }
+            ]
+          }
+        ],
         "events": [
           {
-            "date": "January 1, 2022",
-            "description": "The 1st day of January"
+            "date": "January 16, 2022",
+            "description": "Wheein's 2nd Mini Album - Whee release"
           },
           {
-            "date": "January 2, 2022",
-            "description": "The 2nd day of January."
+            "date": "January 19, 2022",
+            "description": "Moonbyul's 3rd Mini Album - 6equence release"
           },
           {
-            "date": "February 1, 2022",
-            "description": "The 1st day of February."
+            "date": "March 5-6, 2022",
+            "description": "Moonbyul's  Director's Cut: 6equence Concert Day 1 & 2"
+          },
+          {
+            "date": "March 16, 2022",
+            "description": "Solar's 1st Mini Album 容 : FACE release"
+          },
+          {
+            "date": "March 23, 2022",
+            "description": "I Say Mamamoo: The Best (Japan ver.) release"
+          },
+          {
+            "date": "March 25, 2022",
+            "description": "Mamamoo: Where Are We Now documentary release"
+          },
+          {
+            "date": "April 17, 2022",
+            "description": "Wheein's 2022 Wheein Fanmeeting D-Day Part 1 & 2"
+          },
+          {
+            "date": "April 28, 2022",
+            "description": "Moonbyul's 2nd Single Album C.I.T.T release"
+          },
+          {
+            "date": "May 14-15, 2022",
+            "description": "Mamamoo in Frankfurt, Germany for Kpop.Flex"
+          },
+          {
+            "date": "May 28, 2022",
+            "description": "Solar's musical debut in Mata Hari"
           }
         ]
       },
