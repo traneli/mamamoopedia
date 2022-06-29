@@ -9,6 +9,9 @@ const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|
 
 function MembersMain() {
   const { member, setMember } = useContext(MemberContext);
+  const value = { member, setMember }
+
+  console.log(value.member)
 
   const { url } = useRouteMatch();
 

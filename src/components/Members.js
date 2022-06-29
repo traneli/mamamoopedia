@@ -12,6 +12,8 @@ function Members() {
   const [member, setMember] = useState("");
   const value = { member, setMember };
 
+  // console.log(value.member)
+
   function MembersContent(props){
     const selectedMember = props.selectedMember
 

@@ -18,6 +18,8 @@ const TimelineNavigation = (props) => {
 
   const sortedTimelineData = JsonToArray(props.list);
 
+  console.log(sortedTimelineData[0])
+
   const activeStyle = {
     fontWeight: "bold",
     borderBottom: "1px solid #000",
@@ -63,8 +65,8 @@ const TimelineNavigation = (props) => {
           } */}
           {
             selectedYearData && selectedYearData.map(item =>
-              <p>{console.log(item)}</p>
-            )
+                <p>{console.log(item)}</p>
+              )
           }
         </div>
       </nav>

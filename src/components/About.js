@@ -11,6 +11,7 @@ function About() {
   const images = utils.importAll(require.context('../assets', false, /\.(jp?g|svg)/));
 
   const { member, setMember } = useContext(MemberContext);
+  const value = { member, setMember }
 
   return (
     <PageTemplate>
@@ -36,11 +37,11 @@ function About() {
         </div>
         <div class="about-content-low-center">
           <div class="about-content-low-center-button">
-            {/* <Link to={"/members/moonbyul"}> */}
+            <Link to={"/members/moonbyul"}>
               {/* <div class="about-content-low-center-button-header">MOONBYUL</div> */}
-              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default}/>
-              {/* <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("test")}/> */}
-            {/* </Link> */}
+              {/* <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default}/> */}
+              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("moonbyul")}/>
+            </Link>
           </div>
           <div class="about-content-low-center-button">
             <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"].default}/>
