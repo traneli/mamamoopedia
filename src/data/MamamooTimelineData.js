@@ -8,24 +8,39 @@ export const MamamooTimelineData = {
             "month": "January",
             "events": [
               {
-                "date": "January 16, 2014",
-                "description": "Wheein's 2nd Mini Album - Whee release",
+                "date": "January 8, 2014",
+                "description": "Mamamoo collaborates with Bumkey with a song called 'Don't Be Happy'",
                 "img": ""
               }
             ]
           },
           {
-            "month": "March",
+            "month": "February",
             "events": [
               {
-                "date": "March 5-6, 2014",
-                "description": "Moonbyul's  Director's Cut: 6equence Concert Day 1 & 2",
+                "date": "February 11, 2014",
+                "description": "Mamamoo's second collaboration is 'Peppermint Chocolate' with Wheesung",
                 "img": ""
-              },
+              }
+            ]
+          },
+          {
+            "month": "May",
+            "events": [
               {
-                "date": "March 16, 2014",
-                "description": "Solar's 1st Mini Album 容 : FACE release",
+                "date": "May 30, 2014",
+                "description": "Mamamoo releases another collaboration with Geeks, 'HeeHeeHaHeHo'",
                 "img": ""
+              }
+            ]
+          },
+          {
+            "month": "June",
+            "events": [
+              {
+                "date": "June 19, 2014",
+                "description": "Mamamoo officially debuts with a lead single 'Mr Ambiguous' from their first EP 'Hello' on M!Countdown",
+                "img": "mmm_mrambiguous.jpg"
               }
             ]
           }

@@ -8,6 +8,15 @@
   src: url('../assets/fonts/Roboto-Bold.ttf');
 }
 
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
+}
 
 .timeline-content {
   width: 100%;
@@ -88,13 +97,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: RedHatDisplay-Regular;
+  background: white;
 }
 
 .timeline-header {
   width: fit-content;
   background-color: #111;
   padding: 0;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  display: flex;
 }
 
 .timeline-header li {
@@ -104,13 +117,78 @@
 }
 
 .timeline-header li a {
-  color: #FFF;
-  font-weight: bold;
+  /* color: #FFF; */
+  /* font-weight: bold; */
   text-decoration: none;
   padding: 20px;
   display: inline-block;
 }
 
+.timeline-header li:first-of-type {
+  margin-left: 1rem;
+}
+
+.timeline-header li:last-of-type {
+  margin-right: 1rem;
+}
+
+.timeline-verticalline {
+  border-left: 2px solid white;
+  height: 1.6rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+.timeline-verticalline:last-child {
+  display: none;
+}
+
+.isActive {
+  color: #55A965;
+  font-weight: bold;
+}
+
+.notActive {
+  color: white;
+  font-weight: normal;
+}
+
+.timeline-data {
+  display: flex;
+  width: 50rem;
+  justify-content: flex-start;
+}
+
+.timelineyear-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.timelineyear-data li {
+  margin-bottom: 1rem;
+}
+
+.timelineyear-data h1 {
+  text-transform: uppercase;
+  font-family: RedHatDisplay-Bold;
+}
+
+.timelineyear-data-element {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.timelineyear-data-element img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.timelineyear-data-element:last-of-type > span {
+  display: none;
+}
 
 
 .temp-timeline-underconstruction-container {

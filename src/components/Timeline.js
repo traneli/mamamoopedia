@@ -7,7 +7,7 @@ import PageTemplate from '../PageTemplate';
 import TimelineNavigation from './TimelineNavigation';
 import Carousel, { CarouselItem } from './Carousel';
 import TimelineYear from './TimelineYear';
-import { MamamooDiscographyData } from '../data/MamamooDiscographyData';
+import SocialMediaButtons from '../components/SocialMediaButtons.js';
 import { MamamooTimelineData } from '../data/MamamooTimelineData';
 
 import TimeLineContext from '../hoc/context/TimelineContext';
@@ -39,15 +39,28 @@ function Timeline() {
             {
               years.map(year =>
                 // <li><NavLink to={`/timeline/${year}`} activeStyle={activeStyle}>{year}</NavLink></li> 
-                <li><NavLink to={`/timeline/${year}`} className={`${currentYear === year ? 'isActive' : 'notActive'}`} onClick={() => setCurrentYear(year)} activeStyle={activeStyle}>{year}</NavLink></li> 
+                <>
+                  <li><NavLink to={`/timeline/${year}`} className={`${currentYear === year ? 'isActive' : 'notActive'}`} onClick={() => setCurrentYear(year)}>{year}</NavLink></li> 
+                  <span class="timeline-verticalline"></span>
+                </>
               )
             }
             </ul>
             <div className="timeline-data">
+              <Route exact path="/timeline" component={TimelineYear}/>
               <Route path="/timeline/:id" component={TimelineYear}/>
+              {/* {
+                years.map(year => 
+                  <Route path="/timeline/:id" render={(props) => <Timeline {...props} year={year} />}/>
+                )
+              } */}
             </div>
           </Router>
         </div>
+        <footer class="about-content-footer">
+          <p>Get connected with MAMAMOO</p>
+          <SocialMediaButtons background="color"/>
+        </footer>
       </section>
     </PageTemplate>
   );
