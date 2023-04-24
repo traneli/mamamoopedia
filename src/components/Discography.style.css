@@ -8,23 +8,28 @@
   src: url('../assets/fonts/Roboto-Bold.ttf');
 }
 
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
+}
+
 /* Mobile size */
 @media screen and (max-width: 600px) {
   .discography-content-top-media-player-box-top-gallery img {
     margin: 2rem 1rem 1rem 2rem;
   }
 
-  .discography-content-top h2{
-    font-size: 3rem;
-    margin-top: 2rem;
-  }
-
-  .discography-content-top p {
+  /* .discography-content-top p {
     margin-bottom: 2rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     font-size: 1.1rem;
-  }
+  } */
 
   .discography-content-top-media-img-wrapper {
     display: none;
@@ -79,10 +84,9 @@
       margin-top: 2rem;
     }
     
-    .discography-content-top p {
-      /* font-size: 0.7rem; */
+    /* .discography-content-top p {
       margin-bottom: 2rem;
-    }
+    } */
     /***** TOP BOX END ****/
 
 
@@ -166,10 +170,10 @@
     margin-top: 3rem;
   }
 
-  .discography-content-top p {
+  /* .discography-content-top p {
     font-size: 1.4rem;
     margin-bottom: 3rem;
-  }
+  } */
   /***** TOP BOX END ****/
 
 
@@ -244,21 +248,81 @@
 
 .discography-content-top {
   width: 100%;
-  background: #E0D2C7;
+  position: relative;
+  display: inline-block;
 }
 
-.discography-content-top h2 {
-  color: #9A6C57;
-  /* font-size: 5rem; */ /*In media tags*/
-  /* margin-top: 3rem; */ /*In media tags*/
-  margin-bottom: 0;
+.discography-content-top-music {
+  position: absolute;
+  bottom: 4rem;
+  left: 54rem;
+  right: 54rem;
+  color: white;
+  font-family: Roboto-Bold;
+  font-size: 1.2rem;
 }
 
-.discography-content-top p {
-  /* margin-bottom: 3rem; */ /*In media tags*/
-  margin-top: 0.5rem;
-  /* font-size: 1.4rem; */ /*In media tags*/
+.discography-content-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: RedHatDisplay-Regular;
 }
+
+.discography-header {
+  width: fit-content;
+  background-color: #111;
+  padding: 0;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.discography-header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+.discography-header li a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.discography-header li:first-of-type {
+  margin-left: 1rem;
+}
+
+.discography-header li:last-of-type {
+  margin-right: 1rem;
+}
+
+.isActive {
+  color: #55A965;
+  font-weight: bold;
+}
+
+.notActive {
+  color: white;
+  font-weight: normal;
+}
+
+.discography-verticalline {
+  border-left: 2px solid white;
+  height: 1.6rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+.discography-verticalline:last-child {
+  display: none;
+}
+
+
+/****** OLD DISCOGRAPHY STYLES *******/
 
 .discography-content-top-media {
   width: 100%;

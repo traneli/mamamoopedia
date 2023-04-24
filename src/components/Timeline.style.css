@@ -108,6 +108,7 @@
   border-radius: 2rem;
   font-size: 1.3rem;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .timeline-header li {

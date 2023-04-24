@@ -1,13 +1,11 @@
-import './Discography.style.css';
+import './DiscographyOld.style.css';
 
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, NavLink, Route } from "react-router-dom";
+import * as utils from "../utils.js"
 import Album from './Album';
 import ModalGeneral from './ModalGeneral';
 import PageTemplate from '../PageTemplate';
-import DiscographyItem from './DiscographyItem';
 import { MamamooDiscographyData } from '../data/MamamooDiscographyData';
-import * as utils from "../utils.js"
+import { useEffect, useState } from 'react';
 
 function Discography() {
   const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg)/));
@@ -23,53 +21,20 @@ function Discography() {
     setModalOpen(!isModalOpen);
   }
 
-  function openPage(url) {
-    window.open(url, "_blank");
-  }
-
-  const [currentDiscography, setCurrentDiscography] = useState(0);
-
   return (
     <PageTemplate>
       <section class="discography-content">
         <ModalGeneral isModalOpen={isModalOpen} setModalOpen={handleModalClick} galleryType={galleryType} albumName={selectedAlbumInfo}/> 
         <div class="discography-content-top">
-          <img src={images["discography_header.jpg"].default}/>
-          <div class="discography-content-top-music">
-            <p>LISTEN NOW ON</p>
-            <button type="button" class="media-button" onClick={() => openPage("https://www.youtube.com/channel/UCNx0TXIuGVEA_TWB5H2I6Lg")}>
-              <img class="icon" src={images["icon_youtube_GREEN.svg"].default}/>
-            </button>
-            <button type="button" class="media-button" onClick={() => openPage("https://www.youtube.com/channel/UCNx0TXIuGVEA_TWB5H2I6Lg")}>
-              <img class="icon" src={images["icon_vlive_WHITE.svg"].default}/>
-            </button>
-            <button type="button" class="media-button" onClick={() => openPage("https://www.youtube.com/channel/UCNx0TXIuGVEA_TWB5H2I6Lg")}>
-              <img class="icon" src={images["icon_spotify_GREEN.svg"].default}/>
-            </button>
-          </div>
+          <h2>Latest Release</h2>
+          <p>In September 15, 2021, MAMAMOO returned with a compilation album 'I SAY MAMAMOO : THE BEST'</p>
         </div>
-        <div class="discography-content-bottom">
-          <Router>
-            <ul className="discography-header">
-              <li><NavLink to={`/discography/albums`} className={`${currentDiscography === "albums" ? 'isActive' : 'notActive'}`} onClick={() => setCurrentDiscography("albums")}>ALBUMS</NavLink></li> 
-              <span class="discography-verticalline"></span>
-              <li><NavLink to={`/discography/solos`} className={`${currentDiscography === "solos" ? 'isActive' : 'notActive'}`} onClick={() => setCurrentDiscography("solos")}>SOLOS</NavLink></li> 
-              <span class="discography-verticalline"></span>
-              <li><NavLink to={`/discography/cfs`} className={`${currentDiscography === "cfs" ? 'isActive' : 'notActive'}`} onClick={() => setCurrentDiscography("cfs")}>CFs, COLLABs & OSTs</NavLink></li> 
-              <span class="discography-verticalline"></span>
-            </ul>
-            <div className="timeline-data">
-              <Route exact path="/discography" component={DiscographyItem}/>
-              <Route path="/discography/:id" component={DiscographyItem}/>
-            </div>
-          </Router>
-        </div>
-        {/* <div class="discography-content-top-media">
+        <div class="discography-content-top-media">
           <div class="discography-content-top-media-img-wrapper">
             <img src={images["best_mmm_diamond.jpg"].default}/>
           </div>
           <Album album={MamamooDiscographyData.albums} showAlbum="I SAY MAMAMOO: THE BEST" formType={utils.generalForms.GALLERY}/>
-        </div> */}
+        </div>
         <div class="discography-content-gallery">
           <h2 class="discography-content-gallery-header">ALBUMS</h2>
           <p class="discography-content-gallery-subheader">MAMAMOO has released a total of 11 mini albums and 2 full albums</p>
@@ -87,7 +52,7 @@ function Discography() {
             </div>
           </div>
         </div>
-        {/* <div class="discography-content-gallery">
+        <div class="discography-content-gallery">
           <h2 class="discography-content-gallery-header">SOLOs</h2>
           <p class="discography-content-gallery-subheader">Aside from their group releases, MAMAMOO members have shown to have unique individual colors through their solo activities</p>
           <div class="discography-content-top-albums-gallery-container">
@@ -103,8 +68,8 @@ function Discography() {
               }
             </div>
           </div>
-        </div> */}
-        {/* <div class="discography-content-gallery">
+        </div>
+        <div class="discography-content-gallery">
           <h2 class="discography-content-gallery-header">CFs, SINGLES & OSTs</h2>
           <p class="discography-content-gallery-subheader">Throughout their whole career, MAMAMOO as a group and as individuals released several songs in this category</p>
           <div class="discography-content-top-albums-gallery-container">
@@ -113,7 +78,7 @@ function Discography() {
               <h3>Under Construction</h3>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
     </PageTemplate>
   )
