@@ -13,9 +13,7 @@
 
 # media
 /src/assets
-/src/assets/mmm_aya_1080p.mp4
-/src/assets/mmm_mmmuch_1080_compressed.mp4
-/src/assets/mmm_mmmuch_compressed.mp4
+/src/assets/*.mp4
 
 # misc
 .DS_Store
