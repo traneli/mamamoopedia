@@ -28,7 +28,7 @@ const DiscographyItem = ({ albumType }) => {
       return (
         MamamooDiscographyData.albums.map(album => {
           <div class="discography-content-top-albums-gallery-album">
-            <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.SOLOS)}/>
+            <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.ALBUMS)}/>
             <p class="discography-content-top-albums-gallery-album-header">{album.name}</p>
             <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
           </div>
@@ -42,10 +42,10 @@ const DiscographyItem = ({ albumType }) => {
           <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
         </div>
       })
-    } else {
+    } else if (type == "cfs") {
       MamamooDiscographyData.cfs.map(album => {
         <div class="discography-content-top-albums-gallery-album">
-          <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.SOLOS)}/>
+          <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.CFS)}/>
           <p class="discography-content-top-albums-gallery-album-header">{album.name}</p>
           <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
         </div>
