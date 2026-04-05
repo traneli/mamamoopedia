@@ -49,7 +49,6 @@ function ModalGeneral(props){
         overlayClassName="Overlay"
       >
         <Album album={galleryType} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/>
-        {/* <Album album={galleryType} showAlbum={props.albumName} formType={utils.generalForms.MODAL}/> */}
       </Modal>
     </div>
   );

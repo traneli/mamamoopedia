@@ -41,12 +41,12 @@ function MembersSolar() {
     <div class="member-page-container">
       <div class="member-page-back-button-content">
         <button class="member-page-back-button" onClick={() => handleBackButton()}>
-          <img src={images["arrow_left_black.svg"].default}/>
+          <img src={images["arrow_left_black.svg"]}/>
           Back to members
         </button>
       </div>
       <div class="member-page-content">
-        <img class="member-page-img-pfp" src={images[MembersInfo[1].image].default}/>
+        <img class="member-page-img-pfp" src={images[MembersInfo[1].image]}/>
         <div class="member-page-information-box">
         <div class="member-page-information-gradient-line"></div>
           <h1>{MembersInfo[1].name}</h1>
@@ -60,9 +60,9 @@ function MembersSolar() {
           <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[1].solo.url)}>Solar's latest solo work: {MembersInfo[1].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
-            <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[0].url)}/>
-            <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[1].url)}/>
-            <img class="member-page-information-box-media-btn" src={images["waw_youtube_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[1].socials[2].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"]} onClick={() => openMediaLink(MembersInfo[1].socials[0].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"]} onClick={() => openMediaLink(MembersInfo[1].socials[1].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_youtube_dark.svg"]} onClick={() => openMediaLink(MembersInfo[1].socials[2].url)}/>
           </div>
         </div>
       </div>

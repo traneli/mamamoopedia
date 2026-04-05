@@ -19,13 +19,13 @@ function Album(props) {
 
   if(formType === utils.generalForms.PICTURE) {
     return (
-      <img src={albumImages[selectedAlbum.image].default}/>
+      <img src={albumImages[selectedAlbum.image]} alt="album cover"/>
     )
   } else if(formType === utils.generalForms.MODAL) {
     return (
       <div class="discography-content-top-media-player-box-content-modal">
         <div class="discography-content-top-media-player-box-top-modal">
-          <img src={albumImages[selectedAlbum.image].default}/>
+          <img src={albumImages[selectedAlbum.image]} alt="album cover"/>
           <div class="discography-content-top-media-player-box-top-text-container-modal">
             <p class="discography-content-top-media-player-box-top-album-type">{selectedAlbum.type}</p>
             <h1 class="discography-content-top-media-player-box-top-album-title-modal">{selectedAlbum.name}</h1>
@@ -34,6 +34,7 @@ function Album(props) {
           </div>
         </div>
         <div class="discography-content-top-media-player-box-bottom-modal">
+          {/* <iframe styles="border-radius:0" src="https://open.spotify.com/embed/album/2yApvdfgG74FlAW2L4tlTW?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
           {
             selectedAlbum.songs.map(song => 
               <div class="discography-content-top-media-player-box-bottom-row">
@@ -52,7 +53,7 @@ function Album(props) {
     return (
       <div class="discography-content-top-media-player-box-content">
         <div class="discography-content-top-media-player-box-top-gallery">
-          <img src={albumImages[selectedAlbum.image].default}/>
+          <img src={albumImages[selectedAlbum.image]} alt="album cover"/>
           <div class="discography-content-top-media-player-box-top-text-container-gallery">
             <p class="discography-content-top-media-player-box-top-album-type">{selectedAlbum.type}</p>
             <h1 class="discography-content-top-media-player-box-top-album-title">{selectedAlbum.name}</h1>

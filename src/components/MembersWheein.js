@@ -41,12 +41,12 @@ function MembersWheein() {
     <div class="member-page-container">
       <div class="member-page-back-button-content">
         <button class="member-page-back-button" onClick={() => handleBackButton()}>
-          <img src={images["arrow_left_black.svg"].default}/>
+          <img src={images["arrow_left_black.svg"]}/>
           Back to members
         </button>
       </div>
       <div class="member-page-content">
-        <img class="member-page-img-pfp" src={images[MembersInfo[2].image].default}/>
+        <img class="member-page-img-pfp" src={images[MembersInfo[2].image]}/>
         <div class="member-page-information-box">
           <span class="member-page-information-gradient-line"></span>
           <h1>{MembersInfo[2].name}</h1>
@@ -60,8 +60,8 @@ function MembersWheein() {
           <button class="member-page-information-box-solo-btn" onClick={() => openMediaLink(MembersInfo[2].solo.url)}>Wheein's latest solo work: {MembersInfo[2].solo.name}</button>
           <p class="member-page-information-box-social-title">Socials:</p>
           <div class="member-page-information-box-media-btn-content">
-            <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[2].socials[0].url)}/>
-            <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"].default} onClick={() => openMediaLink(MembersInfo[2].socials[1].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_spotify_dark.svg"]} onClick={() => openMediaLink(MembersInfo[2].socials[0].url)}/>
+            <img class="member-page-information-box-media-btn" src={images["waw_instagram_dark.svg"]} onClick={() => openMediaLink(MembersInfo[2].socials[1].url)}/>
           </div>
         </div>
       </div>

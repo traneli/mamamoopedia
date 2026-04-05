@@ -20,22 +20,22 @@ function MembersMain() {
       <div class="members-main-content-image-group">
         <Link to={`${url}/moonbyul`} class="members-main-content-image-group-link">
           <button type="button" class="members-main-content-image-group-btn" onClick={() => setMember("moonbyul")}>
-            <img src={images["thebest_moonbyul.jpg"].default}/>
+            <img src={images["thebest_moonbyul.jpg"]}/>
           </button>
         </Link>
         <Link to={`${url}/solar`} class="members-main-content-image-group-link" onClick={() => setMember("solar")}>
           <button type="button" class="members-main-content-image-group-btn">
-            <img src={images["thebest_solar.jpg"].default}/>
+            <img src={images["thebest_solar.jpg"]}/>
           </button>
         </Link>
         <Link to={`${url}/wheein`} class="members-main-content-image-group-link" onClick={() => setMember("wheein")}>
           <button type="button" class="members-main-content-image-group-btn">
-            <img src={images["thebest_wheein.jpg"].default}/>
+            <img src={images["thebest_wheein.jpg"]}/>
           </button>
         </Link>
         <Link to={`${url}/hwasa`} class="members-main-content-image-group-link" onClick={() => setMember("hwasa")}>
           <button type="button" class="members-main-content-image-group-btn">
-            <img src={images["thebest_hwasa.jpg"].default}/>
+            <img src={images["thebest_hwasa.jpg"]}/>
           </button>
         </Link>
       </div>

@@ -24,36 +24,35 @@ const DiscographyItem = ({ albumType }) => {
   }
 
   function CheckAlbumType(type) {
-    if(type == "albums" || id == undefined) {
+    if(type === "albums" || id === undefined) {
       return (
-        MamamooDiscographyData.albums.map(album => {
+        console.log(MamamooDiscographyData),
+        MamamooDiscographyData.albums.map(album => (
           <div class="discography-content-top-albums-gallery-album">
-            <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.ALBUMS)}/>
+            <img src={albumImages[album.image]} alt="album cover" onClick={() => handleModalClick(album.name, utils.discographyType.ALBUMS)}/>
             <p class="discography-content-top-albums-gallery-album-header">{album.name}</p>
             <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
           </div>
-        })
+        ))
       )
-    } else if (type == "solos") {
-      MamamooDiscographyData.solos.map(album => {
+    } else if (type === "solos") {
+      MamamooDiscographyData.solos.map(album => (
         <div class="discography-content-top-albums-gallery-album">
-          <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.SOLOS)}/>
+          <img src={albumImages[album.image]} alt="album cover" onClick={() => handleModalClick(album.name, utils.discographyType.SOLOS)}/>
           <p class="discography-content-top-albums-gallery-album-header">{album.name}</p>
           <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
         </div>
-      })
-    } else if (type == "cfs") {
-      MamamooDiscographyData.cfs.map(album => {
+      ))
+    } else if (type === "cfs") {
+      MamamooDiscographyData.cfs.map(album => (
         <div class="discography-content-top-albums-gallery-album">
-          <img src={albumImages[album.image].default} onClick={() => handleModalClick(album.name, utils.discographyType.CFS)}/>
+          <img src={albumImages[album.image]} alt="album cover" onClick={() => handleModalClick(album.name, utils.discographyType.CFS)}/>
           <p class="discography-content-top-albums-gallery-album-header">{album.name}</p>
           <p class="discography-content-top-albums-gallery-album-subheader">{album.date}</p>
         </div>
-      })
+      ))
     }
   }
-
-  console.log(albumType)
 
   return (
     <>
@@ -73,7 +72,7 @@ const DiscographyItem = ({ albumType }) => {
         //                     <>
         //                       <li>{event.description}</li>
         //                       {
-        //                         event.img != "" ? <img src={images[`${event.img}`].default}/> : ""
+        //                         event.img != "" ? <img src={images[`${event.img}`]}/> : ""
         //                       }
         //                     </>
         //                   )
@@ -96,7 +95,7 @@ const DiscographyItem = ({ albumType }) => {
         //                     <>
         //                       <li>{event.description}</li>
         //                       {
-        //                         event.img != "" ? <img src={images[`${event.img}`].default}/> : ""
+        //                         event.img != "" ? <img src={images[`${event.img}`]}/> : ""
         //                       }
         //                     </>
         //                   )

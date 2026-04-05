@@ -31,7 +31,7 @@ function Timeline() {
     <PageTemplate>
       <section class="timeline-content">
         <div class="timeline-content-top">
-          <img src={images["mmm_timeline_banner.jpg"].default}/>
+          <img src={images["mmm_timeline_banner.jpg"]}/>
         </div>
         <div class="timeline-content-bottom">
           <Router>
@@ -70,7 +70,7 @@ function Timeline() {
   //       <PageTemplate>
   //         <section class="timeline-content">
   //           <div className="timeline-content-top">
-  //             <img class="timeline-content-top-logo" src={images["mmm-logo-black.svg"].default}/>
+  //             <img class="timeline-content-top-logo" src={images["mmm-logo-black.svg"]}/>
   //             <h2>Timeline</h2>
   //             <TimelineNavigation list={MamamooTimelineData.timeline}/>
   //             {/* <Carousel>

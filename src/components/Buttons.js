@@ -27,7 +27,7 @@ function Buttons() {
         </Link>
       </div>
       <div className="general-btn">
-        <Link to="/discography" className="general-link-btn-label">
+        <Link to="/discography/albums" className="general-link-btn-label">
           Discography
         </Link>
       </div>

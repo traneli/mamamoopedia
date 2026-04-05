@@ -252,6 +252,12 @@
   display: inline-block;
 }
 
+.discography-content-top img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+}
+
 .discography-content-top-music {
   position: absolute;
   bottom: 4rem;

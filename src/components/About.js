@@ -20,11 +20,11 @@ function About() {
           <h2>Who is MAMAMOO?</h2>
           <p>Learn more about the vocal k-pop girl group with immense stage presence</p>
         </div> */}
-        <img class="about-content-top-image" src={images["mmm_group_5th_fanclub.jpg"].default}/>
+        <img class="about-content-top-image" src={images["mmm_group_5th_fanclub.jpg"]}/>
         <div class="about-content-center">
           <div class="about-content-center-container">
             <div class="about-content-center-relative-pos">
-              <img src={images["mmm_moustache_white.svg"].default}/>    
+              <img src={images["mmm_moustache_white.svg"]}/>    
               <h1>MAMAMOO</h1>
             </div>
             <p>
@@ -39,18 +39,18 @@ function About() {
           <div class="about-content-low-center-button">
             <Link to={"/members/moonbyul"}>
               {/* <div class="about-content-low-center-button-header">MOONBYUL</div> */}
-              {/* <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default}/> */}
-              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"].default} onClick={() => setMember("moonbyul")}/>
+              {/* <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"]}/> */}
+              <img class="about-content-low-center-button" src={images["moonbyul_about_icon.jpg"]} onClick={() => setMember("moonbyul")}/>
             </Link>
           </div>
           <div class="about-content-low-center-button">
-            <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"].default}/>
+            <img class="about-content-low-center-button" src={images["solar_about_icon.jpg"]}/>
           </div>
           <div class="about-content-low-center-button">
-            <img class="about-content-low-center-button" src={images["wheein_about_icon.jpg"].default}/>
+            <img class="about-content-low-center-button" src={images["wheein_about_icon.jpg"]}/>
           </div>
           <div class="about-content-low-center-button">
-            <img class="about-content-low-center-button" src={images["hwasa_about_icon.jpg"].default}/>
+            <img class="about-content-low-center-button" src={images["hwasa_about_icon.jpg"]}/>
           </div>
         </div>
         {/* <div class="about-content-center">
@@ -62,7 +62,7 @@ function About() {
         </div> */}
         {/* <div class="about-content-low-center">
           <div class="about-content-low-center-img-wrapper">
-            <img src={images["waw_group.jpg"].default}/>
+            <img src={images["waw_group.jpg"]}/>
           </div>
           <div class="about-content-low-center-text">
             <p class="about-content-low-center-text-paragraph">
@@ -83,7 +83,7 @@ function About() {
             <div class="about-content-low-center-members-btn-container">
               <Link to="/members" className="about-content-low-center-members-btn">
                 <p>Get to know the members</p>
-                <img src={images["brown_arrow_right.svg"].default}/>
+                <img src={images["brown_arrow_right.svg"]}/>
               </Link>
             </div>
           </div>
