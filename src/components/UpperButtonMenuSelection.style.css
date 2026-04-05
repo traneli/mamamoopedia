@@ -1,0 +1,139 @@
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
+}
+
+
+/* Mobile size */
+@media screen and (max-width: 600px){
+  .upperbutton-content {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: fixed;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+
+  .upperbuttonmenu-label {
+    width: 100%;
+  }
+
+  .upperbuttonmenu-button {
+    font-size: 1.1rem;
+    margin: 0.7rem 0 0.7rem 0
+  }
+}
+
+/* Laptop Size */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .upperbutton-content {
+    display: flex;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1rem;
+  }
+  
+  .upperbuttonmenu-button {
+    margin-right: 2.5rem;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1400px) {
+  .upperbutton-content {
+    display: flex;
+  }
+
+  .upperbuttonmenu-button {
+    margin-right: 4rem;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1.3rem; 
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+/* PC size */
+@media (min-width: 1401px) {
+  .upperbutton-content {
+    display: flex;
+  }
+
+  .upperbuttonmenu-button {
+    margin-right: 4rem;
+  }
+
+  .upperbuttonmenu-label {
+    font-size: 1.3rem;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+.upperbuttonmenu-button {
+  color: #f1f1f1;
+  border: none;
+  background: none;
+}
+
+.upperbuttonmenu-label {
+  color: white;
+  font-family: RedHatDisplay-Regular;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.hamburger-upperbutton-content {
+  /* display: inline; */
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 4.6rem;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  padding: 1rem 0 1rem 0;
+}
+
+.menu-hamburger-box {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+

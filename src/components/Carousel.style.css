@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 25%;
+}
+
+.inner { 
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-item-album {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+
+.carousel-item h2 {
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; */
+  color: #9A6C57;
+  font-family: Roboto-Bold;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.indicator-button {
+  width: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.indicator-button:hover {
+  opacity: 0.8;
+}
+
+.carousel-page-labels {
+  z-index: 1;
+}
+
+/* .carousel-page-labels:before, .carousel-page-labels::after {
+  content:" ";
+  width: 100px;
+  height: 2px;
+  margin: 0 10px;
+  vertical-align: super;
+  background-color:grey;
+  display:inline-block;
+} */
+
+.carousel-page-labels > button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 100%;
+  border-width: thin;
+  cursor: pointer;
+}
+
+.carousel-page-labels > button.active {
+  background-color: #9A6C57;
+}

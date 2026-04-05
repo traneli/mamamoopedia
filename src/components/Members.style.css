@@ -1,0 +1,324 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
+}
+
+/* Mobile size */
+@media screen and (max-width: 600px) {
+  .members-main-content-image-group {
+    flex-direction: column;
+  }
+
+  .members-main-content-image-group-link {
+    width: 100%;
+    height: 25%;
+  }
+
+  .members-main-content-image-group-btn img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: none;
+    object-position: 50% 23%;
+    transform: scale(1.1,1.1);
+  }
+}
+
+/* Laptop size */
+@media (min-width: 1025px) and (max-width: 1280px) { 
+
+  .members-main-content-image-group-btn {
+    height: 100%;
+  }
+
+  .members-main-content-image-group-btn img {
+    height: 100%;
+  }
+
+  .member-page-content {
+    width: 72%;
+    height: 72%;
+  }
+
+  /* .member-page-img-pfp {
+    min-height: 55%;
+    max-height: 100%;
+  } */
+
+  .member-page-back-button-content {
+    width: 83%;
+  }
+
+  .member-page-information-box-text-content {
+    font-size: 0.87rem;
+  }
+
+  .member-page-information-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .member-page-information-box h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* PC size */
+@media (min-width: 1281px) {
+  .members-main-content-image-group-btn img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .members-main-content-image-group-link {
+    width: 25%;
+  }
+
+  .member-page-content {
+    width: 72%;
+    height: 72%;
+  }
+
+  /* .member-page-img-pfp {
+    min-height: 55%;
+    max-height: 100%;
+  } */
+
+  .member-page-back-button-content {
+    width: 72%;
+  }
+
+  .member-page-information-box-text-content {
+    font-size: 1.2rem;
+  }
+
+  .member-page-information-box h1 {
+    /* font-size: 4.5rem; */
+    font-size: 1.8rem;
+  }
+
+  .member-page-information-box h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.members-main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  font-family: Roboto-Regular;
+}
+
+.members-main-content-top {
+  width: 100%;
+  background: #E0D2C7;
+}
+
+.members-main-content-top h2 {
+  color: #9A6C57;
+  font-size: 4rem;
+  font-family: RedHatDisplay-Bold;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.members-main-content-image-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.members-main-content-btn-container {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.members-main-content-image-group-link {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.members-main-content-image-group-link:hover {
+  filter: grayscale(0%);
+}
+
+.members-main-content-image-group-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.members-main-content-image-group-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.member-page-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.member-page-content {
+  /* width: 72%; */
+  display: flex;
+}
+
+.member-page-back-button-content {
+  /* width: 72%; */
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.member-page-back-button {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: RedHatDisplay-Bold;
+  display: flex;
+  align-items: center;
+  padding:  2rem 0 2rem 0;
+}
+
+.member-page-back-button:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.member-page-back-button:hover::after {
+  transform: scaleX(1);
+}
+
+.member-page-back-button-content img {
+  margin-right: 1rem;
+}
+
+/* TODO: Recheck image height/width */
+.member-page-img-pfp {
+  height: 100%;
+}
+
+.member-page-information-box {
+  width: 50%;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.member-page-information-gradient-line {
+  width: 100%;
+  height: 0.563rem;
+  background: linear-gradient(90deg, rgba(121,199,136,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.member-page-information-box h1, .member-page-information-box h2, .member-page-information-box-text-content {
+  margin-right: 1rem;
+}
+
+.member-page-information-box h1 {
+  /* font-size: 4.5rem; */
+  font-family: RedHatDisplay-Bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.member-page-information-box h2 {
+  /* font-size: 2rem; */
+  font-family: RedHatDisplay-Bold;
+  margin-top: 0;
+}
+
+.member-page-information-box-text-content {
+  /* font-size: 1.2rem; */
+  font-family: RedHatDisplay-Regular;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.member-page-information-box-text-content p {
+  margin: 0;
+  text-align: justify;
+}
+
+.member-page-information-box-solo-btn {
+  font-size: 1.2rem;
+  font-family: RedHatDisplay-Regular;
+  color: white; 
+  background: #55A965;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition: 0.3s;
+}
+
+.member-page-information-box-social-title {
+  font-family: RedHatDisplay-Regular;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.member-page-information-box-media-btn-content {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.member-page-information-box-media-btn {
+  width: 3rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#member-page-information-box-media-btn-special {
+  width: 6rem;
+  /* margin-top: 0.5rem; */
+}
+
+.member-page-information-box-solo-btn:hover, .member-page-information-box-media-btn:hover {
+  opacity: 0.8;
+}
+
+.member-span-coloured-text {
+  font-family: RedHatDisplay-Bold;
+}

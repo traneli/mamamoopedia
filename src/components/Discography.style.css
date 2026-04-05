@@ -1,0 +1,631 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Regular;
+  src: url('../assets/fonts/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: RedHatDisplay-Bold;
+  src: url('../assets/fonts/RedHatDisplay-Bold.ttf');
+}
+
+/* Mobile size */
+@media screen and (max-width: 600px) {
+  .discography-content-top-media-player-box-top-gallery img {
+    margin: 2rem 1rem 1rem 2rem;
+  }
+
+  /* .discography-content-top p {
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+  } */
+
+  .discography-content-top-media-img-wrapper {
+    display: none;
+  }
+
+  .discography-content-top-media-player-box-top-gallery {
+    height: 100%;
+    flex-direction: column;
+  }
+
+   .discography-content-top-media-player-box-top-text-container-gallery {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+
+  .discography-content-gallery-header {
+    font-size: 3rem;
+  }
+
+  .discography-content-gallery-subheader {
+    font-size: 1.1rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+}
+
+/* Tablet size */
+@media screen  
+  and (min-device-width: 600px)
+  and (max-device-width: 1200px) {
+    /* .discography-content-top-media-player-box-top-gallery img {
+      width: 15%;
+    } */
+
+    /* .discography-content-top-media-player-box-top-text-container-gallery {
+      font-size: 0.5rem;
+    } */
+  }
+
+/* UPDATE 021221: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+
+/* Laptop size */
+@media 
+  (min-width: 1025px) and (max-width: 1280px) { 
+    
+    .discography-content-top-media {
+      height: 60%;
+    }
+
+    /***** TOP BOX START ****/
+    .discography-content-top h2{
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+    
+    /* .discography-content-top p {
+      margin-bottom: 2rem;
+    } */
+    /***** TOP BOX END ****/
+
+
+    /***** TOP MEDIA BOX START ****/
+    .discography-content-top-media-img-wrapper img {
+      display: block;
+    }
+
+    .discography-content-top-media-player-box-top-gallery {
+      height: 35%;
+    }
+
+    .discography-content-top-media-player-box-top-gallery img {
+      width: 15%;
+      margin: 1rem 1rem 1rem 2rem;
+    }
+    
+    .discography-content-top-media-player-box-top-text-container-gallery {
+      font-size: 0.5rem;
+      margin: 1rem 2rem 1rem 1rem;
+    }
+    
+    .discography-content-top-media-player-box-top-album-title {
+      font-size: 1rem;
+    }    
+    /***** TOP MEDIA BOX END ****/
+
+
+    /***** ALBUM MEDIA BOX START ****/
+    .discography-content-gallery-header {
+      font-size: 3rem;
+    }
+
+    .discography-content-gallery-subheader {
+      font-size: 1.4rem;
+    }
+
+    .discography-content-top-albums-gallery-album-header {
+      font-size: 1.2rem;
+    }
+
+    .discography-content-top-albums-gallery-album-subheader {
+      font-size: 0.8rem;
+    }
+    /***** ALBUM MEDIA BOX END ****/
+
+
+    /***** MODAL START *****/
+    .discography-content-top-media-player-box-content-modal {
+      flex-direction: row;
+    }
+
+    .discography-content-top-media-player-box-top-modal {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .discography-content-top-media-player-box-top-modal img {
+      margin-top: 1.6rem;
+      margin-left: 2rem;
+    }
+
+    .discography-content-top-media-player-box-bottom-modal {
+      width: 100%;
+    }
+    /***** MODAL END *****/
+  }
+
+/* PC size */
+@media (min-width: 1281px) {  
+
+  /* .discography-content-top-media {
+    max-height: 80%;
+  } */
+
+  /***** TOP BOX START ****/
+  .discography-content-top h2{
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+
+  /* .discography-content-top p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  } */
+  /***** TOP BOX END ****/
+
+
+  /***** TOP MEDIA BOX START ****/
+  .discography-content-top-media-img-wrapper img {
+    display: block;
+  }
+
+  .discography-content-top-media-player-box-top-gallery {
+    height: 35%;
+  }
+
+  .discography-content-top-media-player-box-top-gallery img {
+    width: 20%;
+    margin: 1rem 1rem 1rem 2rem;
+  }
+
+  .discography-content-top-media-player-box-top-text-container-gallery {
+    font-size: 1rem;
+    margin: 1rem 2rem 1rem 1rem;
+  }
+
+  .discography-content-top-media-player-box-top-album-title {
+    font-size: 1.7rem;
+    /* font-size: 3rem; */
+  }
+  /***** TOP MEDIA BOX END ****/
+
+
+  /***** ALBUM MEDIA BOX START ****/
+  .discography-content-gallery-header {
+    font-size: 5rem;
+  }
+
+  .discography-content-gallery-subheader {
+    font-size: 1.4rem;
+  }
+
+  .discography-content-top-albums-gallery-album-header {
+    font-size: 1.5rem;
+  }
+  /***** ALBUM MEDIA BOX END ****/
+
+  
+  /***** MODAL START *****/
+  .discography-content-top-media-player-box-content-modal {
+    flex-direction: column;
+  }
+
+  .discography-content-top-media-player-box-top-modal {
+    height: 35%;
+    align-items: center;
+  }
+
+  .discography-content-top-media-player-box-top-modal img {
+    margin-left: 1.5rem;
+  }
+  /***** MODAL END *****/
+}
+
+.discography-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.discography-content-top img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: auto;
+}
+
+.discography-content-top-music {
+  position: absolute;
+  bottom: 4rem;
+  left: 54rem;
+  right: 54rem;
+  color: white;
+  font-family: Roboto-Bold;
+  font-size: 1.2rem;
+}
+
+.discography-content-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: RedHatDisplay-Regular;
+}
+
+.discography-header {
+  width: fit-content;
+  background-color: #111;
+  padding: 0;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.discography-header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+.discography-header li a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.discography-header li:first-of-type {
+  margin-left: 1rem;
+}
+
+.discography-header li:last-of-type {
+  margin-right: 1rem;
+}
+
+.isActive {
+  color: #55A965;
+  font-weight: bold;
+}
+
+.notActive {
+  color: white;
+  font-weight: normal;
+}
+
+.discography-verticalline {
+  border-left: 2px solid white;
+  height: 1.6rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+.discography-verticalline:last-child {
+  display: none;
+}
+
+
+/****** OLD DISCOGRAPHY STYLES *******/
+
+.discography-content-top-media {
+  width: 100%;
+  max-height: 80%;
+  background: #E0D2C7;
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-img-wrapper {
+  width: 100%;
+}
+
+.discography-content-top-media-img-wrapper img {
+  width: 100%;
+  /* height: auto; */
+  height: 100%;
+  /* display: block; */
+  object-fit: cover;
+}
+
+.discography-content-top-media-player-box-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.discography-content-top-media-player-box-bottom {
+  height: 100%;
+  background: #131314;
+  overflow: auto;
+}
+
+/*------------- MODAL STYLES -------------------*/
+
+.discography-content-top-media-player-box-content-modal {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */ /*In media tags*/
+}
+
+.discography-content-top-media-player-box-top-modal {
+  /* height: 35%; */ /*In media tags*/
+  background: #1D1D1E;
+  display: flex;
+  /* align-items: center; */ /*In media tags*/
+}
+
+.discography-content-top-media-player-box-top-modal img {
+  /* margin-left: 1.5rem; */ /*In media tags*/
+  /* margin-top: 0.5rem; */
+  width: 20%;
+}
+
+.discography-content-top-media-player-box-bottom-modal {
+  height: 100%;
+  background: #131314;
+  overflow: auto;
+}
+
+.discography-content-top-media-player-box-bottom-row {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-bottom-row:first-child {
+  margin-top: 2rem;
+}
+
+.discography-content-top-media-player-box-bottom-row:last-child {
+  margin-bottom: 2rem;
+}
+
+.discography-content-top-media-player-box-bottom-row-gallery {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-bottom-row-gallery:first-child {
+  margin-top: 1.5rem;
+}
+
+.discography-content-top-media-player-box-bottom-row-artist {
+  margin: 0;
+}
+
+.discography-content-top-media-player-box-bottom-row-inner {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto-Regular;
+  font-weight: 100;
+}
+
+.discography-content-top-media-player-box-bottom-row-inner p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.discography-content-top-media-player-box-top-text-container-modal {
+  color: white;
+  font-size: 1rem;
+  margin: 2rem;
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-player-box-top-album-title-modal {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-top-album-type {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.discography-content-top-media-player-box-top-album-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Roboto-Bold;
+}
+
+.discography-content-top-media-player-box-top-album-information {
+  margin-top: 0;
+}
+
+.discography-content-top-media-player-box-top-album-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.discography-content-top-media-player-box-top-text-container-gallery {
+  color: white;
+  /* font-size: 1rem; */
+  /* margin: 1rem 2rem 1rem 1rem; */
+  font-family: Roboto-Regular;
+}
+
+.discography-content-top-media-player-box-top-gallery {
+  /* height: 35%; */
+  background: #1D1D1E;
+  display: flex;
+  align-items: center;
+}
+
+.discography-content-gallery {
+  width: 100%;
+  background: #E0D2C7;
+}
+
+.discography-content-gallery-header {
+  color: #9A6C57;
+  /* font-size: 5rem; */ /*In media tags*/
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.discography-content-gallery-subheader {
+  margin-bottom: 2rem;
+  /* font-size: 1.4rem; */ /*In media tags*/
+}
+
+.discography-content-top-albums-gallery-container {
+  background: #9A6C57;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.discography-content-top-albums-gallery-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.discography-content-top-albums-gallery-album {
+  margin-top: 4rem;
+  width: 14%;
+  color: #E0D2C7;
+}
+
+.discography-content-top-albums-gallery-album:last-child {
+  margin-bottom: 2rem;
+}
+
+.discography-content-top-albums-gallery-album img {
+  width: 80%;
+  cursor: pointer;
+}
+
+.discography-content-top-albums-gallery-album-header {
+  /* font-size: 1.5rem; */ /*In media tags*/
+  font-family: Roboto-Bold;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.discography-content-top-albums-gallery-album-subheader {
+  font-family: Roboto-Regular;
+  margin-top: 0.2rem;
+}
+
+.temp-underconstruction-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.temp-underconstruction-container h2 {
+  font-family: Roboto-Bold;
+  font-size: 5rem;
+  color: #E0D2C7;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+.temp-underconstruction-container h3 {
+  font-family: Roboto-Regular;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #E0D2C7;
+  margin-top: 0;
+  margin-bottom: 8rem;
+}
+
+/*------------- CAROUSEL STYLES -------------------*/
+
+.discography-carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #9A6C57;
+  overflow: hidden;
+}
+
+.discography-carousel-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 50%;
+  transform-style: preserve-3d;
+}
+
+.discography-carousel-content img {
+  width: 40%;
+  height: auto;
+
+  opacity: 0;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.discography-carousel-text-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 2rem;
+  color: white;
+
+  opacity: 0;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.discography-carousel-text-container h1 {
+  margin: 0;
+}
+
+.discography-carousel-text-subheader {
+  margin: 0;
+}
+
+.discography-carousel-arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discography-carousel-arrow img {
+  width: 90%;
+}
