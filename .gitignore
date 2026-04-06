@@ -14,9 +14,9 @@
 # media
 /src/assets
 /src/assets/*.mp4git 
-*.mp4
 /src/assets/mmm_wawn_1080p.mp4
 /src/assets/mmm_wawn_1080p_compressed.mp4
+/*.webm
 
 # misc
 .DS_Store

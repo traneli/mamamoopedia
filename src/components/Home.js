@@ -1,6 +1,6 @@
 // import sample from '../assets/mmm_wawn_1080p_compressed.mp4';
 // import sample from '../assets/mmm_mmmuch_1080_compressed.mp4';
-import sample from '../assets/moonbyul_citt_1080p.webm';
+// import sample from '../assets/moonbyul_citt_1080p.webm';
 import Buttons from '../components/Buttons.js';
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
 import UpperButtonMenuSelection from './UpperButtonMenuSelection.js';
@@ -30,7 +30,8 @@ function Home() {
     <PageTemplate>
       <section class="home-section-container">
         <video id='videoBackground' autoPlay loop muted>
-          <source src={sample} type='video/webm'/>
+          {/* <source src={sample} type='video/webm'/> */}
+          <source src="/2026_moonbyul_hertz.webm" type='video/webm'/>
         </video>
         {/* <div class="home-container">
           <div class="home-content">
@@ -41,7 +42,7 @@ function Home() {
         </div> */}
         <div class="home-footer">
           <div class="home-footer-container-description">
-            <h1>CHEESE IN THE TRAP</h1>
+            <h1>HERTZ</h1>
             <p>Mamamoo's Moonbyul Comeback Solo</p>
           </div>
           <div class="home-footer-container-buttons">
