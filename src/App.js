@@ -34,7 +34,7 @@ function App() {
           <Route path="/about" component={About}/>
           <Route path="/members" component={Members}/>
           <Route path="/discography" component={Discography}/>
-          <Route path="/timeline" component={Timeline}/>
+          {/* <Route path="/timeline" component={Timeline}/> */}
           <Route path="/resources" component={Resources}/>
         </switch>
       </div>
