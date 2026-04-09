@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import Buttons from '../components/Buttons.js';
 import SocialMediaButtons from '../components/SocialMediaButtons.js';
@@ -13,6 +13,32 @@ function Home() {
   const { member, setMember } = useContext(MemberContext);
   const value = { member, setMember }
 
+  const contentRef = useRef(null);
+  const [contentVisible, setContentVisible] = useState(false);
+
+  const homeVideoID = "YEMBk076jGM";
+  const homeVideoSettings = "?mute=1&autoplay=1&controls=0&showinfo=0&loop=1&playlist="
+  const homeVideoUrl =  `https://www.youtube.com/embed/${homeVideoID}?si=VOd2nt597bvpI27T${homeVideoSettings}${homeVideoID}`;
+
+  /* If 50% of the element is visible -> show content */
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry], obs) => {
+        if (entry.intersectionRatio >= 0.5) {
+          setContentVisible(true);
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (contentRef.current) {
+      observer.observe(contentRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <PageTemplate>
       <section class="home-section-container">
@@ -20,30 +46,14 @@ function Home() {
           <div class="home-video-container">
             <h1>MAMAMOOPEDIA</h1>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-            <iframe src="https://www.youtube.com/embed/pLKOEfMc09E?mute=1&autoplay=1&controls=0&showinfo=0&playlist=pLKOEfMc09E" title="[MV] 문별 (Moon Byul) &#39;Hertz&#39;" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe src={homeVideoUrl} title="화사 (HWASA) - &#39;So Cute&#39; MV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <div class="home-video-overlay"></div>
-            <button type="button" class="home-video-button">🡣</button>
+            {/* <button type="button" class="home-video-button">🡣</button> */}
           </div>
         </div>
       </section>
-
-      {/* <video id='videoBackground' autoPlay loop muted> */}
-      {/* <source src={sample} type='video/webm'/> */}
-      {/* <source src="/2026_moonbyul_hertz.webm" type='video/webm'/> */}
-      {/* </video> */}
-      {/* <div class="home-footer">
-          <div class="home-footer-container-description">
-            <h1>HERTZ</h1>
-            <p>Mamamoo's Moonbyul Comeback Solo</p>
-          </div>
-          <div class="home-footer-container-buttons">
-            <p>Get connected with MAMAMOO</p>
-            <SocialMediaButtons background="transparent" />
-          </div>
-        </div> */}
-        
       <section home-section-container>
-        <div class="home-content-center">
+        <div ref={contentRef} class={`home-content-center ${contentVisible ? 'visible' : 'hidden'}`}>
           <div class="home-content-center-text">
             <h1>MAMAMOO</h1>
             <p>
@@ -61,16 +71,16 @@ function Home() {
         </div>
         <div class="home-content-bottom">
           <div class="home-content-bottom-button">
-            <Link to={"/members/solar"}>
-              <img src={images["2026_solar_solo.webp"]} onClick={() => setMember("solar")}/>
-            </Link>
-            <button type="button" class="home-content-bottom-button-member">Solar</button>
-          </div>
-          <div class="home-content-bottom-button">
             <Link to={"/members/moonbyul"}>
               <img src={images["2026_moonbyul_solo.webp"]} onClick={() => setMember("moonbyul")}/>
             </Link>
             <button type="button" class="home-content-bottom-button-member">Moonbyul</button>
+          </div>
+          <div class="home-content-bottom-button">
+            <Link to={"/members/solar"}>
+              <img src={images["2026_solar_solo.webp"]} onClick={() => setMember("solar")}/>
+            </Link>
+            <button type="button" class="home-content-bottom-button-member">Solar</button>
           </div>
           <div class="home-content-bottom-button">
             <Link to={"/members/wheein"}>
@@ -87,8 +97,16 @@ function Home() {
         </div>
       </section>
       <footer class="about-content-footer">
-          <p>Get connected with MAMAMOO</p>
-          <SocialMediaButtons background="color" />
+          {/* <p>Get connected with MAMAMOO</p> */}
+          <div class="footer-information"> 
+            <img class="footer-information-logo"src={images["mmm-logo-white.svg"]} />
+            <p>Made by a sikrit fan</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lorem tortor, placerat eu malesuada et, ultricies a diam. Suspendisse laoreet diam diam, nec laoreet ipsum volutpat non</p>
+            <SocialMediaButtons background="color" />
+          </div>
+          <div class="footer-feedback">
+            <button class="footer-feedback-button">Feedback 🡢</button>
+          </div>
         </footer>
     </PageTemplate>
   );
