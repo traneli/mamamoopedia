@@ -8,7 +8,12 @@ import MembersWheein from './MembersWheein';
 import MembersHwasa from './MembersHwasa';
 import MemberContext from '../hoc/context/MainContext';
 
+import SocialMediaButtons from '../components/SocialMediaButtons.js';
+import * as utils from "../utils.js"
+
 function Members() {
+  const images = utils.importAll(require.context('../assets', false, /\.(png|jp?g|svg|webp)/));
+
   const [member, setMember] = useState("");
   const value = { member, setMember };
 
@@ -50,6 +55,18 @@ function Members() {
            <MembersContent selectedMember={member}/>
          }
        </MemberContext.Provider>
+       <footer class="about-content-footer">
+        {/* <p>Get connected with MAMAMOO</p> */}
+        <div class="footer-information"> 
+          <img class="footer-information-logo"src={images["mmm-logo-white.svg"]} />
+          <p>Made by a sikrit fan</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lorem tortor, placerat eu malesuada et, ultricies a diam. Suspendisse laoreet diam diam, nec laoreet ipsum volutpat non</p>
+          <SocialMediaButtons background="color" />
+        </div>
+        <div class="footer-feedback">
+          <button class="footer-feedback-button">Feedback 🡢</button>
+        </div>
+      </footer>
     </PageTemplate>
   );
 }

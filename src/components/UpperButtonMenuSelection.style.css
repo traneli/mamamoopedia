@@ -13,6 +13,8 @@
 @media screen and (max-width: 600px){
   .upperbutton-content {
     display: none;
+    text-align: start;
+    font-weight: bold;
   }
 
   .menu-hamburger {
@@ -113,7 +115,7 @@
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  background-color: black;
+  background-color: white;
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
@@ -125,9 +127,9 @@
   left: 0;
   top: 4.6rem;
   width: 100%;
-  background-color: white;
+  background-color: #55A965;
   z-index: 100;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 1rem 1rem;
 }
 
 .menu-hamburger-box {
