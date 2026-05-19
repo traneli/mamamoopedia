@@ -16,9 +16,9 @@ function Home() {
   const contentRef = useRef(null);
   const [contentVisible, setContentVisible] = useState(false);
 
-  const homeVideoID = "YEMBk076jGM";
-  const homeVideoSettings = "?mute=1&autoplay=1&controls=0&showinfo=0&loop=1&playlist="
-  const homeVideoUrl =  `https://www.youtube.com/embed/${homeVideoID}?si=VOd2nt597bvpI27T${homeVideoSettings}${homeVideoID}`;
+  const homeVideoID = "xnwOfIiZ-zQ";
+  const homeVideoSettings = "?controls=0&showinfo=0&loop=1&mute=1&autoplay=1&playlist="
+  const homeVideoUrl =  `https://www.youtube.com/embed/${homeVideoID}?si=rdjw4Jl73s71UqY9${homeVideoSettings}${homeVideoID}`;
 
   /* If 50% of the element is visible -> show content */
   useEffect(() => {
@@ -46,7 +46,7 @@ function Home() {
           <div class="home-video-container">
             <h1>MAMAMOOPEDIA</h1>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-            <iframe src={homeVideoUrl} title="화사 (HWASA) - &#39;So Cute&#39; MV" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe src={homeVideoUrl} frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin"></iframe>
             <div class="home-video-overlay"></div>
             {/* <button type="button" class="home-video-button">🡣</button> */}
           </div>
@@ -73,26 +73,26 @@ function Home() {
           <div class="home-content-bottom-button">
             <Link to={"/members/moonbyul"}>
               <img src={images["2026_moonbyul_solo.webp"]} onClick={() => setMember("moonbyul")}/>
+              <button type="button" class="home-content-bottom-button-member">Moonbyul</button>
             </Link>
-            <button type="button" class="home-content-bottom-button-member">Moonbyul</button>
           </div>
           <div class="home-content-bottom-button">
             <Link to={"/members/solar"}>
               <img src={images["2026_solar_solo.webp"]} onClick={() => setMember("solar")}/>
+              <button type="button" class="home-content-bottom-button-member">Solar</button>
             </Link>
-            <button type="button" class="home-content-bottom-button-member">Solar</button>
           </div>
           <div class="home-content-bottom-button">
             <Link to={"/members/wheein"}>
               <img src={images["2026_wheein_solo.webp"]} onClick={() => setMember("wheein")}/>
+              <button type="button" class="home-content-bottom-button-member">Wheein</button>
             </Link>
-            <button type="button" class="home-content-bottom-button-member">Wheein</button>
           </div>
           <div class="home-content-bottom-button">
             <Link to={"/members/hwasa"}>
               <img src={images["2026_hwasa_solo.webp"]} onClick={() => setMember("hwasa")}/>
+              <button type="button" class="home-content-bottom-button-member">Hwasa</button>
             </Link>
-            <button type="button" class="home-content-bottom-button-member">Hwasa</button>
           </div>
         </div>
       </section>
@@ -100,7 +100,7 @@ function Home() {
         {/* <p>Get connected with MAMAMOO</p> */}
         <div class="footer-information"> 
           <img class="footer-information-logo"src={images["mmm-logo-white.svg"]} />
-          <p>Made by a sikrit fan</p>
+          <p>Made by a secret fan</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lorem tortor, placerat eu malesuada et, ultricies a diam. Suspendisse laoreet diam diam, nec laoreet ipsum volutpat non</p>
           <SocialMediaButtons background="color" />
         </div>

@@ -6,12 +6,9 @@ import {
 import { useState, useEffect } from "react";
 import { useHistory, withRouter } from "react-router";
 
-import { Home, About, General, Members, Discography, Timeline, Resources } from './components/Index';
+import { Home, About, General, Members, Discography, Timeline, Resources, MembersSolar, MembersMoonbyul, MembersWheein, MembersHwasa } from './components/Index';
 
 import './App.css';
-
-
-// https://www.intechnic.com/blog/50-examples-of-large-background-video-websites/
 
 function App() {
   const [ isHome, setHome ] = useState(false);
@@ -31,8 +28,12 @@ function App() {
         <switch>
           <Route exact path="/" component={Home}/>
           <Route path="/general" component={General}/>
-          <Route path="/about" component={About}/>
-          <Route path="/members" component={Members}/>
+          {/* <Route path="/about" component={About}/> */}
+          <Route exact path="/members" component={Members}/>
+          <Route path="/members/solar" component={MembersSolar}/>
+          <Route path="/members/moonbyul" component={MembersMoonbyul}/>
+          <Route path="/members/wheein" component={MembersWheein}/>
+          <Route path="/members/hwasa" component={MembersHwasa}/>
           <Route path="/discography" component={Discography}/>
           {/* <Route path="/timeline" component={Timeline}/> */}
           <Route path="/resources" component={Resources}/>

@@ -11,10 +11,8 @@ function MembersMain() {
   const { member, setMember } = useContext(MemberContext);
   const value = { member, setMember }
 
-  console.log(value.member)
-
   const { url } = useRouteMatch();
-
+  
   return (
     <section class="members-main-content">
       <div class="members-main-content-image-group">

@@ -31,12 +31,11 @@ function UpperButtonMenuSelection() {
         <HamburgerMenu/>
       </div>
       <nav className={`upperbutton-content ${hamburgerOpen && 'hamburger-upperbutton-content'}`}>
-        <div className="upperbuttonmenu-button">
+        {/* <div className="upperbuttonmenu-button">
           <NavLink to="/about" className="upperbuttonmenu-label" activeStyle={activeStyle}>
-          {/* <NavLink to="/about" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}
             About Mamamoo
           </NavLink>
-        </div>
+        </div> */}
         <div className="upperbuttonmenu-button">
           <NavLink to="/members" className="upperbuttonmenu-label" activeStyle={activeStyle}>
           {/* <NavLink to="/members" className="upperbuttonmenu-label" activeClassName="upperbuttonmenu-label"> */}

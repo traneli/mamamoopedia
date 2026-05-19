@@ -17,10 +17,8 @@ function Members() {
   const [member, setMember] = useState("");
   const value = { member, setMember };
 
-  // console.log(value.member)
-
   function MembersContent(props){
-    const selectedMember = props.selectedMember
+    const selectedMember = props.selectedMember;
 
     if(selectedMember === "moonbyul") {
       return (
@@ -31,6 +29,7 @@ function Members() {
         <section class="members-main-content"><MembersSolar/></section>
       )
     } else if(selectedMember === "wheein") {
+      console.log("Rendering Wheein content");
       return (
         <section class="members-main-content"><MembersWheein/></section>
       )
@@ -45,26 +44,18 @@ function Members() {
 
   return (
     <PageTemplate>
-      {/* <section class="members-main-content"> */}
-        {/* <div class="members-main-content-top">
-          <h2>Meet the members</h2>
-        </div> */}
-
-        <MemberContext.Provider value={value}>
-         {
-           <MembersContent selectedMember={member}/>
-         }
-       </MemberContext.Provider>
-       <footer class="about-content-footer">
-        {/* <p>Get connected with MAMAMOO</p> */}
-        <div class="footer-information"> 
-          <img class="footer-information-logo"src={images["mmm-logo-white.svg"]} />
-          <p>Made by a sikrit fan</p>
+      <MemberContext.Provider value={value}>
+        <MembersContent selectedMember={member} />
+      </MemberContext.Provider>
+      <footer className="about-content-footer">
+        <div className="footer-information">
+          <img className="footer-information-logo" src={images["mmm-logo-white.svg"]} alt="MAMAMOO logo" />
+          <p>Made by a secret fan</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lorem tortor, placerat eu malesuada et, ultricies a diam. Suspendisse laoreet diam diam, nec laoreet ipsum volutpat non</p>
           <SocialMediaButtons background="color" />
         </div>
-        <div class="footer-feedback">
-          <button class="footer-feedback-button">Feedback 🡢</button>
+        <div className="footer-feedback">
+          <button className="footer-feedback-button">Feedback 🡢</button>
         </div>
       </footer>
     </PageTemplate>
