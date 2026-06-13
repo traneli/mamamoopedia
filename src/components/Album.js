@@ -1,6 +1,8 @@
 import './Discography.style.css';
 
 import * as utils from "../utils.js"
+import { type } from 'firebase/firestore/pipelines';
+import { MamamooDiscographyData } from '../data/MamamooDiscographyData.js';
 
 const albumImages = utils.importAll(require.context('../assets/albums', false, /\.(png|jp?g|svg)/));
 //const albumImagesBorderless = utils.importAll(require.context('../assets/albums/borderless_albums', false, /\.(png|jp?g|svg)/));
@@ -11,8 +13,25 @@ function Album(props) {
   const formType = props.formType;
   let selectedAlbum = "";
 
+  let selectedDiscographyData = null;
+  switch(albumData){
+    case utils.discographyType.ALBUMS:
+      selectedDiscographyData = MamamooDiscographyData.albums;
+      break;
+    case utils.discographyType.SOLOS:
+      selectedDiscographyData = MamamooDiscographyData.solos;
+      break;
+    case utils.discographyType.CFS:
+      selectedDiscographyData = MamamooDiscographyData.cfs;
+      break;
+    default:
+      selectedDiscographyData = null;
+      break;
+  }
+
   if(albumToShow.length){
-    selectedAlbum = albumData.find(album => album.name.toLowerCase() === albumToShow.toLowerCase())
+    // selectedAlbum = albumData.find(album => album.name.toLowerCase() === albumToShow.toLowerCase())
+    selectedAlbum = selectedDiscographyData.find(album => album.name.toLowerCase() === albumToShow.toLowerCase())
   } else {
     return (null);
   }
@@ -36,8 +55,8 @@ function Album(props) {
         <div class="discography-content-top-media-player-box-bottom-modal">
           {/* <iframe styles="border-radius:0" src="https://open.spotify.com/embed/album/2yApvdfgG74FlAW2L4tlTW?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
           {
-            selectedAlbum.songs.map(song => 
-              <div class="discography-content-top-media-player-box-bottom-row">
+            selectedAlbum.songs.map((song, index) => 
+              <div key={`${song.name}-${index}`} class="discography-content-top-media-player-box-bottom-row">
                 <p class="discography-content-top-media-player-box-bottom-row-artist">{song.name}</p>
                 <div class="discography-content-top-media-player-box-bottom-row-inner">
                   <p>{song.artist.toUpperCase()}</p>
@@ -63,10 +82,10 @@ function Album(props) {
         </div>
         <div class="discography-content-top-media-player-box-bottom">
           {
-            selectedAlbum.songs.map(song => 
-              <div class="discography-content-top-media-player-box-bottom-row-gallery">
+            selectedAlbum.songs.map((song, index) => 
+              <div key={`${song.name}-${index}`} class="discography-content-top-media-player-box-bottom-row-gallery">
                 <p class="discography-content-top-media-player-box-bottom-row-artist">{song.name}</p>
-                <div class="discography-content-top-media-player-box-bottom-row-inner">
+                <div class="discography-content-top-media-player-box- bottom-row-inner">
                   <p>{song.artist.toUpperCase()}</p>
                   <p>{song.length}</p>
                 </div>

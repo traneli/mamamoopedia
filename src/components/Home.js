@@ -16,9 +16,9 @@ function Home() {
   const contentRef = useRef(null);
   const [contentVisible, setContentVisible] = useState(false);
 
-  const homeVideoID = "xnwOfIiZ-zQ";
+  const homeVideoID = "PVzSI9PpkXc";
   const homeVideoSettings = "?controls=0&showinfo=0&loop=1&mute=1&autoplay=1&playlist="
-  const homeVideoUrl =  `https://www.youtube.com/embed/${homeVideoID}?si=rdjw4Jl73s71UqY9${homeVideoSettings}${homeVideoID}`;
+  const homeVideoUrl =  `https://www.youtube.com/embed/${homeVideoID}?si=https://www.youtube.com/embed/PVzSI9PpkXc?si=NS2NjagzVZG_8_jt${homeVideoSettings}${homeVideoID}`;
 
   /* If 50% of the element is visible -> show content */
   useEffect(() => {
@@ -66,7 +66,7 @@ function Home() {
             <p class="home-content-center-logo-description">MAMAMOO's official logo</p>
           </div>
           <div class="home-content-center-picture">
-            <img src={images["mmm_illella.webp"]} />
+            <img src={images["mmm_4ward.webp"]} />
           </div>
         </div>
         <div class="home-content-bottom">

@@ -36,6 +36,82 @@
     object-position: 50% 23%;
     transform: scale(1.1,1.1);
   }
+
+  /* Member page mobile adjustments */
+  .member-page-content {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .member-page-img-pfp {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .member-page-information-box {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .member-page-information-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .member-page-information-box h2 {
+    font-size: 1rem;
+  }
+
+  .member-page-information-box-text-content {
+    font-size: 0.9rem;
+  }
+
+  .member-page-back-button-content {
+    width: 90%;
+  }
+
+  .member-page-back-button {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet size */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .member-page-content {
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .member-page-img-pfp {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .member-page-information-box {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .member-page-information-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .member-page-information-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .member-page-information-box-text-content {
+    font-size: 1rem;
+  }
+
+  .member-page-back-button-content {
+    width: 85%;
+  }
 }
 
 /* Laptop size */
@@ -52,6 +128,17 @@
   .member-page-content {
     width: 72%;
     height: 72%;
+    /* flex-direction: row; */
+  }
+
+  .member-page-img-pfp {
+    width: 50%;
+    height: 100%;
+  }
+
+  .member-page-information-box {
+    width: 50%;
+    margin-left: 3rem;
   }
 
   /* .member-page-img-pfp {
@@ -90,6 +177,17 @@
   .member-page-content {
     width: 72%;
     height: 72%;
+    flex-direction: row;
+  }
+
+  .member-page-img-pfp {
+    width: 50%;
+    height: 100%;
+  }
+
+  .member-page-information-box {
+    width: 50%;
+    margin-left: 3rem;
   }
 
   /* .member-page-img-pfp {
@@ -188,12 +286,12 @@
 }
 
 .member-page-content {
-  /* width: 72%; */
   display: flex;
+  /* flex-direction: column; */
+  gap: 0;
 }
 
 .member-page-back-button-content {
-  /* width: 72%; */
   height: 12%;
   display: flex;
   align-items: center;
@@ -229,16 +327,16 @@
 
 /* TODO: Recheck image height/width */
 .member-page-img-pfp {
-  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .member-page-information-box {
-  width: 50%;
-  margin-left: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   overflow: auto;
+  padding-right: 1rem;
 }
 
 .member-page-information-gradient-line {
@@ -248,7 +346,7 @@
 }
 
 .member-page-information-box h1, .member-page-information-box h2, .member-page-information-box-text-content {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .member-page-information-box h1 {

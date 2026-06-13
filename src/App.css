@@ -1501,8 +1501,8 @@
   cursor: pointer;
 }
 
-/* Phone & Tablet */
-@media screen and (min-width: 601px) and (max-width: 1200px), screen and (max-width: 600px) {
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
   .about-content-footer {
     flex-direction: column;
     align-items: stretch;
@@ -1513,6 +1513,43 @@
     min-width: auto;
     max-width: 100%;
     width: 100%;
+  }
+
+  .footer-information-logo {
+    min-width: 35%;
+    max-width: 40%;
+  }
+
+  .footer-feedback {
+    display: flex;
+    width: auto;
+  }
+
+  .footer-feedback-button {
+    position: static;
+    right: auto;
+    bottom: auto;
+    max-width: 30%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .about-content-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-information,
+  .footer-feedback {
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-information-logo {
+    min-width: 25%;
+    max-width: 30%;
   }
 
   .footer-feedback {
